@@ -2,16 +2,27 @@ module.exports = function(eleventyConfig) {
     // Copy `assets/` to `_site/assets/`
     eleventyConfig.addPassthroughCopy("assets");
 
-    // Set the source for 11ty to the /src directory
-    // Otherwise, this defaults to the project root
-    // This provides a cleaner project structure
     return {
+        // Control which files Eleventy will process
+        // e.g.: *.md, *.njk, *.html, *.liquid
+        templateFormats: [
+            "md",
+            "njk",
+            "html",
+            "liquid"
+        ],
+        
+        // Pre-process *.md files with: (default: `liquid`)
+        markdownTemplateEngine: "njk",
+        
+        // Pre-process *.html files with: (default: `liquid`)
+        htmlTemplateEngine: "njk",
+
         dir: {
-            input: "src",
-            // This is the default, but it's included
-            // here for clarity.
-            output: "_site",
-            includes: "_templates"
+            input: "src",               // default: "."
+            includes: "_templates",     // default: "_includes"
+            data: "../_data",           // default: "_data"
+            output: "_site"             // default: "_site"
         }
     }
 }
