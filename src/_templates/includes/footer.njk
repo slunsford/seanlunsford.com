@@ -1,10 +1,10 @@
-        <footer>
-            <span class="copyright">&copy; 2023 Sean Lunsford</span>
-            <span class="footer-links">
-                <a rel="me" href="https://data-folks.masto.host/@sean">Mastodon</a>
-                <a href="/feed.xml">RSS Feed</a>
-                <a href="/feed.json">JSON Feed</a>
-            </span>
-        </footer>
+    <footer class="site-footer">
+        <span class="copyright">&copy; 2023 Sean Lunsford</span>
+        <span class="footer-links">
+            <a href="/feed.xml"><i class="fa-solid fa-square-rss"></i></a>
+            {%if metadata.author.mastodon_url %}<a rel="me" href="{{ metadata.author.mastodon_url }}"><i class="fa-brands fa-mastodon"></i></a>{% endif %}
+            {%if metadata.author.threads_url %}<a rel="me" href="{{ metadata.author.threads_url }}"><i class="fa-brands fa-threads"></i></a>{% endif %}
+        </span>
+    </footer>
     </body>
 </html>

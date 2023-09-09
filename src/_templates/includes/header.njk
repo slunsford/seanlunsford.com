@@ -9,6 +9,10 @@
         {#- Atom and JSON feeds included by default #}
         <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
         <link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ metadata.title }}">
+        
+        <link rel="stylesheet" type="text/css" href="/assets/css/fonts.css"}}" />
+        <link rel="stylesheet" type="text/css" href="/assets/css/style.css"}}" />
+        <script src="https://kit.fontawesome.com/8be7adf8bc.js" crossorigin="anonymous"></script>
 
         {#- Uncomment this if you’d like folks to know that you used Eleventy to build your site!  #}
         <meta name="generator" content="{{ eleventy.generator }}">
@@ -17,7 +21,10 @@
         <a href="#skip" class="visually-hidden">Skip to main content</a>
 
         <header>
-            <a href="/" class="home-link">{{ metadata.title }}</a>
+            <div class="main-header-content">
+                <h1 class="site-title"><a href="/" class="home-link">{{ metadata.title }}</a></h1>
+                {%if metadata.description %}<section class="site-description">{{ metadata.description }}</section>{% endif %}
+            </div>
 
             {% include "includes/navigation.njk" %}
         </header>
