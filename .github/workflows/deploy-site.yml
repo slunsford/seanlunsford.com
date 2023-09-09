@@ -1,0 +1,58 @@
+name: Deploy Site
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+# Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+permissions:
+  contents: read
+  pages: write # to deploy to Pages
+  id-token: write # to verify the deployment originates from an appropriate source
+
+jobs:
+  # Build job
+  build:
+    name: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out
+        uses: actions/checkout@main
+
+      # Install eleventy
+      - name: Set up node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build eleventy site
+        run: npm run build
+
+      # Configure Pages
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v3.0.6
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v2.0.0
+
+  # Deploy job
+  deploy:
+    # Add a dependency to the build job
+    needs: build
+
+    # Deploy to the github-pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    # Specify runner + deployment step
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2 # or the latest "vX.X.X" version tag for this action
