@@ -1,0 +1,25 @@
+{
+  "name": "seanlunsford.com",
+  "version": "1.0.0",
+  "description": "Sean's website built on [Eleventy](https://www.11ty.dev/) ([v2](https://www.11ty.dev/blog/eleventy-v2/)).",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "start": "npx @11ty/eleventy --serve --quiet",
+    "clean": "rm -rf _site/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slunsford/seanlunsford.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slunsford/seanlunsford.com/issues"
+  },
+  "homepage": "https://github.com/slunsford/seanlunsford.com#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
