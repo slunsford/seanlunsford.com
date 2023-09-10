@@ -1,7 +1,7 @@
 ---
 title: Good Books
 slug: good-books
-date_published: 2012-11-12T00:15:08.000Z
+date: 2012-11-12T00:15:08.000Z
 date_updated: 2020-02-12T11:21:57.000Z
 tags: Christianity, Technology
 ---

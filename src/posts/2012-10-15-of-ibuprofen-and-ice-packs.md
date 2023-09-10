@@ -1,7 +1,7 @@
 ---
 title: Of Ibuprofen and Ice Packs
 slug: of-ibuprofen-and-ice-packs
-date_published: 2012-10-15T00:11:18.000Z
+date: 2012-10-15T00:11:18.000Z
 date_updated: 2020-02-12T11:24:26.000Z
 tags: Christianity
 ---

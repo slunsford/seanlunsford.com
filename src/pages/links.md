@@ -1,7 +1,7 @@
 ---
 title: Links
 slug: links
-date_published: 2022-12-19T16:16:45.000Z
+date: 2022-12-19T16:16:45.000Z
 date_updated: 2022-12-19T16:16:45.000Z
 ---
 

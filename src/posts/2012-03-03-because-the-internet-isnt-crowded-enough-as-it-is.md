@@ -1,7 +1,7 @@
 ---
 title: Because the Internet Isn’t Crowded Enough as It Is
 slug: because-the-internet-isnt-crowded-enough-as-it-is
-date_published: 2012-03-03T18:33:29.000Z
+date: 2012-03-03T18:33:29.000Z
 date_updated: 2020-02-07T10:18:07.000Z
 tags: Blogging
 ---

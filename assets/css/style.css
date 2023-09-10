@@ -9,6 +9,7 @@
   --background-color: #f4f4f4;
   --post-background-color: white;
   --post-border-color: #e5e7e9;
+  --accent-color: #fa4616;
 
   --default-font-features: "onum", "ss12", "calt";
   --small-caps: var(--default-font-features), "c2sc";
@@ -56,6 +57,17 @@ body {
   font-feature-settings: var(--default-font-features);
   color: var(--main-text-color);
   background-color: var(--background-color);
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 h1,
@@ -157,7 +169,7 @@ pre {
 blockquote {
   margin: 0 2.5rem 0.75rem;
   padding: 0 0.75rem;
-  border-left: 3px solid var(--ghost-accent-color);
+  border-left: 3px solid var(--accent-color);
   font-size: var(--font-size-minus-1);
   line-height: 1.45;
 }
@@ -184,12 +196,13 @@ hr {
 }
 
 /* Links */
-.post a {
-  color: var(--ghost-accent-color);
+a {
+  color: var(--accent-color);
   text-decoration: none;
 }
 
-.post a:hover {
+.post a:hover,
+.page a:hover {
   margin: -3px;
   padding: 2px;
   background: var(--background-color);
@@ -200,7 +213,7 @@ hr {
 a.read-more,
 a.read-more:hover,
 a.read-more:visited {
-  color: var(--ghost-accent-color);
+  color: var(--accent-color);
   text-decoration: none;
 }
 
@@ -214,13 +227,15 @@ h6 a {
   text-decoration: none;
 }
 
-.post-title a {
+.post-title a,
+.page-title a {
   color: var(--main-text-color) !important;
   text-decoration: none !important;
 }
 
-.post-title a:hover {
-  color: var(--ghost-accent-color) !important;
+.post-title a:hover,
+.page-title a:hover {
+  color: var(--accent-color) !important;
 
   /* Override hover styles on post body */
   margin: 0 -0.5rem !important;
@@ -229,7 +244,8 @@ h6 a {
   border: none !important;
 }
 
-.post-title a:active {
+.post-title a:active,
+.page-title a:active {
   opacity: 75%;
 }
 
@@ -247,7 +263,7 @@ h6 a {
 }
 
 .bigfoot-footnote__button:hover {
-  background-color: var(--ghost-accent-color);
+  background-color: var(--accent-color);
 }
 
 .bigfoot-footnote__button.is-active {
@@ -359,7 +375,7 @@ dl dd {
 }
 
 .site-title a:active {
-  color: var(--ghost-accent-color);
+  color: var(--accent-color);
 }
 
 .site-description {
@@ -398,7 +414,7 @@ dl dd {
 }
 
 .nav a:hover {
-  color: var(--ghost-accent-color);
+  color: var(--accent-color);
 }
 
 .nav a:active {
@@ -406,7 +422,7 @@ dl dd {
 }
 
 a.nav-current {
-  color: var(--ghost-accent-color);
+  color: var(--accent-color);
 }
 
 a.nav-home {
@@ -434,7 +450,7 @@ a.nav-home {
 }
 
 .site-footer a:hover {
-  color: var(--ghost-accent-color);
+  color: var(--accent-color);
 }
 
 .site-footer a:active {
@@ -465,10 +481,11 @@ a.nav-home {
 }
 
 /*	==========================================================================
-	Posts
+	Posts/Pages
 	========================================================================== */
 
-.post {
+.post,
+.page {
   position: relative;
   margin: 1.25rem -1.25rem;
   padding: 1.25rem;
@@ -481,29 +498,13 @@ a.nav-home {
   font-style: normal;
 }
 
-.post h1 {
-  font-family: var(--serif);
-  font-size: var(--font-size-plus-3);
-}
-
-.post h2 {
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: var(--font-size-plus-2);
-}
-
-.post h3 {
-  font-family: var(--serif);
-  /* font-feature-settings: var(--small-caps); */
-  font-style: italic;
-  font-size: var(--font-size-plus-1);
-}
-
-.post-header {
+.post-header,
+.page-header {
   margin-bottom: 0.5rem;
 }
 
-.post-title {
+.post-title,
+.page-title {
   margin: 0;
 }
 
@@ -514,25 +515,8 @@ a.nav-home {
   font-style: italic;
 }
 
-.post-footer {
-  margin-top: 1rem;
-}
-
-.post-footer .tags a {
-  color: var(--secondary-text-color);
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.post-footer .tags a:hover {
-  color: var(--ghost-accent-color);
-}
-
-.post-footer h4 {
-  margin: 2rem 0 0;
-}
-
-.post-header img {
+.post-header img,
+.page-header img {
   width: calc(100% + 2.5rem + 2px) !important;
   max-width: calc(100% + 2.5rem + 2px) !important;
   margin: calc(-1.25rem - 1px);
@@ -541,6 +525,23 @@ a.nav-home {
 
 .footnotes-sep {
   display: none;
+}
+
+/* Post List */
+
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-list-item {
+  align-items: baseline;
+  counter-increment: start-from -1;
+  margin-bottom: 0.75rem;
+}
+
+.post-list-title {
+  font-weight: 700;
 }
 
 /*	==========================================================================
@@ -587,7 +588,7 @@ a.nav-home {
 }
 
 .pagination a:hover {
-  color: var(--ghost-accent-color);
+  color: var(--accent-color);
 }
 
 .pagination a:active {
@@ -671,12 +672,14 @@ a.nav-home {
     font-size: 9vw;
   }
 
-  .post {
+  .post,
+  .page {
     margin: 0.75rem -0.75rem;
     padding: 0.75rem;
   }
 
-  .post-header img {
+  .post-header img,
+  .page-header img {
     width: calc(100% + 1.5rem + 2px) !important;
     max-width: calc(100% + 1.5rem + 2px) !important;
     margin: calc(-0.75rem - 1px);

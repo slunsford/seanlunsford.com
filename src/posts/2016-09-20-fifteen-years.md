@@ -1,7 +1,7 @@
 ---
 title: Fifteen Years
 slug: fifteen-years
-date_published: 2016-09-19T21:26:18.000Z
+date: 2016-09-19T21:26:18.000Z
 date_updated: 2020-02-10T19:42:28.000Z
 tags: Christianity, Highlights
 ---
@@ -18,7 +18,7 @@ Since that day my family and I have been torn between two worlds—the country m
 
 But the stark, night and day difference is that the Muslims who we lived among never once directed their anger at America towards us, but instead welcomed us into their homes, fed us, called us guests in their country. How many Americans who claim to follow Jesus have done the same for the Muslims who live among us and feel more isolated and vulnerable than ever right now?
 
-In the fifteen years since 9/11, I’ve seen the world rally around not only New York, but Paris, Haiti, Japan, and other places where tragedy has struck in the form of either violence or natural disasters. And yet when disasters or extremists strike the Muslim world,[[1]](#fn1) the rest of the world either (a) doesn’t notice, or (b) shrugs and says “They’re all terrorists anyways.”
+In the fifteen years since 9/11, I’ve seen the world rally around not only New York, but Paris, Haiti, Japan, and other places where tragedy has struck in the form of either violence or natural disasters. And yet when disasters or extremists strike the Muslim world,[^1] the rest of the world either (a) doesn’t notice, or (b) shrugs and says “They’re all terrorists anyways.”
 
 Or worse, expresses the sentiment that this is somehow God’s judgment on the unbelievers.
 
@@ -34,7 +34,4 @@ But for those of you still reading, join me in praying—yes, for those affected
 
 *Come, Lord Jesus.*
 
----
-
-1. 
-I feel the need to point out that terrorists have killed far more Muslims than non-Muslims worldwide. At the same time, most mass shootings within the US—all of which are acts of terror—have been at the hands of non-immigrant Americans. Though the media seems to reserve the label of terrorism for violence committed by Muslims. [↩︎](#fnref1)
+[^1]: I feel the need to point out that terrorists have killed far more Muslims than non-Muslims worldwide. At the same time, most mass shootings within the US—all of which are acts of terror—have been at the hands of non-immigrant Americans. Though the media seems to reserve the label of terrorism for violence committed by Muslims.

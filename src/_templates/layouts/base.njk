@@ -1,7 +1,13 @@
-{% include "includes/header.njk" %}
+---
+links:
+  - text: Freelance
+    url: https://lunsford.tech/
+  - text: Diapers & Coffee
+    url: https://diapers.coffee/
+---
 
-        <main id="skip">
+{% include "includes/header.njk" %}
+        <main id="skip" class="content" role="main">
             {{ content | safe }}
         </main>
-
 {% include "includes/footer.njk" %}

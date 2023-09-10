@@ -1,7 +1,7 @@
 ---
 title: In Over My Head
 slug: in-over-my-head
-date_published: 2013-02-28T14:58:03.000Z
+date: 2013-02-28T14:58:03.000Z
 date_updated: 2020-02-12T11:12:38.000Z
 tags: Christianity
 ---

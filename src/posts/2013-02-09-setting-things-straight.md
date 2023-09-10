@@ -1,7 +1,7 @@
 ---
 title: Setting Things Straight
 slug: setting-things-straight
-date_published: 2013-02-09T08:46:35.000Z
+date: 2013-02-09T08:46:35.000Z
 date_updated: 2020-02-07T10:11:58.000Z
 tags: Christianity
 ---

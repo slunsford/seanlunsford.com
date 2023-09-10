@@ -1,7 +1,17 @@
 ---
 layout: layouts/base.njk
+pageID: home
+eleventyNavigation:
+  key: Home
+  order: 1
+pagination:
+  data: collections.posts
+  size: 5
+  reverse: true
+  alias: posts
+permalink: "{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}{% endif %}/"
 ---
 
-<p>Hello, world!</p>
+{% include "includes/post-loop.njk" %}
 
 

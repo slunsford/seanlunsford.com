@@ -1,7 +1,7 @@
 ---
 title: Forth, and Fear No Darkness!
 slug: forth-and-fear-no-darkness
-date_published: 2013-01-20T16:31:33.000Z
+date: 2013-01-20T16:31:33.000Z
 date_updated: 2020-02-20T13:53:58.000Z
 tags: Christianity, Highlights
 ---

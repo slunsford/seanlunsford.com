@@ -1,7 +1,7 @@
 ---
 title: "Missing Out: a response to “Look Up” and the argument that my iPhone is evil"
 slug: missing-out
-date_published: 2014-05-04T18:02:35.000Z
+date: 2014-05-04T18:02:35.000Z
 date_updated: 2019-03-24T15:07:51.000Z
 tags: Technology
 ---

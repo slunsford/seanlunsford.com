@@ -1,0 +1,7 @@
+---
+layout: layouts/base.njk
+permalink: "/{{ page.date | readableDate('yyyy/MM/dd') }}/{{slug or title | slugify}}/"
+---
+
+{% include "includes/post-content.njk" %}
+{% include "includes/post-pagination.njk" %}

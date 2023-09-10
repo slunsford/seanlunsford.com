@@ -7,4 +7,8 @@
         </span>
     </footer>
     </body>
+    {# Run script after load #}
+    {%- js %}{% include "assets/js/script.js" %}{% endjs %}
+    {%- js %}acronyms();{% endjs %}
+    <script>{% getBundle "js" %}</script>
 </html>

@@ -1,7 +1,7 @@
 ---
 title: Receiving the Baton
 slug: receiving-the-baton
-date_published: 2012-11-14T12:59:31.000Z
+date: 2012-11-14T12:59:31.000Z
 date_updated: 2020-02-12T11:21:21.000Z
 tags: Christianity
 ---

@@ -1,7 +1,7 @@
 ---
 title: Yearly Themes
 slug: yearly-themes
-date_published: 2020-02-23T22:24:15.000Z
+date: 2020-02-23T22:24:15.000Z
 date_updated: 2021-03-06T14:32:56.000Z
 ---
 

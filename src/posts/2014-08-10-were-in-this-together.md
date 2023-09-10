@@ -1,7 +1,7 @@
 ---
 title: We’re in This Together
 slug: were-in-this-together
-date_published: 2014-08-09T21:02:50.000Z
+date: 2014-08-09T21:02:50.000Z
 date_updated: 2017-12-19T02:06:06.000Z
 tags: Christianity
 ---

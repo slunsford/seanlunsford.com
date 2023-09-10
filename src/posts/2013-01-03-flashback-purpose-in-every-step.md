@@ -1,7 +1,7 @@
 ---
 title: "Flashback: Purpose In Every Step"
 slug: flashback-purpose-in-every-step
-date_published: 2013-01-03T18:44:27.000Z
+date: 2013-01-03T18:44:27.000Z
 date_updated: 2020-02-12T11:19:57.000Z
 tags: Christianity
 ---

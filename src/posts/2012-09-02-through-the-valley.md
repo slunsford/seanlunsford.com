@@ -1,7 +1,7 @@
 ---
 title: Through the Valley
 slug: through-the-valley
-date_published: 2012-09-02T15:55:39.000Z
+date: 2012-09-02T15:55:39.000Z
 date_updated: 2020-02-12T11:28:42.000Z
 tags: Life, Christianity
 ---

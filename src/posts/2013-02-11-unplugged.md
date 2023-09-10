@@ -1,7 +1,7 @@
 ---
 title: Unplugged (Sort Of)
 slug: unplugged
-date_published: 2013-02-11T00:20:59.000Z
+date: 2013-02-11T00:20:59.000Z
 date_updated: 2020-02-12T11:14:30.000Z
 tags: Christianity, Technology
 ---

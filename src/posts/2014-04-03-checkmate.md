@@ -1,7 +1,7 @@
 ---
 title: Checkmate
 slug: checkmate
-date_published: 2014-04-03T10:45:56.000Z
+date: 2014-04-03T10:45:56.000Z
 date_updated: 2017-12-01T16:57:18.000Z
 tags: Christianity
 ---
