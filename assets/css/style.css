@@ -529,18 +529,21 @@ a.nav-home {
 
 /* Post List */
 
-.post-list {
+.post-list,
+.categories-list {
   list-style: none;
   padding: 0;
 }
 
-.post-list-item {
+.post-list-item,
+.categories-list-item {
   align-items: baseline;
   counter-increment: start-from -1;
   margin-bottom: 0.75rem;
 }
 
-.post-list-title {
+.post-list-title,
+.categories-list-title {
   font-weight: 700;
 }
 
