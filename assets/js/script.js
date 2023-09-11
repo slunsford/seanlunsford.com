@@ -1,5 +1,8 @@
 function acronyms() {
   var posts = document.getElementsByClassName("post");
+  // var pages = document.getElementsByClassName("page");
+  // var postsAndPages = posts.concat(pages);
+  print(posts);
 
   for (post of posts) {
     var html = post.innerHTML;

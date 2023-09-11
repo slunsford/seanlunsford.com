@@ -1,7 +1,7 @@
 const { DateTime } = require("luxon");
 const markdownItAnchor = require("markdown-it-anchor");
 const markdownItFootnote = require("markdown-it-footnote");
-
+const Plugin = require('markdown-it-regexp')
 
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
@@ -78,6 +78,18 @@ module.exports = function(eleventyConfig) {
     
     // Customize Markdown library settings:
     eleventyConfig.amendLibrary("md", mdLib => {
+        var smallCapsAcronyms = Plugin(
+            // regexp to match
+          /(\b[A-Z]{2,}s?)\b(?=[^\>]+\<)/,
+         
+          // this function will be called when something matches
+          function(match, utils) {
+            var span = '<span class="small-caps">' + match[1] + '</span>'
+            print(span)
+            return span
+          }
+        )
+        
         mdLib.enable("code");
         mdLib.use(markdownItAnchor, {
             permalink: markdownItAnchor.permalink.ariaHidden({
@@ -90,6 +102,7 @@ module.exports = function(eleventyConfig) {
             slugify: eleventyConfig.getFilter("slugify")
         });
         mdLib.use(markdownItFootnote);
+        mdLib.use(smallCapsAcronyms);
     });
 
     return {
