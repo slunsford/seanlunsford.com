@@ -3,7 +3,7 @@ title: Letting Go
 slug: letting-go
 date: 2012-11-26T23:46:27.000Z
 date_updated: 2020-02-12T11:20:54.000Z
-tags: Christianity
+categories: "Christianity"
 ---
 
 Several weeks back I wrote a post titled, [“I’ve got this.”](/2012/10/27/ive-got-this/) I almost called it “Letting go,” but I felt like I needed to save that title. I got this sense that that post was more of a prequel. The part where God says, “I’ve got this.” And while there was some letting go on my part then, I had a feeling a post would follow, at some point, that would really be the point of letting go. Well, here it is.

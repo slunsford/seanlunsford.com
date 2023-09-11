@@ -3,7 +3,9 @@ title: What’s in Front of Me
 slug: whats-in-front-of-me
 date: 2013-09-01T22:03:01.000Z
 date_updated: 2020-02-12T11:11:57.000Z
-tags: Life, Christianity
+categories: 
+  - "Life"
+  - "Christianity"
 ---
 
 So it’s been a while since I’ve posted anything here. In fact, last time I posted was early in the spring semester, which turned out to be my busiest semester since starting at Virginia Tech. Thanks to God and God alone, I not only survived the semester with my sanity intact (well, mostly…) but it was academically my best semester yet. Actually, it was a really good semester across the board, busy as it was. I also got an internship in the DC area over the summer, building a database system for a residential builder to improve their workflow and the flow of data—from subcontractor bids, to analysis of the bids, to award documents, to a historical cost database, and finally to budgets for new jobs. I really enjoyed the job, and they really appreciated my work. So it was a great experience for all of us. And now I’m back in Blacksburg, and classes have started up again—and it’s the beginning of my senior year.

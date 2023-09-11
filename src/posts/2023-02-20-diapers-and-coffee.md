@@ -3,7 +3,10 @@ title: Diapers & Coffee
 slug: diapers-and-coffee
 date: 2023-02-19T21:33:26.000Z
 date_updated: 2023-03-19T21:26:54.000Z
-tags: Blogging, Technology, Life
+categories:
+  - "Blogging"
+  - "Technology"
+  - "Life"
 ---
 
 I’ve started what I guess could be described as [a parenting blog](https://diapers.coffee). This idea came up sometime toward the end of last year, when Megan commented on my habit of reasoning very matter-of-factly with our daughter about the kind of ridiculous things that come up in parenting a toddler. She thought it would be entertaining to save some of these situations, exchanges, and one-liners for…posterity?

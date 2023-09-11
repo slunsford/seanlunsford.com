@@ -3,7 +3,7 @@ title: Receiving the Baton
 slug: receiving-the-baton
 date: 2012-11-14T12:59:31.000Z
 date_updated: 2020-02-12T11:21:21.000Z
-tags: Christianity
+categories: "Christianity"
 ---
 
 “Reblogging” is something that I haven’t done here yet, that I’ve decided to experiment with—linking on my blog to other great blog posts I read around the web. There’s so much great stuff out there that gets me thinking or impacts me, and rather than reinventing the wheel, it makes sense to just point you to what they’ve already said, better than I can, and add a few comments of my own.

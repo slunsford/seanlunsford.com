@@ -3,7 +3,9 @@ title: Two Months
 slug: two-months
 date: 2014-03-18T15:12:30.000Z
 date_updated: 2020-02-12T11:08:49.000Z
-tags: Life, Christianity
+categories: 
+  - "Life"
+  - "Christianity"
 ---
 
 Remember how I wrote that I was going to blog every week…almost two weeks ago? Oops.

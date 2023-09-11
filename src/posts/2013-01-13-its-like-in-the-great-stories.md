@@ -3,7 +3,9 @@ title: The Great Stories
 slug: its-like-in-the-great-stories
 date: 2013-01-13T16:29:00.000Z
 date_updated: 2020-02-12T11:18:46.000Z
-tags: Christianity, Highlights
+categories: 
+  - "Christianity"
+  - "Highlights"
 ---
 
 I’m listening to the soundtrack of *The Two Towers* right now. I was just reading some more of the book. Suddenly, in the past few weeks, I’m crazy about Tolkien again. I blame *The Hobbit*. Since I saw a trailer for the first installment a year ago, I couldn’t wait. To return to Middle-earth, and explore it further; to be reunited with familiar characters, and introduced to new ones. So when it finally hit theaters, right before Christmas break, I was at the midnight opening—I couldn’t wait a minute longer. (Now I can’t wait for the next one.) It had been several years since I last read *The Lord of the Rings*, and even longer since I’d read *The Hobbit*, and watching the new movie whet my appetite. So at the beginning of the break I started *The Hobbit*, and I’m almost done with *The Two Towers* now. I also watched *The Lord of the Rings* (the Extended Editions, of course) and the accompanying documentaries in the newly-added iTunes Extras. And I listened to all four soundtracks a bunch.

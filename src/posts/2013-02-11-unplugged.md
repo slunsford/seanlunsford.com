@@ -3,7 +3,9 @@ title: Unplugged (Sort Of)
 slug: unplugged
 date: 2013-02-11T00:20:59.000Z
 date_updated: 2020-02-12T11:14:30.000Z
-tags: Christianity, Technology
+categories: 
+  - "Christianity"
+  - "Technology"
 ---
 
 If there’s one thing I’ve learned about God, it’s that he likes to throw monkey wrenches in our plans, and substitute his own. To disrupt us if we start to get too comfortable—not because there’s anything wrong with comfort, but because if we’re too comfortable for too long we start to get stagnant.

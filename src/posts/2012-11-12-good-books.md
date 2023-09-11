@@ -3,7 +3,9 @@ title: Good Books
 slug: good-books
 date: 2012-11-12T00:15:08.000Z
 date_updated: 2020-02-12T11:21:57.000Z
-tags: Christianity, Technology
+categories: 
+  - "Christianity"
+  - "Technology"
 ---
 
 I’ve been reading a book this week. As in, one of those things consisting of a bunch of pages held together at one edge, that you actually have to turn as you read. It’s been a strange experience. I had to get used to holding the book in my hand in such a way as to keep it open as I read, a position that used to be very familiar to me, but one that I haven’t had much practice with recently. I do all my reading on my iPad these days. As I’ve mentioned before, that includes reading the Bible. (Side note: What has me really drooling over the iPad mini is that its size and weight (from what I’ve heard) make it pretty much the most perfect reading device ever built. Whenever it gets a Retina display, perfection has been achieved.) I have a couple dozen books on a shelf that I have from before I started phasing out books that take up space on a bookshelf and pounds in a suitcase in favor of books that take up megabytes of digital storage. I hope to replace them with their digital counterparts eventually, but until then, I’m hanging on to the paper versions. But anything new I get, I get digitally. My textbooks this year are all digital rentals. Except for *Waking the Dead*, one of those books I mentioned that sit on my physical shelf, my entire John Eldredge collection resides on my iBooks bookshelf. I could go on.

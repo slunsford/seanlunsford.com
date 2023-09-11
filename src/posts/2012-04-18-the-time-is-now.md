@@ -3,7 +3,7 @@ title: The Time Is Now
 slug: the-time-is-now
 date: 2012-04-18T18:35:00.000Z
 date_updated: 2020-02-07T10:16:32.000Z
-tags: Christianity
+categories: "Christianity"
 ---
 
 When I posted on Saturday I said I had a couple ideas in mind for new posts. This was not one of them. But the events since then have thrust this into my mind.

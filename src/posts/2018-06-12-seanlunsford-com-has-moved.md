@@ -3,7 +3,9 @@ title: seanlunsford.com Has Moved (and so Have I)
 slug: seanlunsford-com-has-moved
 date: 2018-06-12T08:17:58.000Z
 date_updated: 2020-02-25T20:26:54.000Z
-tags: Blogging, Technology
+categories: 
+  - "Blogging"
+  - "Technology"
 ---
 
 I’ve just finished [the move I wrote about](/2018/05/30/eleven-days/),[^1] so it seems appropriate to officially announce the move of my blog as well, though this new site has been live for a while now.

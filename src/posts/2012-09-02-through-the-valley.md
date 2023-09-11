@@ -3,7 +3,9 @@ title: Through the Valley
 slug: through-the-valley
 date: 2012-09-02T15:55:39.000Z
 date_updated: 2020-02-12T11:28:42.000Z
-tags: Life, Christianity
+categories: 
+  - "Life"
+  - "Christianity"
 ---
 
 There is a bridge on the Virginia Tech campus. Actually there are a lot of bridges on campus. But one of them is a little concrete footbridge, tucked in between several dorms, spanning a driveway that leads to a couple parking lots. Nothing very significant, really. But it found significance for me my freshman year. It has haunted me ever since. (No, before you start freaking out, I never tried jumping off it or anything. Nothing drastic. Just hear me out.)

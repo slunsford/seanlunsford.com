@@ -3,7 +3,9 @@ title: Regeneration
 slug: regeneration
 date: 2020-02-24T15:12:41.000Z
 date_updated: 2021-06-27T11:56:12.000Z
-tags: Life, Yearly Themes
+categories: 
+  - "Life"
+  - "Yearly Themes"
 ---
 
 For the last few years on [our podcast](https://breadcrumbsfm.com), my friend Elias and I have chosen and discussed [yearly themes](https://youtu.be/NVGuFdX5guE), inspired by [another podcast](https://www.relay.fm/cortex/95). An alternative to New Year’s resolutions, they’re basically an idea—typically phrased as “The Year of ______”—intended to be a guiding principle for decisions throughout the year.

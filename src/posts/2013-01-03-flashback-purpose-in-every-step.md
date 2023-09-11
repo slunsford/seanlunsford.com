@@ -3,7 +3,7 @@ title: "Flashback: Purpose In Every Step"
 slug: flashback-purpose-in-every-step
 date: 2013-01-03T18:44:27.000Z
 date_updated: 2020-02-12T11:19:57.000Z
-tags: Christianity
+categories: "Christianity"
 ---
 
 *I need to write a short essay for a scholarship application. They gave a few typical prompts, and the option to write about a topic of my choice, or to reuse an essay I wrote for class or for a college application. Being a junior in an engineering major, I haven’t exactly written many essays in the last few years. Several for psychology my freshman year, and one about the environment in geology. After staring at my cursor blinking for a good while, I decided to go back and dig through my old college applications for some inspiration. Not to straight-up recycle one. A lot has changed in the three years since I was writing those. But I thought I might find one that would be a good starting point. I came across a document named “Personal statement”—I apparently hadn’t bothered to specify what I was writing it for. But between the essay itself and the prompt, which I also had (but which didn’t say specifically what it was for, either) it seems that I was writing this after having been accepted to Tech, for something related to financial aid. Anyways, it really struck me. But I’ll let you read it, and then add some comments at the end (where I pick back up in italics.)*

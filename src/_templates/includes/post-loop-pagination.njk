@@ -1,6 +1,5 @@
 <nav class="pagination">
 {% if pagination.href.next %}<a class="older-posts" href="{{ pagination.href.next }}">← Older</a>{% endif %}
 <span>&nbsp;</span>
-{# {% if pagination.href.previous and pagination.href.next %} | {% endif %} #}
 {% if pagination.href.previous %}<a class="newer-posts" href="{{ pagination.href.previous }}">Newer →</a>{% endif %}
 </nav>

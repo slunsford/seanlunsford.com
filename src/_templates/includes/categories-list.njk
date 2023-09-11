@@ -1,0 +1,6 @@
+<ul>
+{% for category in collections.categories %}
+	{% set categoryURL %}/categories/{{ category.title | slugify }}/{% endset %}
+	<li><a href="{{ categoryURL }}" class="category">{{ category.title }}</a></li>
+{% endfor %}
+</ul>
