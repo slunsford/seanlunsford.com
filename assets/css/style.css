@@ -691,16 +691,6 @@ a.nav-home {
     margin: 0 1.25rem 0.75rem;
   }
 
-  .subscribe-form .subscribe-email {
-    display: block;
-    width: calc(100% - 1.5rem - 2px);
-  }
-
-  .subscribe-form button {
-    display: block;
-    margin: 0.75rem auto;
-  }
-
   .bigfoot-footnote__content {
     padding: 0.65rem 0.75rem 0.75rem;
   }
@@ -730,14 +720,5 @@ a.nav-home {
 
   .post {
     box-shadow: 1px 2px rgba(0, 0, 0, 0.3);
-  }
-
-  .subscribe-form button {
-    color: var(--main-text-color);
-    background: var(--post-background-color);
-  }
-
-  .post .subscribe-form button {
-    background: var(--background-color);
   }
 }
