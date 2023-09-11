@@ -5,7 +5,7 @@ date: 2013-01-20T16:31:33.000Z
 date_updated: 2020-02-20T13:53:58.000Z
 categories: 
   - "Christianity"
-  - "Highlights"
+tags: highlights
 ---
 
 When I last posted I was nearing the end of *The Two Towers*. I’ve finished *The Return of the King* now, and I’m working on the appendices. And yes, I’m going to write about *The Lord of the Rings* again. (Don’t be surprised if this ends up becoming a series.)

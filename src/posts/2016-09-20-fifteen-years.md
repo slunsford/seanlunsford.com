@@ -5,7 +5,7 @@ date: 2016-09-19T21:26:18.000Z
 date_updated: 2020-02-10T19:42:28.000Z
 categories: 
   - "Christianity"
-  - "Highlights"
+tags: highlights
 ---
 
 *I wrote the first draft of this on Sunday, September 11. Normally I write, edit, and publish in the space of a few hours at most, but I decided to hold off on posting this that day. I wanted to give myself time to reflect, and to let a few others read it and give me their thoughts. I really wanted to make sure I was communicating clearly, and that the message that is most important is the thing that’s getting through. I’ve really questioned whether I should publish it at all, but I—and those I shared it with—think it is an important perspective to share. I hope I am able to effectively communicate the way I see these things.*

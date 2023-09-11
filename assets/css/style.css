@@ -548,7 +548,7 @@ a.nav-home {
 	Tags
 	========================================================================== */
 
-.tag-title {
+.collection-title {
   margin: 0;
   font-family: var(--sans-caps);
   font-size: var(--font-size-plus-5);
@@ -561,7 +561,7 @@ a.nav-home {
   max-width: 100%;
 }
 
-.tag-description {
+.collection-description {
   font-size: var(--font-size-minus-1);
   font-style: italic;
   font-weight: 300;
