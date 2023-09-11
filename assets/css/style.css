@@ -132,9 +132,12 @@ pre {
   font-family: var(--mono);
   font-style: normal;
   font-weight: 400;
+  font-size: var(--font-size-minus-1);
   white-space: pre-wrap;
   border: none;
   background: none;
+  -webkit-hyphens: none;
+  hyphens: none;
 }
 
 pre {
@@ -146,12 +149,12 @@ pre {
   font-size: var(--font-size-minus-2);
 }
 
-:not(pre) > code {
+/* :not(pre) > code {
   padding: 2px 4px;
   background: var(--background-color);
   border: 1px solid var(--post-border-color);
   border-radius: 5px;
-}
+} */
 
 .small-caps {
   font-family: var(--serif-caps);
