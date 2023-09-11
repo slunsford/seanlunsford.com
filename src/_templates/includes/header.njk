@@ -21,11 +21,16 @@
         {# Font Awesome icons #}
         <script src="https://kit.fontawesome.com/8be7adf8bc.js" crossorigin="anonymous"></script>
         
-        <link rel="stylesheet" type="text/css" href="/assets/css/fonts.css" />
-        <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
-        {% if pageID == "subscribe" %}
-        {% include "includes/subscribe-form-header.njk" %}
-        {% endif %}
+        {%- js %}{% include "assets/js/script.js" %}{% endjs %}
+        <script>{% getBundle "js" %}</script>
+        
+        {% getBundle "html" %}
+        
+        {# <link rel="stylesheet" type="text/css" href="/assets/css/fonts.css" /> #}
+        {# <link rel="stylesheet" type="text/css" href="/assets/css/style.css" /> #}
+        {%- css %}{% include "assets/css/fonts.css" %}{% endcss %}
+        {%- css %}{% include "assets/css/style.css" %}{% endcss %}
+        <style>{% getBundle "css" %}</style>
         
         {#- Uncomment this if you’d like folks to know that you used Eleventy to build your site!  #}
         <meta name="generator" content="{{ eleventy.generator }}">

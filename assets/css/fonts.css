@@ -1,114 +1,114 @@
 @font-face {
 	font-family: Concourse;
-	src: url('../fonts/concourse_2_regular.woff2') format('woff2');
+	src: url('/assets/fonts/concourse_2_regular.woff2') format('woff2');
 	font-weight: 200;
 }
 
 @font-face {
 	font-family: Concourse;
-	src: url('../fonts/concourse_3_regular.woff2') format('woff2');
+	src: url('/assets/fonts/concourse_3_regular.woff2') format('woff2');
 	font-weight: 300;
 }
 
 @font-face {
 	font-family: Concourse;
-	src: url('../fonts/concourse_4_regular.woff2') format('woff2');
+	src: url('/assets/fonts/concourse_4_regular.woff2') format('woff2');
 	font-weight: 400;
 }
 
 @font-face {
 	font-family: Concourse;
-	src: url('../fonts/concourse_6_regular.woff2') format('woff2');
+	src: url('/assets/fonts/concourse_6_regular.woff2') format('woff2');
 	font-weight: 600;
 }
 
 @font-face {
 	font-family: Concourse;
-	src: url('../fonts/concourse_7_regular.woff2') format('woff2');
+	src: url('/assets/fonts/concourse_7_regular.woff2') format('woff2');
 	font-weight: 700;
 }
 
 @font-face {
 	font-family: Concourse;
-	src: url('../fonts/concourse_8_regular.woff2') format('woff2');
+	src: url('/assets/fonts/concourse_8_regular.woff2') format('woff2');
 	font-weight: 800;
 }
 
 @font-face {
 	font-family: Concourse;
-	src: url('../fonts/concourse_2_italic.woff2') format('woff2');
+	src: url('/assets/fonts/concourse_2_italic.woff2') format('woff2');
 	font-weight: 200;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: Concourse;
-	src: url('../fonts/concourse_3_italic.woff2') format('woff2');
+	src: url('/assets/fonts/concourse_3_italic.woff2') format('woff2');
 	font-weight: 300;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: Concourse;
-	src: url('../fonts/concourse_4_italic.woff2') format('woff2');
+	src: url('/assets/fonts/concourse_4_italic.woff2') format('woff2');
 	font-weight: 400;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: Concourse;
-	src: url('../fonts/concourse_6_italic.woff2') format('woff2');
+	src: url('/assets/fonts/concourse_6_italic.woff2') format('woff2');
 	font-weight: 600;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: Concourse;
-	src: url('../fonts/concourse_7_italic.woff2') format('woff2');
+	src: url('/assets/fonts/concourse_7_italic.woff2') format('woff2');
 	font-weight: 700;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: Concourse;
-	src: url('../fonts/concourse_8_italic.woff2') format('woff2');
+	src: url('/assets/fonts/concourse_8_italic.woff2') format('woff2');
 	font-weight: 800;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: "Concourse Caps";
-	src: url('../fonts/concourse_2_caps_regular.woff2') format('woff2');
+	src: url('/assets/fonts/concourse_2_caps_regular.woff2') format('woff2');
 	font-weight: 200;
 }
 
 @font-face {
 	font-family: "Concourse Caps";
-	src: url('../fonts/concourse_3_caps_regular.woff2') format('woff2');
+	src: url('/assets/fonts/concourse_3_caps_regular.woff2') format('woff2');
 	font-weight: 300;
 }
 
 @font-face {
 	font-family: "Concourse Caps";
-	src: url('../fonts/concourse_4_caps_regular.woff2') format('woff2');
+	src: url('/assets/fonts/concourse_4_caps_regular.woff2') format('woff2');
 	font-weight: 400;
 }
 
 @font-face {
 	font-family: "Concourse Caps";
-	src: url('../fonts/concourse_6_caps_regular.woff2') format('woff2');
+	src: url('/assets/fonts/concourse_6_caps_regular.woff2') format('woff2');
 	font-weight: 600;
 }
 
 @font-face {
 	font-family: "Concourse Caps";
-	src: url('../fonts/concourse_7_caps_regular.woff2') format('woff2');
+	src: url('/assets/fonts/concourse_7_caps_regular.woff2') format('woff2');
 	font-weight: 700;
 }
 
 @font-face {
 	font-family: "Concourse Caps";
-	src: url('../fonts/concourse_8_caps_regular.woff2') format('woff2');
+	src: url('/assets/fonts/concourse_8_caps_regular.woff2') format('woff2');
 	font-weight: 800;
 }
 
@@ -118,7 +118,7 @@
 	font-weight: normal;
 	font-stretch: normal;
 	font-display: auto;
-	src: url('../fonts/triplicate_a_code_regular.woff2') format('woff2');
+	src: url('/assets/fonts/triplicate_a_code_regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -127,7 +127,7 @@
 	font-weight: normal;
 	font-stretch: normal;
 	font-display: auto;
-	src: url('../fonts/triplicate_a_code_italic.woff2') format('woff2');
+	src: url('/assets/fonts/triplicate_a_code_italic.woff2') format('woff2');
 }
 
 @font-face {
@@ -136,7 +136,7 @@
 	font-weight: bold;
 	font-stretch: normal;
 	font-display: auto;
-	src: url('../fonts/triplicate_a_code_bold.woff2') format('woff2');
+	src: url('/assets/fonts/triplicate_a_code_bold.woff2') format('woff2');
 }
 
 @font-face {
@@ -145,7 +145,7 @@
 	font-weight: bold;
 	font-stretch: normal;
 	font-display: auto;
-	src: url('../fonts/triplicate_a_code_bold_italic.woff2') format('woff2');
+	src: url('/assets/fonts/triplicate_a_code_bold_italic.woff2') format('woff2');
 }
 
 @font-face {
@@ -154,7 +154,7 @@
 	font-weight: normal;
 	font-stretch: normal;
 	font-display: auto;
-	src: url('../fonts/valkyrie_a_regular.woff2') format('woff2');
+	src: url('/assets/fonts/valkyrie_a_regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -163,7 +163,7 @@
 	font-weight: normal;
 	font-stretch: normal;
 	font-display: auto;
-	src: url('../fonts/valkyrie_a_italic.woff2') format('woff2');
+	src: url('/assets/fonts/valkyrie_a_italic.woff2') format('woff2');
 }
 
 @font-face {
@@ -172,7 +172,7 @@
 	font-weight: bold;
 	font-stretch: normal;
 	font-display: auto;
-	src: url('../fonts/valkyrie_a_bold.woff2') format('woff2');
+	src: url('/assets/fonts/valkyrie_a_bold.woff2') format('woff2');
 }
 
 @font-face {
@@ -181,7 +181,7 @@
 	font-weight: bold;
 	font-stretch: normal;
 	font-display: auto;
-	src: url('../fonts/valkyrie_a_bold_italic.woff2') format('woff2');
+	src: url('/assets/fonts/valkyrie_a_bold_italic.woff2') format('woff2');
 }
 
 @font-face {
@@ -190,7 +190,7 @@
 	font-weight: normal;
 	font-stretch: normal;
 	font-display: auto;
-	src: url('../fonts/valkyrie_a_caps_regular.woff2') format('woff2');
+	src: url('/assets/fonts/valkyrie_a_caps_regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -199,5 +199,5 @@
 	font-weight: bold;
 	font-stretch: normal;
 	font-display: auto;
-	src: url('../fonts/valkyrie_a_caps_bold.woff2') format('woff2');
+	src: url('/assets/fonts/valkyrie_a_caps_bold.woff2') format('woff2');
 }

@@ -11,4 +11,4 @@ eleventyNavigation:
 
 Subscribe via [RSS](/feed.xml) or [JSON Feed](/feed.json) or enter your email below to get new posts delivered to your inbox.
 
-{% include "includes/subscribe-form.html" %}
+{% include "includes/subscribe-form.njk" %}
