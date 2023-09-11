@@ -91,14 +91,15 @@ h1 {
 h2 {
   font-family: var(--serif);
   font-size: var(--font-size-plus-2);
+  font-style: italic;
   font-weight: 800;
 }
 
 h3 {
-  font-family: var(--sans);
+  font-family: var(--serif);
   /* font-feature-settings: var(--small-caps); */
+  font-style: italic;
   font-size: var(--font-size-plus-1);
-  font-weight: 200;
 }
 
 h2 b,
