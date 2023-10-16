@@ -3,6 +3,18 @@ const markdownItAnchor = require("markdown-it-anchor");
 const markdownItFootnote = require("markdown-it-footnote");
 var Plugin = require('markdown-it-regexp')
 
+var smallCapsAcronyms = Plugin(
+    // regex to match
+    /(\b[A-Z]{2,}s?)\b(?=[^\>]+\<)/g,
+    // this function will be called when something matches
+    function(match, utils) {
+        var span = '<span class="small-caps">' + match[1] + '</span>';
+        console.log(span);
+        return span;
+    }
+)
+
+
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginBundle = require("@11ty/eleventy-plugin-bundle");
@@ -78,18 +90,6 @@ module.exports = function(eleventyConfig) {
     
     // Customize Markdown library settings:
     eleventyConfig.amendLibrary("md", mdLib => {
-        var smallCapsAcronyms = Plugin(
-            // regex to match
-          /(\b[A-Z]{2,}s?)\b(?=[^\>]+\<)/,
-         
-          // this function will be called when something matches
-          function(match, utils) {
-            var span = '<span class="small-caps">' + match[1] + '</span>';
-            console.log(span);
-            return span;
-          }
-        )
-        
         mdLib.enable("code");
         mdLib.use(markdownItAnchor, {
             permalink: markdownItAnchor.permalink.ariaHidden({
