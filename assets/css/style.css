@@ -11,14 +11,12 @@
   --post-border-color: #e5e7e9;
   --accent-color: #fa4616;
 
-  --default-font-features: "onum", "ss12", "calt";
+  --default-font-features: "onum";
   --small-caps: var(--default-font-features), "c2sc";
 
-  --serif: "Valkyrie";
-  --serif-caps: "Valkyrie Caps";
-  --sans: "Concourse";
-  --sans-caps: "Concourse Caps";
-  --mono: "Triplicate";
+  --sans: leksa-sans, sans-serif;
+  --slab: circe-slab-c, serif;
+  --mono: pt-mono, monospace;
 
   --font-size-minus-3: 0.702rem;
   --font-size-minus-2: 0.79rem;
@@ -70,6 +68,10 @@ body {
   width: 1px;
 }
 
+b, strong {
+  font-weight: 600;
+}
+
 h1,
 h2,
 h3,
@@ -77,34 +79,33 @@ h4,
 h5,
 h6 {
   margin: 1.25rem 0 0.5rem;
-  font-family: var(--sans);
+  font-family: var(--slab);
   font-style: normal;
 }
 
 h1 {
-  font-family: var(--serif);
   font-size: var(--font-size-plus-3);
   /* font-style: italic; */
-  font-weight: 800;
+  font-weight: 700;
 }
 
 h2 {
-  font-family: var(--serif);
   font-size: var(--font-size-plus-2);
   font-style: italic;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 h3 {
-  font-family: var(--serif);
   /* font-feature-settings: var(--small-caps); */
   font-style: italic;
   font-size: var(--font-size-plus-1);
 }
 
+h1 b,
+h1 strong,
 h2 b,
 h2 strong {
-  font-weight: 800;
+  font-weight: 900;
 }
 
 h3 b,
@@ -156,17 +157,13 @@ pre {
   border-radius: 5px;
 } */
 
-.small-caps {
-  font-family: var(--serif-caps);
-  font-style: normal;
+acronym, .small-caps {
   font-feature-settings: var(--small-caps);
 }
 
 .nav,
 .pagination,
 .site-footer {
-  font-family: var(--sans-caps);
-  font-style: normal;
   font-feature-settings: var(--small-caps);
 }
 
@@ -261,8 +258,8 @@ h6 a {
 
 .bigfoot-footnote__button {
   font-feature-settings: "onum" off;
-  font-family: var(--sans);
-  font-weight: 300;
+  font-family: var(--mono);
+  font-weight: 400;
   background-color: var(--secondary-text-color);
 }
 
@@ -369,9 +366,9 @@ dl dd {
   margin: 0;
   margin-right: 0.5rem;
   padding: 0;
-  font-family: var(--serif);
+  font-family: var(--slab);
   font-size: var(--font-size-plus-7);
-  font-style: italic;
+  font-weight: 900;
 }
 
 .site-title a {
@@ -384,7 +381,7 @@ dl dd {
 
 .site-description {
   margin: 0;
-  font-family: var(--serif);
+  font-family: var(--sans);
   font-size: var(--font-size-minus-1);
   font-weight: 300;
   font-style: italic;
@@ -400,6 +397,7 @@ dl dd {
   padding: 0;
   font-size: var(--font-size-minus-1);
   font-weight: 300;
+  font-feature-settings: var(--small-caps);
 }
 
 .nav li {
@@ -498,7 +496,7 @@ a.nav-home {
   background-color: var(--post-background-color);
   border: 1px solid var(--post-border-color);
   box-shadow: 1px 1px rgba(0, 0, 0, 0.1);
-  font-family: var(--serif);
+  font-family: var(--sans);
   font-style: normal;
 }
 
@@ -557,7 +555,7 @@ a.nav-home {
 
 .collection-title {
   margin: 0;
-  font-family: var(--sans-caps);
+  font-family: var(--sans);
   font-size: var(--font-size-plus-5);
   font-weight: 200;
   font-style: normal;
