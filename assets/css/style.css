@@ -98,6 +98,7 @@ h2 {
 h3 {
   /* font-feature-settings: var(--small-caps); */
   font-style: italic;
+  font-weight: 400;
   font-size: var(--font-size-plus-1);
 }
 
@@ -110,7 +111,7 @@ h2 strong {
 
 h3 b,
 h3 strong {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 a {
@@ -148,6 +149,11 @@ pre {
   border: 1px solid var(--post-border-color);
   border-radius: 5px;
   font-size: var(--font-size-minus-2);
+}
+
+code b,
+pre b {
+  font-weight: 700;
 }
 
 /* :not(pre) > code {
