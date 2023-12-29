@@ -3,6 +3,7 @@ title: Thing Builder
 slug: thing-builder
 date: 2021-03-07T15:17:58.000Z
 date_updated: 2021-03-27T19:45:59.000Z
+featured_image: "thing-builder-framed.png"
 categories: "Technology"
 ---
 

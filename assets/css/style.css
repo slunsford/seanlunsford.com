@@ -529,8 +529,10 @@ a.nav-home {
 
 .post-header img,
 .page-header img {
-  width: calc(100% + 2.5rem + 2px) !important;
-  max-width: calc(100% + 2.5rem + 2px) !important;
+  width: calc(100% + 2.5rem + 2px);
+  max-width: calc(100% + 2.5rem + 2px);
+  aspect-ratio: auto;
+  height: auto;
   margin: calc(-1.25rem - 1px);
   margin-bottom: 1.25rem;
 }

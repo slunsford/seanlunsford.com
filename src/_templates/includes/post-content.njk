@@ -1,7 +1,7 @@
 <article class="post">
     <header class="post-header">
-        {%- if feature_image %}
-        <img src="{{ feature_image }}"></img>
+        {%- if featured_image %}
+        {% image featured_image, featured_image_alt or title %}
         {%- endif %}
         <h1 class="post-title">{{ title }}</h1>
         <section class="post-meta">

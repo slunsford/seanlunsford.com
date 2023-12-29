@@ -15,7 +15,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("assets");
 
     // Watch content images for the image pipeline.
-    eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpeg}");
+    eleventyConfig.addWatchTarget("src/**/*.{svg,webp,png,jpeg}");
     
     // App plugins
     eleventyConfig.addPlugin(require("./eleventy.config.drafts.js"));
