@@ -1,0 +1,73 @@
+@font-face {
+	font-family: Lang;
+	src: url('/assets/fonts/AT-Lang-Variable.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: Lang;
+	src: url('/assets/fonts/AT-Lang-Italic-Variable.woff2') format('woff2');
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Name Mono';
+	src: url('/assets/fonts/AT-NameMono-Variable.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Name Mono';
+	src: url('/assets/fonts/AT-NameMonoItalic-Variable.woff2') format('woff2');
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Lang Gothic';
+	src: url('/assets/fonts/ATLangGothic-Regular.woff2') format('woff2');
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: 'Lang Gothic';
+	src: url('/assets/fonts/ATLangGothic-RegularItalic.woff2') format('woff2');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Lang Gothic';
+	src: url('/assets/fonts/ATLangGothic-Medium.woff2') format('woff2');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Lang Gothic';
+	src: url('/assets/fonts/ATLangGothic-MediumItalic.woff2') format('woff2');
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Lang Gothic';
+	src: url('/assets/fonts/ATLangGothic-Bold.woff2') format('woff2');
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'Lang Gothic';
+	src: url('/assets/fonts/ATLangGothic-BoldItalic.woff2') format('woff2');
+	font-weight: 700;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Lang Gothic';
+	src: url('/assets/fonts/ATLangGothic-ExtraBold.woff2') format('woff2');
+	font-weight: 800;
+}
+
+@font-face {
+	font-family: 'Lang Gothic';
+	src: url('/assets/fonts/ATLangGothic-ExtraBoldItalic.woff2') format('woff2');
+	font-weight: 800;
+	font-style: italic;
+}

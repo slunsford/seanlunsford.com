@@ -14,9 +14,9 @@
   --default-font-features: "onum";
   --small-caps: var(--default-font-features), "c2sc";
 
-  --sans: leksa-sans, sans-serif;
-  --slab: circe-slab-c, serif;
-  --mono: pt-mono, monospace;
+  --sans: 'Lang Gothic', sans-serif;
+  --slab: Lang, serif;
+  --mono: 'Name Mono', monospace;
 
   --font-size-minus-3: 0.702rem;
   --font-size-minus-2: 0.79rem;
