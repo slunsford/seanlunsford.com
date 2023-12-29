@@ -12,8 +12,10 @@
   --accent-color: #fa4616;
 
   --default-font-features: "onum";
-  --small-caps: var(--default-font-features), "c2sc", "smcp";
+  --small-caps: var(--default-font-features), "smcp";
+  --all-small-caps: var(--default-font-features), "c2sc", "smcp";
 
+  --sans-text: 'Name Sans Text', sans-serif;
   --sans: 'Name Sans', sans-serif;
   --slab: Lang, serif;
   --mono: 'Name Mono', monospace;
@@ -85,12 +87,14 @@ h6 {
 
 h1 {
   font-size: var(--font-size-plus-3);
-  font-weight: 1000;
+  font-weight: 900;
 }
 
 h2 {
+  font-family: var(--slab);
   font-size: var(--font-size-plus-2);
-  font-weight: 800;
+  font-weight: 700;
+  font-feature-settings: var(--default-font-features), 'smcp';
 }
 
 h3 {
@@ -123,6 +127,7 @@ ol {
   -webkit-hyphens: auto;
   hyphens: auto;
   hanging-punctuation: first;
+  font-family: var(--sans-text);
 }
 
 code,
@@ -161,13 +166,13 @@ pre b {
 } */
 
 acronym, .small-caps {
-  font-feature-settings: var(--small-caps);
+  font-feature-settings: var(--all-small-caps);
 }
 
 .nav,
 .pagination,
 .site-footer {
-  font-feature-settings: var(--small-caps);
+  font-feature-settings: var(--all-small-caps);
 }
 
 blockquote {
@@ -384,7 +389,7 @@ dl dd {
 
 .site-description {
   margin: 0;
-  font-family: var(--sans);
+  font-family: var(--sans-text);
   font-size: var(--font-size-minus-1);
   font-weight: 300;
   font-style: italic;
@@ -401,7 +406,7 @@ dl dd {
   font-family: var(--slab);
   font-size: var(--font-size-minus-1);
   font-weight: 300;
-  font-feature-settings: var(--small-caps);
+  font-feature-settings: var(--all-small-caps);
   letter-spacing: 1px;
 }
 
@@ -516,6 +521,7 @@ a.nav-home {
 }
 
 .post-meta {
+  font-family: var(--sans-text);
   font-size: var(--font-size-minus-1);
   color: var(--secondary-text-color);
   font-weight: 300;
@@ -562,9 +568,9 @@ a.nav-home {
   margin: 0;
   font-family: var(--sans);
   font-size: var(--font-size-plus-5);
-  font-weight: 200;
+  font-weight: 100;
   font-style: normal;
-  font-feature-settings: var(--small-caps);
+  /* font-feature-settings: var(--all-small-caps); */
 }
 
 .tag-image {
@@ -572,6 +578,7 @@ a.nav-home {
 }
 
 .collection-description {
+  font-family: var(--sans-text);
   font-size: var(--font-size-minus-1);
   font-style: italic;
   font-weight: 300;
