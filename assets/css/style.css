@@ -525,7 +525,6 @@ a.nav-home {
   font-size: var(--font-size-minus-1);
   color: var(--secondary-text-color);
   font-weight: 300;
-  font-style: italic;
 }
 
 .post-header img,
