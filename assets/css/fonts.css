@@ -1,4 +1,9 @@
 @font-face {
+	font-family: 'Name Sans';
+	src: url('/assets/fonts/ATNameSansVariable-Regular.woff2') format('woff2');
+}
+
+@font-face {
 	font-family: Lang;
 	src: url('/assets/fonts/AT-Lang-Variable.woff2') format('woff2');
 }
@@ -23,26 +28,26 @@
 @font-face {
 	font-family: 'Lang Gothic';
 	src: url('/assets/fonts/ATLangGothic-Regular.woff2') format('woff2');
-	font-weight: 300;
+	font-weight: 400;
 }
 
 @font-face {
 	font-family: 'Lang Gothic';
 	src: url('/assets/fonts/ATLangGothic-RegularItalic.woff2') format('woff2');
-	font-weight: 300;
+	font-weight: 400;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: 'Lang Gothic';
 	src: url('/assets/fonts/ATLangGothic-Medium.woff2') format('woff2');
-	font-weight: 400;
+	font-weight: 500;
 }
 
 @font-face {
 	font-family: 'Lang Gothic';
 	src: url('/assets/fonts/ATLangGothic-MediumItalic.woff2') format('woff2');
-	font-weight: 400;
+	font-weight: 500;
 	font-style: italic;
 }
 

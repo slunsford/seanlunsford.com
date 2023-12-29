@@ -12,9 +12,9 @@
   --accent-color: #fa4616;
 
   --default-font-features: "onum";
-  --small-caps: var(--default-font-features), "c2sc";
+  --small-caps: var(--default-font-features), "c2sc", "smcp";
 
-  --sans: 'Lang Gothic', sans-serif;
+  --sans: 'Name Sans', sans-serif;
   --slab: Lang, serif;
   --mono: 'Name Mono', monospace;
 
@@ -79,26 +79,23 @@ h4,
 h5,
 h6 {
   margin: 1.25rem 0 0.5rem;
-  font-family: var(--slab);
+  font-family: var(--sans);
   font-style: normal;
 }
 
 h1 {
   font-size: var(--font-size-plus-3);
-  /* font-style: italic; */
-  font-weight: 700;
+  font-weight: 1000;
 }
 
 h2 {
   font-size: var(--font-size-plus-2);
-  font-style: italic;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 h3 {
   /* font-feature-settings: var(--small-caps); */
-  font-style: italic;
-  font-weight: 400;
+  font-weight: 100;
   font-size: var(--font-size-plus-1);
 }
 
@@ -264,7 +261,7 @@ h6 a {
 
 .bigfoot-footnote__button {
   font-feature-settings: "onum" off;
-  font-family: var(--mono);
+  /* font-family: var(--mono); */
   font-weight: 400;
   background-color: var(--secondary-text-color);
 }
@@ -401,9 +398,11 @@ dl dd {
 .nav {
   display: block;
   padding: 0;
+  font-family: var(--slab);
   font-size: var(--font-size-minus-1);
   font-weight: 300;
   font-feature-settings: var(--small-caps);
+  letter-spacing: 1px;
 }
 
 .nav li {
