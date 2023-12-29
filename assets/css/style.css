@@ -12,11 +12,13 @@
   --accent-color: #fa4616;
 
   --default-font-features: "onum";
-  --small-caps: var(--default-font-features), "c2sc";
+  --small-caps: var(--default-font-features), "smcp";
+  --all-small-caps: var(--default-font-features), "c2sc", "smcp";
 
-  --sans: leksa-sans, sans-serif;
-  --slab: circe-slab-c, serif;
-  --mono: pt-mono, monospace;
+  --sans-text: 'Name Sans Text', sans-serif;
+  --sans: 'Name Sans', sans-serif;
+  --slab: Lang, serif;
+  --mono: 'Name Mono', monospace;
 
   --font-size-minus-3: 0.702rem;
   --font-size-minus-2: 0.79rem;
@@ -79,26 +81,25 @@ h4,
 h5,
 h6 {
   margin: 1.25rem 0 0.5rem;
-  font-family: var(--slab);
+  font-family: var(--sans);
   font-style: normal;
 }
 
 h1 {
   font-size: var(--font-size-plus-3);
-  /* font-style: italic; */
-  font-weight: 700;
+  font-weight: 900;
 }
 
 h2 {
+  font-family: var(--slab);
   font-size: var(--font-size-plus-2);
-  font-style: italic;
   font-weight: 700;
+  font-feature-settings: var(--default-font-features), 'smcp';
 }
 
 h3 {
   /* font-feature-settings: var(--small-caps); */
-  font-style: italic;
-  font-weight: 400;
+  font-weight: 100;
   font-size: var(--font-size-plus-1);
 }
 
@@ -126,6 +127,7 @@ ol {
   -webkit-hyphens: auto;
   hyphens: auto;
   hanging-punctuation: first;
+  font-family: var(--sans-text);
 }
 
 code,
@@ -164,13 +166,13 @@ pre b {
 } */
 
 acronym, .small-caps {
-  font-feature-settings: var(--small-caps);
+  font-feature-settings: var(--all-small-caps);
 }
 
 .nav,
 .pagination,
 .site-footer {
-  font-feature-settings: var(--small-caps);
+  font-feature-settings: var(--all-small-caps);
 }
 
 blockquote {
@@ -264,7 +266,7 @@ h6 a {
 
 .bigfoot-footnote__button {
   font-feature-settings: "onum" off;
-  font-family: var(--mono);
+  /* font-family: var(--mono); */
   font-weight: 400;
   background-color: var(--secondary-text-color);
 }
@@ -387,7 +389,7 @@ dl dd {
 
 .site-description {
   margin: 0;
-  font-family: var(--sans);
+  font-family: var(--sans-text);
   font-size: var(--font-size-minus-1);
   font-weight: 300;
   font-style: italic;
@@ -401,9 +403,11 @@ dl dd {
 .nav {
   display: block;
   padding: 0;
+  font-family: var(--slab);
   font-size: var(--font-size-minus-1);
   font-weight: 300;
-  font-feature-settings: var(--small-caps);
+  font-feature-settings: var(--all-small-caps);
+  letter-spacing: 1px;
 }
 
 .nav li {
@@ -517,6 +521,7 @@ a.nav-home {
 }
 
 .post-meta {
+  font-family: var(--sans-text);
   font-size: var(--font-size-minus-1);
   color: var(--secondary-text-color);
   font-weight: 300;
@@ -563,9 +568,9 @@ a.nav-home {
   margin: 0;
   font-family: var(--sans);
   font-size: var(--font-size-plus-5);
-  font-weight: 200;
+  font-weight: 100;
   font-style: normal;
-  font-feature-settings: var(--small-caps);
+  /* font-feature-settings: var(--all-small-caps); */
 }
 
 .tag-image {
@@ -573,6 +578,7 @@ a.nav-home {
 }
 
 .collection-description {
+  font-family: var(--sans-text);
   font-size: var(--font-size-minus-1);
   font-style: italic;
   font-weight: 300;
