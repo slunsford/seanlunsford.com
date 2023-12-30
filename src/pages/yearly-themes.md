@@ -12,7 +12,7 @@ My friend Elias and I have been picking [yearly themes](https://youtu.be/NVGuFdX
 *Allowing the things that need to to die and finding new life*
 
 - [Breadcrumbs episode](https://breadcrumbsfm.com/?name=breadcrumbs163.mp3)
-- [Blog post](/regeneration/)
+- [Blog post](/2020/02/24/regeneration/)
 
 ### Ideal Outcomes
 

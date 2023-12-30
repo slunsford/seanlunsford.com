@@ -3,7 +3,7 @@ title: Thing Builder
 slug: thing-builder
 date: 2021-03-07T15:17:58.000Z
 date_updated: 2021-03-27T19:45:59.000Z
-featured_image: "/img/Hkf9G0fc2t-2630.png"
+featured_image: "/img/thing-builder.png"
 featured_image_alt: "A screenshot of the first few blocks of the Thing Builder shortcut on an iPad"
 categories: "Technology"
 ---

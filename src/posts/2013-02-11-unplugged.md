@@ -3,7 +3,7 @@ title: Unplugged (Sort Of)
 slug: unplugged
 date: 2013-02-11T00:20:59.000Z
 date_updated: 2020-02-12T11:14:30.000Z
-featured_image: "unplugged.jpeg"
+featured_image: "/img/unplugged.jpeg"
 featured_image_alt: "Assorted technology in a trash can"
 categories: 
   - "Christianity"
