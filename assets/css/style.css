@@ -695,7 +695,8 @@ a.nav-home {
   flex-grow: 3;
   max-width: 100%;
   background-color: var(--background-color);
-  color: var(--secondary-text-color);
+  color: var(--main-text-color);
+  font-weight: 200;
 }
 
 .embeddable-buttondown-form #bd-submit {
@@ -703,6 +704,7 @@ a.nav-home {
   flex-grow: 1;
   background-color: #101213;
   color: #e7e9ea;
+  font-weight: 900;
 }
 
 .embeddable-buttondown-form #bd-submit:hover {

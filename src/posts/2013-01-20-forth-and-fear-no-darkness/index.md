@@ -3,6 +3,8 @@ title: Forth, and Fear No Darkness!
 slug: forth-and-fear-no-darkness
 date: 2013-01-20T16:31:33.000Z
 date_updated: 2020-02-20T13:53:58.000Z
+featured_image: "witch-king.jpeg"
+featured_image_alt: "A frame from The Return of the King with Gandalf and Pippin from behind, facing the Witch-king with a flaming sword pointed to the sky"
 categories: 
   - "Christianity"
 tags: highlights
