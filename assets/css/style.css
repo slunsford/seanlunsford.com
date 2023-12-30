@@ -41,11 +41,7 @@ html {
 }
 
 body {
-  -webkit-font-feature-settings: "kern" 1;
-  -moz-font-feature-settings: "kern" 1;
-  -ms-font-feature-settings: "kern" 1;
-  -o-font-feature-settings: "kern" 1;
-  font-feature-settings: "kern" 1;
+  font-feature-settings: var(--default-font-features);
   height: 100%;
   max-height: 100%;
   width: 80%;
@@ -54,7 +50,6 @@ body {
   font-family: var(--sans);
   font-style: normal;
   font-weight: 300;
-  font-feature-settings: var(--default-font-features);
   color: var(--main-text-color);
   background-color: var(--background-color);
 }
@@ -529,8 +524,10 @@ a.nav-home {
 
 .post-header img,
 .page-header img {
-  width: calc(100% + 2.5rem + 2px) !important;
-  max-width: calc(100% + 2.5rem + 2px) !important;
+  width: calc(100% + 2.5rem + 2px);
+  max-width: calc(100% + 2.5rem + 2px);
+  aspect-ratio: auto;
+  height: auto;
   margin: calc(-1.25rem - 1px);
   margin-bottom: 1.25rem;
 }
@@ -693,7 +690,8 @@ a.nav-home {
   flex-grow: 3;
   max-width: 100%;
   background-color: var(--background-color);
-  color: var(--secondary-text-color);
+  color: var(--main-text-color);
+  font-weight: 200;
 }
 
 .embeddable-buttondown-form #bd-submit {
@@ -701,6 +699,7 @@ a.nav-home {
   flex-grow: 1;
   background-color: #101213;
   color: #e7e9ea;
+  font-weight: 900;
 }
 
 .embeddable-buttondown-form #bd-submit:hover {

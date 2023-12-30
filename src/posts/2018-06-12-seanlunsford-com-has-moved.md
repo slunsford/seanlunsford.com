@@ -14,7 +14,7 @@ I’ve been using WordPress since my first post went up on this blog in 2012, bu
 
 The final piece was setting up email subscriptions with Ghost’s subscribers functionality and [MailChimp](https://mailchimp.com). I didn’t have this last piece in place when I published my last post, so I pushed it live to both sites at the same time. Sometime last week I took a break from moving to get the email piece up and running and migrate email subscribers from the old site,[^3] so I can now say that the move is complete.
 
-I do have aspirations of starting to write more often again.[^4] So if you want to know when there’s something new, you can get it in your [inbox](/subscribe/) or [RSS reader](/rss/).
+I do have aspirations of starting to write more often again.[^4] So if you want to know when there’s something new, you can get it in your [inbox](/subscribe/) or [RSS reader](/feed.xml).
 
 [^1]: Except for those couple pieces of luggage the airline should be bringing by sometime today.
 
