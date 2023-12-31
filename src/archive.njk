@@ -5,9 +5,14 @@ eleventyNavigation:
   key: Archive
   order: 3
 ---
+
 <h2>Categories</h2>
 {% include "includes/categories-list.njk" %}
 
 <h2>All Posts</h2>
 {% set posts = collections.posts %}
 {% include "includes/post-list.njk" %}
+
+{% postGraph collections.posts, { "highlightColor": "#fa4616" } %}
+
+<a href="https://postgraph.rknight.me/">Post Graph by Robb Knight</a>
