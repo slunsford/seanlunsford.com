@@ -15,10 +15,10 @@
   --small-caps: var(--default-font-features), "smcp";
   --all-small-caps: var(--default-font-features), "c2sc", "smcp";
 
-  --sans-text: 'Name Sans Text', sans-serif;
-  --sans: 'Name Sans', sans-serif;
-  --slab: Lang, serif;
-  --mono: 'Name Mono', monospace;
+  --sans: 'Name Sans', Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+  --sans-text: 'Name Sans Text', var(--sans);
+  --slab: Lang, Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;
+  --mono: 'Name Mono', ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
 
   --font-size-minus-3: 0.702rem;
   --font-size-minus-2: 0.79rem;
@@ -42,6 +42,7 @@ html {
 
 body {
   font-feature-settings: var(--default-font-features);
+  font-variant-ligatures: contextual;
   height: 100%;
   max-height: 100%;
   width: 80%;
@@ -171,7 +172,7 @@ acronym, .small-caps {
 }
 
 blockquote {
-  margin: 0 2.5rem 0.75rem;
+  margin: 0 0.75rem 0.75rem;
   padding: 0 0.75rem;
   border-left: 3px solid var(--accent-color);
   font-size: var(--font-size-minus-1);
@@ -366,8 +367,7 @@ dl dd {
 }
 
 .site-title {
-  margin: 0;
-  margin-right: 0.5rem;
+  margin: 0.75rem .25rem 0 0;
   padding: 0;
   font-family: var(--slab);
   font-size: var(--font-size-plus-7);
@@ -400,7 +400,7 @@ dl dd {
   padding: 0;
   font-family: var(--slab);
   font-size: var(--font-size-minus-1);
-  font-weight: 300;
+  font-weight: 500;
   font-feature-settings: var(--all-small-caps);
   letter-spacing: 1px;
 }
@@ -587,13 +587,16 @@ a.nav-home {
 
 /* The main wrapper for pagination links */
 .pagination {
-  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
   margin: 1.25rem auto;
-  font-size: var(--font-size-minus-2);
+  font-size: var(--font-size-minus-3);
   font-weight: 300;
   color: var(--secondary-text-color);
   text-align: center;
-  font-feature-settings: "ss08", "c2sc";
+  font-feature-settings: var(--default-font-features), "onum" off;
+  text-transform: uppercase;
 }
 
 .pagination a {
@@ -610,40 +613,19 @@ a.nav-home {
 
 /* Push the previous/next links out to the left/right */
 .older-posts,
-.newer-posts {
-  position: absolute;
-  display: inline-block;
-}
-
+.newer-posts,
 .prev-post,
 .next-post {
-  max-width: 49%;
-  margin-bottom: 1rem;
+  flex-grow: 1;
 }
 
-.older-posts {
-  left: 0;
-}
-
+.older-posts,
 .prev-post {
-  float: left;
-  max-width: calc(49% - 1rem);
   text-align: left;
-  text-indent: -1rem;
-  margin-left: 1rem;
 }
 
-.page-number {
-  display: inline-block;
-  min-width: 100px;
-}
-
-.newer-posts {
-  right: 0;
-}
-
+.newer-posts,
 .next-post {
-  float: right;
   text-align: right;
 }
 
@@ -657,7 +639,7 @@ a.nav-home {
 
 /* On page2+ show extra pagination controls at the top of post list */
 .paged .extra-pagination {
-  display: block;
+  display: flex;
 }
 
 /*	==========================================================================
@@ -707,9 +689,17 @@ a.nav-home {
   color: #ffffff;
 }
 
-.embeddable-buttondown-form p {
+.embeddable-buttondown-form .powered-by {
   margin-top: 0.75rem;
   font-size: var(--font-size-minus-2);
+}
+
+.embeddable-buttondown-form .powered-by a {
+  color: var(--secondary-text-color);
+}
+
+.embeddable-buttondown-form .powered-by a:hover {
+  color: var(--accent-color);
 }
 
 /* ==========================================================================
@@ -764,6 +754,10 @@ a.nav-home {
 @media only screen and (max-width: 370px) {
   .site-description {
     margin-top: -1rem;
+  }
+  
+  .embeddable-buttondown-form #bd-email {
+    font-size: 1rem;
   }
 
   blockquote,
