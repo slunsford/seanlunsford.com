@@ -14,7 +14,7 @@ Yesterday, I was starting my personal time with God. I asked God to speak to me,
 > 
 > So I proclaimed this to the people the next morning, and in the evening my wife died. The next morning I did everything I had been told to do.
 > 
-> Ezekiel 24:15-18 (NLT)
+> <cite>Ezekiel 24:15-18 (NLT)</cite>
 
 I don’t think I could give any adequate commentary on those words, other than to let them speak for themselves. So stop, read that again, and let it sink in.
 

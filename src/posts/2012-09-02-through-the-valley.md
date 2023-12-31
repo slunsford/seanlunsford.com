@@ -32,40 +32,25 @@ By the blood of Christ, we are participants in the covenant God offered to Abram
 
 A parting thought. Yesterday evening, before I left for my friend’s house, I was listening to music, and a song came on—namely “Mountain of God” by Third Day. I first discovered Third Day—now one of my, if not my favorite, bands—in the summer of ’09. Fittingly, I discovered this song during our two-week family vacation that summer, among some of the tallest mountains on the face of the earth. It quickly became one of my favorites.
 
-> Thought that I was all alone
-> 
-> Broken and afraid
-> 
-> But you were there with me
-> 
-> Yes, you were there with me…
-> 
-> Even though the journey’s long
-> 
-> And I know the road is hard
-> 
-> You’re the one who’s gone before me
-> 
-> You will help me carry on
-> 
-> And after all that I’ve been through
-> 
-> Now I realize the truth
-> 
-> That I must go through the valley
-> 
+> Thought that I was all alone  
+> Broken and afraid  
+> But you were there with me  
+> Yes, you were there with me…  
+> Even though the journey’s long  
+> And I know the road is hard  
+> You’re the one who’s gone before me  
+> You will help me carry on  
+> And after all that I’ve been through  
+> Now I realize the truth  
+> That I must go through the valley  
 > To stand upon the mountain of God
 
 This song, and the album as a whole—*Wherever You Are*—became a rally for me freshman year. Those songs kept me going. I still remember one night, listening to “Mountain of God,” when the bridge (no pun intended) hit me like a wall:
 
-> Sometimes I think of where it is I’ve come from
-> 
-> And the things I’ve left behind
-> 
-> But of all I’ve had and what I’ve possessed
-> 
-> Nothing can quite compare
-> 
+> Sometimes I think of where it is I’ve come from  
+> And the things I’ve left behind  
+> But of all I’ve had and what I’ve possessed  
+> Nothing can quite compare  
 > With what’s in front of me
 
 I couldn’t even imagine life here even being *close* to what I left behind, much less *better*. But it was something to cling to. It didn’t feel true, but I had to tell myself it was. And now…well, it’s not quite there yet, but it’s no longer an impossibility. I still don’t have all I had in high school—someone to pour into and disciple, a handful of close brothers I could be real with and go through life with—at least not quite to the degree I did there. But now I can be sure that God really does have greater things in store than I could imagine, here at this campus and beyond. The bittersweet side of finally feeling at home here is knowing that in a couple short years, it will be time to move on again, to say goodbye to everyone all over again, and move on to God knows what. But I know that he will continue to be faithful. He will have even better things in store for me beyond. And he will stick with me through whatever valleys I have to walk through to get there.

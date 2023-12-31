@@ -22,19 +22,14 @@ I have come to see myself in my proper place—part of the grand, epic story sta
 
 So with that mindset, I keep running no matter what is ahead and I trust God to be faithful, as He has been faithful so far. This track has had plenty of uphills and downhills, but God’s hand has been in it all, and in retrospect I wouldn’t change a thing if I could. He has been with me through countless transitions, upheavals, and storms, and He has blessed me beyond measure. As the prophet Isaiah said:
 
-> Even youths will become weak and tired,
-> 
-> And young men will fall in exhaustion.
-> 
-> But those who trust in the Lord will find new strength.
-> 
-> They will soar high on wings like eagles.
-> 
-> They will run and not grow weary.
-> 
+> Even youths will become weak and tired,  
+> And young men will fall in exhaustion.  
+> But those who trust in the Lord will find new strength.  
+> They will soar high on wings like eagles.  
+> They will run and not grow weary.  
 > They will walk and not grow faint.
 > 
-> Isaiah 40:30-31
+> <cite>Isaiah 40:30-31</cite>
 
 Through everything, God has continued to give me new strength for each step, for each new difficulty. When the deteriorating situation in the country we live in brought my family’s annual trips to the mountains to an end and later made us move from our home of twelve years to another city, God was still there. When my heart was broken in ninth grade and I was left devastated, God took my by the hand and helped me back up, and gave me strength to keep running. Time and time again, God has carried me over each hurdle that crosses my path.
 

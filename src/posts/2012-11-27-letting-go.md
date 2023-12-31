@@ -22,14 +22,10 @@ But the break just went by so fast. I spent the first weekend in DC with some fr
 
 It was at this point that I decided I needed to drop what I was doing, and let God speak to me. He was using this stress to bring all this stuff forward that I’d been bent over double over, without even realizing it. I knew it wouldn’t do any good to try to keep pushing forward with homework. I needed to step away, and try to process all this stuff. I felt like the best first step was to start by just writing out everything. All of those things that were overwhelming me, frustrating me, filling me with guilt or shame, everything that God was bringing out in me right now. I didn’t really know where to go from there. I started praying, and God brought the chorus of a Third Day song to mind:
 
-> Take it all, cause I can’t take it any longer
-> 
-> All I have, I can’t make it on my own
-> 
-> Take the first, take the last
-> 
-> Take the good and take the bad
-> 
+> Take it all, cause I can’t take it any longer  
+> All I have, I can’t make it on my own  
+> Take the first, take the last  
+> Take the good and take the bad  
 > Here I am, all I have, take it all
 
 I cued the song, to listen to the whole thing. As it played, I thought of the series that we just finished at [[nlcf]](http://nlcf.net), about freedom. One of the things that was discussed a lot was things that stand in the way of freedom, that we need to let go of. Things that often are even seen in secular culture as exercising freedom, but that really are obstacles to true, biblical freedom. I also remembered something I noticed for the first time the other night. Hebrews 12:1-2 says:
@@ -42,8 +38,7 @@ In my case, while some of the stuff that God brought to mind tonight is sin, muc
 
 Then he brought a line from another song to mind. This one is Magnificent Obsession, by Steven Curtis Chapman.
 
-> Cut through these chains that tie me down to so many lesser things
-> 
+> Cut through these chains that tie me down to so many lesser things  
 > Let all my dreams fall to the ground, until this one remains
 
 Of course, I had to listen to this one in its entirety too. As the song finished, I wrote,

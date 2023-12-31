@@ -40,4 +40,4 @@ Of course, this doesn’t mean I should just expect God to magically open up lar
 > 
 > God has united you with Christ Jesus. For our benefit God made him to be wisdom itself. Christ made us right with God; he made us pure and holy, and he freed us from sin. Therefore, as the Scriptures say, “If you want to boast, boast only about the Lord.”
 > 
-> 1 Corinthians 1:27-31 (NLT)
+> <cite>1 Corinthians 1:27-31 (NLT)</cite>

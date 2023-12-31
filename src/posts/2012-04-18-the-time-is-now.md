@@ -30,7 +30,7 @@ But for those of us who have put our faith in Christ, what matters even more is 
 > 
 > But how can they call on him to save them unless they believe in him? And how can they believe in him if they have never heard about him? And how can they hear about him unless someone tells them?
 > 
-> Romans 10:14-15
+> <cite>Romans 10:14-15</cite>
 
 Brothers and sisters, the time is now. The world is perishing. And we are content to go to church on Sunday or a Bible study on a Wednesday night, utter an Amen! at a passage like the one above, and hope and even pray that somebody tells them. We need to *get in the game.* I say this to myself as much as anyone else. Our comfort zones are no excuse. Our busyness is no excuse. *We have no excuse.* How much death will it take to wake us up?
 

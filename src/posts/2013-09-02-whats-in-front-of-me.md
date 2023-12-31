@@ -34,10 +34,7 @@ Two short years ago, I never would have guessed I would be making this decision.
 
 I’ve quoted it before on this blog, but Third Day’s “Mountain of God” is such a great song, and has become somewhat of a theme song for me (among a few others.) The bridge gets me every time, and comes back to me now:
 
-> Sometimes I think of where it is I’ve come from
-> 
-> And the things I’ve left behind
-> 
-> But of all I’ve had, and what I’ve possessed, nothing can quite compare
-> 
+> Sometimes I think of where it is I’ve come from  
+> And the things I’ve left behind  
+> But of all I’ve had, and what I’ve possessed, nothing can quite compare  
 > With what’s in front of me

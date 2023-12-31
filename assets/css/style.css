@@ -87,16 +87,15 @@ h1 {
 }
 
 h2 {
-  font-family: var(--slab);
   font-size: var(--font-size-plus-2);
-  font-weight: 700;
-  font-feature-settings: var(--default-font-features), 'smcp';
+  font-weight: 100;
 }
 
 h3 {
-  /* font-feature-settings: var(--small-caps); */
-  font-weight: 100;
+  font-family: var(--slab);
   font-size: var(--font-size-plus-1);
+  font-feature-settings: var(--small-caps);
+  font-weight: 600;
 }
 
 h1 b,
@@ -517,6 +516,7 @@ a.nav-home {
 
 .post-meta {
   font-family: var(--sans-text);
+  margin-top: 0.25rem;
   font-size: var(--font-size-minus-1);
   color: var(--secondary-text-color);
   font-weight: 300;
@@ -529,7 +529,7 @@ a.nav-home {
   aspect-ratio: auto;
   height: auto;
   margin: calc(-1.25rem - 1px);
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.5rem;
 }
 
 .footnotes-sep {
@@ -553,11 +553,11 @@ a.nav-home {
 
 .post-list-title,
 .categories-list-title {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 /*	==========================================================================
-	Tags
+	Collections
 	========================================================================== */
 
 .collection-title {
@@ -565,19 +565,15 @@ a.nav-home {
   font-family: var(--slab);
   font-size: var(--font-size-plus-5);
   font-weight: 700;
-  font-style: normal;
-  font-feature-settings: var(--all-small-caps);
-}
-
-.tag-image {
-  max-width: 100%;
+  font-feature-settings: var(--default-font-features), "ss03";
 }
 
 .collection-description {
-  font-family: var(--sans-text);
+  font-family: var(--slab);
   font-size: var(--font-size-minus-1);
   font-style: italic;
   font-weight: 300;
+  font-feature-settings: var(--default-font-features), "ss03";
   color: var(--secondary-text-color);
 }
 
