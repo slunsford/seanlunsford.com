@@ -2,7 +2,7 @@ const { DateTime } = require("luxon");
 const markdownItAnchor = require("markdown-it-anchor");
 const markdownItFootnote = require("markdown-it-footnote");
 
-
+const postGraph = require('@rknightuk/eleventy-plugin-post-graph');
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginBundle = require("@11ty/eleventy-plugin-bundle");
@@ -34,6 +34,10 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPlugin(dynamicCategories, {
         categoryVar: "categories", // Name of your category variable from your frontmatter (default: categories)
         itemsCollection: "posts", // Name of your collection to use for the items (default: posts)
+    });
+    
+    eleventyConfig.addPlugin(postGraph, {
+        sort: 'desc',
     })
 
     // Filters
@@ -80,16 +84,16 @@ module.exports = function(eleventyConfig) {
     // Customize Markdown library settings:
     eleventyConfig.amendLibrary("md", mdLib => {
         mdLib.enable("code");
-        mdLib.use(markdownItAnchor, {
-            permalink: markdownItAnchor.permalink.ariaHidden({
-                placement: "after",
-                class: "header-anchor",
-                symbol: "#",
-                ariaHidden: false,
-            }),
-            level: [1,2,3,4],
-            slugify: eleventyConfig.getFilter("slugify")
-        });
+        // mdLib.use(markdownItAnchor, {
+        //     permalink: markdownItAnchor.permalink.ariaHidden({
+        //         placement: "after",
+        //         class: "header-anchor",
+        //         symbol: "#",
+        //         ariaHidden: false,
+        //     }),
+        //     level: [1,2,3,4],
+        //     slugify: eleventyConfig.getFilter("slugify")
+        // });
         mdLib.use(markdownItFootnote);
     });
 
