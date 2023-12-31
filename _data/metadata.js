@@ -7,6 +7,7 @@ module.exports = {
 		"email": "sean@seanlunsford.com",
 		"url": "https://seanlunsford.com/",
 		"mastodon_url": "https://data-folks.masto.host/@sean",
-		"threads_url": "https://www.threads.net/@splunsford"
+		"threads_url": "https://www.threads.net/@splunsford",
+		"github_url": "https://github.com/slunsford"
 	}
 }
