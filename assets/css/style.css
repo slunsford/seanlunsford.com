@@ -562,11 +562,11 @@ a.nav-home {
 
 .collection-title {
   margin: 0;
-  font-family: var(--sans);
+  font-family: var(--slab);
   font-size: var(--font-size-plus-5);
-  font-weight: 100;
+  font-weight: 700;
   font-style: normal;
-  /* font-feature-settings: var(--all-small-caps); */
+  font-feature-settings: var(--all-small-caps);
 }
 
 .tag-image {
