@@ -12,14 +12,14 @@ A couple of well-known verses have been on my mind since my post, “[Setting th
 > 
 > So you see, faith by itself isn’t enough. Unless it produces good deeds, it is dead and useless.
 > 
-> James 2:14-17
+> <cite>James 2:14-17</cite>
 
 > If I could speak all the languages of earth and of angels, but didn’t love others, I would only be a noisy gong or a clanging cymbal. If I had the gift of prophecy, and if I understood all of God’s secret plans and possessed all knowledge, and if I had such faith that I could move mountains, but didn’t love others, I would be nothing. If I gave everything I have to the poor and even sacrificed my body, I could boast about it; but if I didn’t love others, I would have gained nothing.
 > 
-> 1 Corinthians 13:1-3
+> <cite>1 Corinthians 13:1-3</cite>
 
 Faith without deeds is dead; faith and deeds without love are nothing.
 
 > Three things will last forever—faith, hope, and love—and the greatest of these is love.
 > 
-> 1 Corinthians 13:13
+> <cite>1 Corinthians 13:13</cite>

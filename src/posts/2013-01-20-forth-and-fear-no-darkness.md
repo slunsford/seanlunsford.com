@@ -28,46 +28,34 @@ Cloaked in black, faceless, mounted on winged steeds, with piercing cries that d
 
 > For we are not fighting against flesh-and-blood enemies, but against evil rulers and authorities of the unseen world, against mighty powers in this dark world, and against evil spirits in the heavenly places.
 > 
-> Ephesians 6:12
+> <cite>Ephesians 6:12</cite>
 
 And like the Nazgûl, one of their favorite weapons is despair. Despair that the evil in the world could ever be made right. Despair that the evil in us could ever be made right.
 
 Take these two songs. The first is a poem written by Henry Wadsworth Longfellow during the Civil War. It has become the Christmas carol, “I Heard the Bells on Christmas Day.” (By the way, the Casting Crowns version of this is awesome.) It tells the story of the competing sounds of the church bells ringing for Christmas day, and the cannons being fired in nearby battlefields. As the cannons drown out the bells, he loses hope.
 
-> And in despair I hung my head
-> 
-> “There is no peace on earth,” I said
-> 
-> “For hate is strong and mocks the song
-> 
+> And in despair I hung my head  
+> “There is no peace on earth,” I said  
+> “For hate is strong and mocks the song  
 > Of peace on earth, goodwill to men”
 
 But it doesn’t end there. Listen to the finale:
 
-> Then pealed the bells more loud and deep
-> 
-> God is not dead, nor doth he sleep
-> 
-> The wrong shall fail, the right prevail
-> 
+> Then pealed the bells more loud and deep  
+> God is not dead, nor doth he sleep  
+> The wrong shall fail, the right prevail  
 > With peace on earth, goodwill to men
 
 The other is the well-known hymn, “Before the Throne of God Above.” Here is the second verse:
 
-> When Satan tempts me to despair
-> 
-> And tells me of the guilt within
-> 
-> Upward I look and see him there
-> 
+> When Satan tempts me to despair  
+> And tells me of the guilt within  
+> Upward I look and see him there  
 > Who made an end of all my sin
-> 
-> Because the sinless Savior died
-> 
-> My sinful soul is counted free
-> 
-> For God the just is satisfied
-> 
+>   
+> Because the sinless Savior died  
+> My sinful soul is counted free  
+> For God the just is satisfied  
 > To look on him and pardon me
 
 In the midst of despair, hope shines through. Indeed, we have more reason to hope than the free peoples of Middle-earth did. Because we know that God is firmly in control, and Jesus already won the decisive victory at the cross and at the tomb. And while the war rages on, we await the return of the King, when he will finish the enemy and establish his reign forever.
@@ -76,7 +64,7 @@ In the midst of despair, hope shines through. Indeed, we have more reason to hop
 > 
 > Then I saw the beast and the kings of the world and their armies gathered together to fight against the one sitting on the horse and his army. And the beast was captured, and with him the false prophet who did mighty miracles on behalf of the beast. … Both the beast and his false prophet were thrown alive into the fiery lake of burning sulfur. Their entire army was killed by the sharp sword that came from the mouth of the one riding the white horse.
 > 
-> Revelation 19:11-21
+> <cite>Revelation 19:11-21</cite>
 
 > Then I saw a new heaven and a new earth, for the old heaven and old earth had disappeared. And the sea was also gone. And I saw the holy city, the new Jerusalem, coming down from God out of heaven like a bride beautifully dressed for her husband.
 > 
@@ -84,7 +72,7 @@ In the midst of despair, hope shines through. Indeed, we have more reason to hop
 > 
 > And the one sitting on the throne said, “Look, I am making everything new!”
 > 
-> Revelation 21:1-5
+> <cite>Revelation 21:1-5</cite>
 
 Or, as Théoden says to his niece before leading the Rohirrim to the aid of Minas Tirith, “You shall live to see these days renewed, and no more despair.”
 

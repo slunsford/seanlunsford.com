@@ -20,10 +20,8 @@ So as I stood in that auditorium yesterday, as the alerts came in with the climb
 
 Because as dark as it seems right now, the darkest day in history was that Saturday two thousand years ago. But when all hope seemed lost, Jesus came back. And the very thing that seemed to have beaten him is what clinched his victory. So we celebrate that victory, we proclaim it and live in it, even in the face of unspeakable evil. God’s light is breaking through the darkness, and we are carrying it, knowing victory is ours.
 
-> Death is swallowed up in victory.
->
-> O death, where is your victory?
->
+> Death is swallowed up in victory.  
+> O death, where is your victory?  
 > O death, where is your sting?
 >
-> 1 Corinthians 15:54-55
+> <cite>1 Corinthians 15:54-55</cite>

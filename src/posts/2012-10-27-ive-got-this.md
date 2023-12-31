@@ -20,51 +20,30 @@ These are just two of the things that have been weighing on me, even more than I
 
 In the first set of songs, we sang “Everlasting God.” I immediately thought of the passage of Scripture it comes from, one of my favorites.
 
-> Look up into the heavens.
-> 
-> Who created all the stars?
-> 
-> He brings them out like an army, one after another,
-> 
-> calling each by its name.
-> 
-> Because of his great power and incomparable strength,
-> 
-> not a single one is missing.
-> 
-> O Jacob, how can you say the Lord does not see your troubles?
-> 
-> O Israel, how can you say God ignores your rights?
-> 
-> Have you never heard?
-> 
-> Have you never understood?
-> 
-> The Lord is the everlasting God,
-> 
-> the Creator of all the earth.
-> 
-> He never grows weak or weary.
-> 
-> No one can measure the depths of his understanding.
-> 
-> He gives power to the weak
-> 
-> and strength to the powerless.
-> 
-> Even youths will become weak and tired,
-> 
-> and young men will fall in exhaustion.
-> 
-> But those who trust in the Lord will find new strength.
-> 
-> They will soar high on wings like eagles.
-> 
-> They will run and not grow weary.
-> 
+> Look up into the heavens.  
+> Who created all the stars?  
+> He brings them out like an army, one after another,  
+> calling each by its name.  
+> Because of his great power and incomparable strength,  
+> not a single one is missing.  
+> O Jacob, how can you say the Lord does not see your troubles?  
+> O Israel, how can you say God ignores your rights?  
+> Have you never heard?  
+> Have you never understood?  
+> The Lord is the everlasting God,  
+> the Creator of all the earth.  
+> He never grows weak or weary.  
+> No one can measure the depths of his understanding.  
+> He gives power to the weak  
+> and strength to the powerless.  
+> Even youths will become weak and tired,  
+> and young men will fall in exhaustion.  
+> But those who trust in the Lord will find new strength.  
+> They will soar high on wings like eagles.  
+> They will run and not grow weary.  
 > They will walk and not faint.
-> 
-> Isaiah 40:26-31
+>
+> <cite>Isaiah 40:26-31</cite>
 
 It was a moment of relief sweeping over me, as God put things back in perspective, and reminded me that he’s got my back. Verse 31 especially hit home, given the fact that I *can’t* run right now.
 

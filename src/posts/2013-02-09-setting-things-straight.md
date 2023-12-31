@@ -30,7 +30,7 @@ Now, before I get eaten alive or walked away from, I am **not** saying that we s
 
 > “If the world hates you, remember that it hated me first. The world would love you as one of its own if you belonged to it, but you are no longer part of the world. I chose you to come out of the world, so it hates you.”
 > 
-> John 15:18-19
+> <cite>John 15:18-19</cite>
 
 But what will amaze them, what will really make them wonder, is *love*. Especially when they hate us. It will blow them away. It does blow them away. When Christians step up and choose to love instead of preaching at people about what’s right and what’s wrong, they can’t figure it out. I’ve seen the stories and the photos going viral on the internet. (That said, a large part of people’s amazement is that Christians have come to be some of the last people they expect to see it from—which is really sad, and infuriating. Because we have no one to blame for that but ourselves.)
 
