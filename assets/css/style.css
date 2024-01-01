@@ -536,6 +536,12 @@ a.nav-home {
   display: none;
 }
 
+.page-404 .page-title {
+  margin-bottom: 1.5rem;
+  font-size: var(--font-size-plus-8);
+  /* font-feature-settings: var(--default-font-features), "zero"; */
+}
+
 /* Post List */
 
 .post-list,
