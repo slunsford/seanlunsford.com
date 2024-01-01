@@ -32,36 +32,24 @@ It’s so simple, but so easy to forget. But in spite of that, he relentlessly p
 
 In my mind I heard the lyrics from “One Thing Remains”:
 
-> Your love never fails
-> 
-> It never gives up
-> 
-> It never runs out on me
-> 
+> Your love never fails  
+> It never gives up  
+> It never runs out on me  
 > Your love
-> 
-> And it’s higher than the mountains that I face
-> 
-> And it’s stronger than the power of the grave
-> 
-> And constant in the trial and the change
-> 
+>
+> And it’s higher than the mountains that I face  
+> And it’s stronger than the power of the grave  
+> And constant in the trial and the change  
 > This one thing remains
-> 
-> And on and on and on and on it goes
-> 
-> Yes, it overwhelms and satisfies my soul
-> 
-> And I never, ever have to be afraid
-> 
+>
+> And on and on and on and on it goes  
+> Yes, it overwhelms and satisfies my soul  
+> And I never, ever have to be afraid  
 > This one thing remains
-> 
-> In death, in life
-> 
-> I’m confident and covered by the power of your great love
-> 
-> My debt is paid
-> 
+>
+> In death, in life  
+> I’m confident and covered by the power of your great love  
+> My debt is paid  
 > There’s nothing that can separate my heart from your great love
 
 No matter what I’m going through, no matter what I do, no matter what happens, he will never stop loving me. And he just asks me to love him back. And sometimes he needs to break through all my distractions and checkmate me to remind me of that.
