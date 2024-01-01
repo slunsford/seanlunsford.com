@@ -8,7 +8,7 @@ categories:
   - "Technology"
 ---
 
-I’ve just finished [the move I wrote about](/2018/05/30/eleven-days/),[^1] so it seems appropriate to officially announce the move of my blog as well, though this new site has been live for a while now.
+I’ve just finished [the move I wrote about](/2018/eleven-days/),[^1] so it seems appropriate to officially announce the move of my blog as well, though this new site has been live for a while now.
 
 I’ve been using WordPress since my first post went up on this blog in 2012, but when I launched [my other site](https://thedarkroast.com) in 2014 it was using a blogging platform called [Ghost](https://ghost.org) and hosted on a server I rent and manage. Pretty much since then I’ve wanted to migrate this blog to Ghost and consolidate both on that same server. But in the past several months I’ve finally made the transition piecemeal, as I’ve had a moment here or there: migrating the old posts and images to a new instance of Ghost, pointing the seanlunsford.com domain name at the new site (and reverting WordPress to the wordpress.com subdomain), and coding a new theme.[^2]
 
