@@ -6,7 +6,7 @@ date_updated: 2020-02-12T11:20:54.000Z
 categories: "Christianity"
 ---
 
-Several weeks back I wrote a post titled, [“I’ve got this.”](/2012/10/27/ive-got-this/) I almost called it “Letting go,” but I felt like I needed to save that title. I got this sense that that post was more of a prequel. The part where God says, “I’ve got this.” And while there was some letting go on my part then, I had a feeling a post would follow, at some point, that would really be the point of letting go. Well, here it is.
+Several weeks back I wrote a post titled, [“I’ve got this.”](/2012/ive-got-this/) I almost called it “Letting go,” but I felt like I needed to save that title. I got this sense that that post was more of a prequel. The part where God says, “I’ve got this.” And while there was some letting go on my part then, I had a feeling a post would follow, at some point, that would really be the point of letting go. Well, here it is.
 
 I hit a breaking point tonight. All this stuff that’s been been popping up here and there, elusively, finally came rushing to the surface. I hadn’t realized how much all these different things had just been adding up, building up pressure, until the dam broke.
 

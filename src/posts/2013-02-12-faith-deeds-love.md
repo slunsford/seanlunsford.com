@@ -6,7 +6,7 @@ date_updated: 2020-02-12T11:16:29.000Z
 categories: "Christianity"
 ---
 
-A couple of well-known verses have been on my mind since my post, “[Setting things straight](/2013/02/09/setting-things-straight/)”:
+A couple of well-known verses have been on my mind since my post, “[Setting things straight](/2013/setting-things-straight/)”:
 
 > What good is it, dear brothers and sisters, if you say you have faith but don’t show it by your actions? Can that kind of faith save anyone? Suppose you see a brother or sister who has no food or clothing, and you say, “Good-bye and have a good day; stay warm and eat well”—but then you don’t give that person any food or clothing. What good does that do?
 > 
