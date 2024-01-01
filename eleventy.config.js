@@ -39,6 +39,8 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPlugin(postGraph, {
         sort: 'desc',
     })
+    
+    eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
     // Filters
     eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
