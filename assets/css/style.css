@@ -185,7 +185,7 @@ blockquote p {
 blockquote cite {
   color: var(--secondary-text-color);
   font-size: var(--font-size-minus-2);
-  font-style: italic;
+  font-style: normal;
 }
 
 blockquote code {
