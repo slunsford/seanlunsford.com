@@ -709,11 +709,11 @@ a.nav-home {
    12. Media Queries - Smaller sizes
    ========================================================================== */
 
-@media only screen and (max-width: 1000px) {
+/* @media only screen and (max-width: 1000px) {
   .site-footer {
     padding-bottom: calc(98px + 1.25rem);
   }
-}
+} */
 
 @media only screen and (max-width: 570px) {
   html {
