@@ -440,7 +440,11 @@ a.nav-home {
 	========================================================================== */
 
 .site-footer {
-  position: relative;
+  display: flex;
+  flex-flow: row wrap-reverse;
+  justify-content: space-between;
+  row-gap: 0.5rem;
+  column-gap: 1rem;
   width: 100%;
   margin-top: 1.25rem;
   padding-bottom: calc(1.25rem + var(--font-size-minus-1));
@@ -463,20 +467,17 @@ a.nav-home {
   opacity: 75%;
 }
 
-.site-footer .copyright,
-.footer-links {
-  display: inline-block;
-  position: absolute;
-  margin-bottom: 1.25rem;
+/* .site-footer .copyright {
+  order: 3;
 }
 
-.site-footer .copyright {
-  left: 0;
+.site-footer .powered-by {
+  order: 2;
 }
 
 .site-footer .footer-links {
-  right: 0;
-}
+  order: 1;
+} */
 
 .site-footer .footer-links a {
   margin-left: 0.5rem;
