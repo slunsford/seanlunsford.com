@@ -715,7 +715,7 @@ a.nav-home {
   }
 }
 
-@media only screen and (max-width: 530px) {
+@media only screen and (max-width: 570px) {
   html {
     /* font-size: 16px; */
     padding: 0 1.25rem;
@@ -746,6 +746,10 @@ a.nav-home {
 
   .bigfoot-footnote__content {
     padding: 0.65rem 0.75rem 0.75rem;
+  }
+  
+  .site-footer {
+    justify-content: center;
   }
 }
 
