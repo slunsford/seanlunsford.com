@@ -491,8 +491,7 @@ a.nav-home {
 	Posts/Pages
 	========================================================================== */
 
-.post,
-.page {
+.post {
   position: relative;
   margin: 1.25rem -1.25rem;
   padding: 1.25rem;
@@ -523,8 +522,7 @@ a.nav-home {
   font-weight: 300;
 }
 
-.post-header img,
-.page-header img {
+.post-header img {
   width: calc(100% + 2.5rem + 2px);
   max-width: calc(100% + 2.5rem + 2px);
   aspect-ratio: auto;
