@@ -82,18 +82,18 @@ h6 {
 }
 
 h1 {
-  font-size: var(--font-size-plus-3);
+  font-size: var(--font-size-plus-4);
   font-weight: 900;
 }
 
 h2 {
-  font-size: var(--font-size-plus-2);
+  font-size: var(--font-size-plus-3);
   font-weight: 100;
 }
 
 h3 {
   font-family: var(--slab);
-  font-size: var(--font-size-plus-1);
+  font-size: var(--font-size-plus-2);
   font-feature-settings: var(--small-caps);
   font-weight: 600;
 }
@@ -212,6 +212,10 @@ a {
   background: var(--background-color);
   border: 1px solid var(--post-border-color);
   border-radius: 5px;
+}
+
+.page a:hover {
+  background: var(--post-background-color);
 }
 
 a.read-more,
@@ -352,7 +356,8 @@ dl dd {
 .main-header {
   position: relative;
   width: 100%;
-  margin: 1.5rem 0;
+  margin-bottom: 1.5rem;
+  padding-top: 0.75rem;
   overflow: hidden;
 }
 
@@ -366,10 +371,10 @@ dl dd {
 }
 
 .site-title {
-  margin: 0.75rem .25rem 0 0;
+  margin: 0;
   padding: 0;
   font-family: var(--slab);
-  font-size: var(--font-size-plus-7);
+  font-size: var(--font-size-plus-8);
   font-weight: 900;
 }
 
@@ -396,6 +401,7 @@ dl dd {
 
 .nav {
   display: block;
+  margin: 0;
   padding: 0;
   font-family: var(--slab);
   font-size: var(--font-size-minus-1);
@@ -491,8 +497,7 @@ a.nav-home {
 	Posts/Pages
 	========================================================================== */
 
-.post,
-.page {
+.post {
   position: relative;
   margin: 1.25rem -1.25rem;
   padding: 1.25rem;
@@ -523,8 +528,7 @@ a.nav-home {
   font-weight: 300;
 }
 
-.post-header img,
-.page-header img {
+.post-header img {
   width: calc(100% + 2.5rem + 2px);
   max-width: calc(100% + 2.5rem + 2px);
   aspect-ratio: auto;
@@ -674,7 +678,7 @@ a.nav-home {
   flex-basis: 16rem;
   flex-grow: 3;
   max-width: 100%;
-  background-color: var(--background-color);
+  background-color: var(--post-background-color);
   color: var(--main-text-color);
   font-weight: 200;
 }
@@ -779,7 +783,7 @@ a.nav-home {
   }
   
   .embeddable-buttondown-form #bd-submit {
-    background-color: var(--background-color);
+    background-color: var(--post-background-color);
     color: var(--main-text-color);
   }
 }
