@@ -182,14 +182,14 @@ blockquote p {
   margin: 0.5rem 0;
 }
 
-blockquote cite {
+blockquote code {
+  padding: 0 2px;
+}
+
+cite {
   color: var(--secondary-text-color);
   font-size: var(--font-size-minus-2);
   font-style: normal;
-}
-
-blockquote code {
-  padding: 0 2px;
 }
 
 hr {
