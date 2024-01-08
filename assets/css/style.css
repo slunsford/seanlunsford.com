@@ -3,11 +3,11 @@
 	========================================================================== */
 
 :root {
-  --main-text-color: #3a4145;
-  --secondary-text-color: #9eabb3;
-  --tertiary-text-color: #5f686e; /* For blockquotes, etc. */
+  --main-text-color: #262a2c;
+  --secondary-text-color: #5f676b;
+  --footnote-button-color: #bfc3c5;
   --background-color: #f4f4f4;
-  --post-background-color: white;
+  --post-background-color: #ffffff;
   --post-border-color: #e5e7e9;
   --accent-color: #fa4616;
 
@@ -263,7 +263,7 @@ h6 a {
   font-feature-settings: "onum" off;
   /* font-family: var(--mono); */
   font-weight: 400;
-  background-color: var(--secondary-text-color);
+  background-color: var(--footnote-button-color);
 }
 
 .bigfoot-footnote__button:hover {
@@ -275,7 +275,7 @@ h6 a {
 }
 
 .bigfoot-footnote__button:after {
-  color: var(--tertiary-text-color);
+  color: var(--main-text-color);
 }
 
 /* Tables and dictionaries
@@ -682,14 +682,14 @@ a.nav-home {
 .embeddable-buttondown-form #bd-submit {
   flex-basis: 100px;
   flex-grow: 1;
-  background-color: #101213;
-  color: #e7e9ea;
+  background-color: var(--main-text-color);
+  color: #ffffff;
   font-weight: 900;
 }
 
 .embeddable-buttondown-form #bd-submit:hover {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .embeddable-buttondown-form .powered-by {
@@ -766,15 +766,20 @@ a.nav-home {
 /* 🌑 DARK MODE 🌑 */
 @media (prefers-color-scheme: dark) {
   :root {
-    --main-text-color: #e7e9ea;
-    --secondary-text-color: #5f686e;
-    --tertiary-text-color: #9eabb3; /* For blockquotes, etc. */
-    --background-color: #101213;
+    --main-text-color: #dfe1e2;
+    --secondary-text-color: #9eabb3;
+    --footnote-button-color: #5f676b;
+    --background-color: #131516;
     --post-background-color: #1e2124;
     --post-border-color: #212528;
   }
 
   .post {
     box-shadow: 1px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  .embeddable-buttondown-form #bd-submit {
+    background-color: var(--background-color);
+    color: var(--main-text-color);
   }
 }
