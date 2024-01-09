@@ -13,6 +13,8 @@ eleventyNavigation:
 {% set posts = collections.posts %}
 {% include "includes/post-list.njk" %}
 
-{% postGraph collections.posts, { "highlightColor": "#fa4616" } %}
+<h1>Post Graph</h1>
 
-<p><cite><a href="https://postgraph.rknight.me/">Post Graph by Robb Knight</a></cite></p>
+<p>This is a <a href="https://github.com/slunsford">GitHub-style</a> visualization by <a href="https://postgraph.rknight.me/">Robb Knight</a> of how (in)frequently I post.</p>
+
+{% postGraph collections.posts %}

@@ -4,4 +4,7 @@ permalink: "/{{ page.date | readableDate('yyyy') }}/{{slug or title | slugify}}/
 ---
 
 {% include "includes/post-content.njk" %}
+
+{% include "includes/subscribe-form.njk" %}
+
 {% include "includes/post-pagination.njk" %}

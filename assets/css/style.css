@@ -9,7 +9,10 @@
   --background-color: #f4f4f4;
   --post-background-color: #ffffff;
   --post-border-color: #e5e7e9;
+  --link-highlight-color: rgba(158, 171, 179, 0.2);
+  --link-highlight-border-color: rgba(95, 104, 110, 0.2);
   --accent-color: #ff4500;
+  --epg-box-highlight: var(--accent-color) !important;  /* Eleventy Post Graph highlights */
   
   --post-border-radius: 0.75rem;
 
@@ -17,10 +20,13 @@
   --small-caps: var(--default-font-features), "smcp";
   --all-small-caps: var(--default-font-features), "c2sc", "smcp";
 
-  --sans: 'Name Sans', Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+  --sans: 'Name Sans', Avenir, Montserrat, Corbel, 'URW Gothic',
+          source-sans-pro, sans-serif;
   --sans-text: 'Name Sans Text', var(--sans);
-  --slab: Lang, Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;
-  --mono: 'Name Mono', ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  --slab: Lang, Rockwell, 'Rockwell Nova', 'Roboto Slab',
+          'DejaVu Serif', 'Sitka Small', serif;
+  --mono: 'Name Mono', ui-monospace, 'Cascadia Code', 'Source Code Pro',
+          Menlo, Consolas, 'DejaVu Sans Mono', monospace;
 
   --font-size-minus-3: 0.702rem;
   --font-size-minus-2: 0.79rem;
@@ -85,7 +91,7 @@ h6 {
 
 h1 {
   font-size: var(--font-size-plus-4);
-  font-weight: 900;
+  font-weight: 1000;
 }
 
 h2 {
@@ -94,10 +100,8 @@ h2 {
 }
 
 h3 {
-  font-family: var(--slab);
-  font-size: var(--font-size-plus-2);
-  font-feature-settings: var(--small-caps);
-  font-weight: 600;
+  font-size: var(--font-size-plus-1);
+  font-weight: 800;
 }
 
 h1 b,
@@ -164,12 +168,7 @@ pre b {
 
 acronym, .small-caps {
   font-feature-settings: var(--all-small-caps);
-}
-
-.nav,
-.pagination,
-.site-footer {
-  font-feature-settings: var(--all-small-caps);
+  letter-spacing: 1px;
 }
 
 blockquote {
@@ -207,56 +206,37 @@ a {
   text-decoration: none;
 }
 
-.post a:hover,
-.page a:hover {
+.post :not(.post-title) > a:hover,
+.page :not(.page-title) > a:hover {
   margin: -3px;
   padding: 2px;
-  background: var(--background-color);
-  border: 1px solid var(--post-border-color);
+  background: var(--link-highlight-color);
+  border: 1px solid var(--link-highlight-border-color);
   border-radius: 5px;
 }
 
-.page a:hover {
+/* .page :not(.page-title) > a:hover {
   background: var(--post-background-color);
-}
+} */
 
-a.read-more,
-a.read-more:hover,
-a.read-more:visited {
-  color: var(--accent-color);
-  text-decoration: none;
-}
-
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a {
-  color: var(--main-text-color);
-  text-decoration: none;
-}
-
+.site-title a,
 .post-title a,
 .page-title a {
-  color: var(--main-text-color) !important;
-  text-decoration: none !important;
+  color: inherit;
 }
 
 .post-title a:hover,
 .page-title a:hover {
   color: var(--accent-color) !important;
-
-  /* Override hover styles on post body */
-  margin: 0 -0.5rem !important;
-  padding: 0 0.5rem !important;
-  background: transparent !important;
-  border: none !important;
 }
 
 .post-title a:active,
 .page-title a:active {
   opacity: 75%;
+}
+
+.site-title a:active {
+  color: var(--accent-color);
 }
 
 /* Tweak Bigfoot footnote style */
@@ -267,7 +247,6 @@ h6 a {
 
 .bigfoot-footnote__button {
   font-feature-settings: "onum" off;
-  /* font-family: var(--mono); */
   font-weight: 400;
   background-color: var(--footnote-button-color);
 }
@@ -378,14 +357,6 @@ dl dd {
   font-family: var(--slab);
   font-size: var(--font-size-plus-8);
   font-weight: 900;
-}
-
-.site-title a {
-  color: inherit;
-}
-
-.site-title a:active {
-  color: var(--accent-color);
 }
 
 .site-description {
@@ -546,10 +517,22 @@ a.nav-home {
   display: none;
 }
 
+.page-404 {
+  text-align: center;
+}
+
 .page-404 .page-title {
-  margin-bottom: 1.5rem;
-  font-size: var(--font-size-plus-8);
-  /* font-feature-settings: var(--default-font-features), "zero"; */
+  font-size: 6rem;
+  font-weight: 100;
+  font-feature-settings: var(--default-font-features), "zero";
+}
+
+.page-404 h2 {
+  margin: 0;
+}
+
+.page-404 .page-header {
+  margin-bottom: 2rem;
 }
 
 /* Post List */
@@ -564,7 +547,7 @@ a.nav-home {
 .categories-list-item {
   align-items: baseline;
   counter-increment: start-from -1;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
 .post-list-title,
@@ -654,7 +637,8 @@ a.nav-home {
 .embeddable-buttondown-form .input-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.25rem;
+  row-gap: 0.25rem;
+  column-gap: 0.5rem;
   margin: 0.75rem 0;
 }
 
@@ -694,16 +678,16 @@ a.nav-home {
   color: #ffffff !important;
 }
 
-.embeddable-buttondown-form .powered-by {
+.powered-by-buttondown {
   margin-top: 0.75rem;
   font-size: var(--font-size-minus-2);
 }
 
-.embeddable-buttondown-form .powered-by a {
+.powered-by-buttondown a {
   color: var(--secondary-text-color);
 }
 
-.embeddable-buttondown-form .powered-by a:hover {
+.powered-by-buttondown a:hover {
   color: var(--accent-color);
 }
 
@@ -760,6 +744,10 @@ a.nav-home {
     margin-top: -1rem;
   }
   
+  .page-404 .page-title {
+    font-size: 30vw;
+  }
+  
   .embeddable-buttondown-form #bd-email {
     font-size: 1rem;
   }
@@ -774,6 +762,14 @@ a.nav-home {
     --background-color: #060316;
     --post-background-color: #171823;
     --post-border-color: #22242f;
+  }
+  
+  .bigfoot-footnote, .bigfoot-footnote__wrapper, .bigfoot-footnote__content, .bigfoot-footnote__tooltip {
+    background: var(--background-color);
+  }
+  
+  .bigfoot-footnote, .bigfoot-footnote__tooltip {
+    border-color: var(--post-border-color);
   }
 
   .post {
