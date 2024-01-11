@@ -1,1 +1,3 @@
+/rss /feed.xml 301
+/rss/ /feed.xml 301
 /:yyyy/:mm/:dd/:slug/ /:yyyy/:slug/ 301
