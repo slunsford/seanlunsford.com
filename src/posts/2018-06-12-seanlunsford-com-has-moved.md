@@ -18,7 +18,7 @@ I do have aspirations of starting to write more often again.[^4] So if you want 
 
 [^1]: Except for those couple pieces of luggage the airline should be bringing by sometime today.
 
-[^2]: I have to say I really like the way it turned out. I used [the theme](https://thedarkroast.com/arabica/) I created and maintain for The Dark Roast as a foundation, but made some visual changes and took cues from what I liked best in my customized WordPress theme.
+[^2]: I have to say I really like the way it turned out. I used [the theme](https://github.com/slunsford/arabica) I created and maintain for The Dark Roast as a foundation, but made some visual changes and took cues from what I liked best in my customized WordPress theme.
 
 [^3]: Tinkering with servers and RSS feeds is a nice change from putting stuff into suitcases, boxes, and trash bags.
 
