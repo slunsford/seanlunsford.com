@@ -14,9 +14,6 @@ module.exports = function(eleventyConfig) {
     // Copy `assets/` to `_site/assets/`
     eleventyConfig.addPassthroughCopy("assets");
 
-    // Copy `img/` to `_site/img/`
-    eleventyConfig.addPassthroughCopy("img");
-
     // Copy `public/` to `_site/`
     eleventyConfig.addPassthroughCopy({ "public": "/" });
 
