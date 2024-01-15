@@ -389,13 +389,13 @@ dl dd {
   display: inline-block;
 }
 
+.nav li:last-child {
+  margin-right: 0;
+}
+
 .nav a {
   color: var(--secondary-text-color);
   text-decoration: none;
-}
-
-.nav a:last-child {
-  margin-right: 0;
 }
 
 .nav a:hover {
