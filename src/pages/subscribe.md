@@ -9,7 +9,7 @@ eleventyNavigation:
   order: 3
 ---
 
-Subscribe via [RSS](/rss) or [JSON Feed](/feed.json) or enter your email below to get new posts delivered to your inbox.
+Subscribe via [RSS](/feed.xml) or [JSON Feed](/feed.json) or enter your email below to get new posts delivered to your inbox.
 
 {% include "includes/subscribe-form.njk" %}
   
