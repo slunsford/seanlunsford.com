@@ -37,6 +37,6 @@
     "markdown-it-footnote": "^3.0.3"
   },
   "devDependencies": {
-    "@rknightuk/eleventy-plugin-post-graph": "^1.0.6"
+    "@rknightuk/eleventy-plugin-post-graph": "^1.0.7"
   }
 }
