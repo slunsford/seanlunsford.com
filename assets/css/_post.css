@@ -10,6 +10,10 @@
   box-shadow: var(--post-shadow);
   font-family: var(--sans);
   font-style: normal;
+  -moz-border-radius: var(--post-border-radius);
+  -webkit-border-radius: var(--post-border-radius);
+  -moz-box-shadow: var(--post-shadow);
+  -webkit-box-shadow: var(--post-shadow);
 }
 
 .post-header {
