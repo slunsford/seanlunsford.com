@@ -1,0 +1,90 @@
+.post {
+  position: relative;
+  margin: 1.25rem -1.25rem;
+  padding: 1.25rem;
+  padding-bottom: 0.5rem; /* Account for bottom margin of last paragraph/element */
+  word-break: break-word;
+  background-color: var(--post-background-color);
+  border: 1px solid var(--post-border-color);
+  border-radius: var(--post-border-radius);
+  box-shadow: var(--post-shadow);
+  font-family: var(--sans);
+  font-style: normal;
+}
+
+.post-header,
+.page-header {
+  margin-bottom: 0.5rem;
+}
+
+.post-title,
+.page-title {
+  margin: 0;
+}
+
+.post-meta {
+  font-family: var(--sans-text);
+  margin-top: 0.25rem;
+  font-size: var(--font-size-minus-1);
+  color: var(--secondary-text-color);
+  font-weight: 300;
+}
+
+.post-header img {
+  width: calc(100% + 2.5rem + 2px);
+  max-width: calc(100% + 2.5rem + 2px);
+  aspect-ratio: auto;
+  height: auto;
+  margin: calc(-1.25rem - 1px);
+  margin-bottom: 0.5rem;
+  border-top-left-radius: var(--post-border-radius);
+  border-top-right-radius: var(--post-border-radius);
+}
+
+.footnotes-sep {
+  display: none;
+}
+
+.post :not(.post-title) > a:hover,
+.page :not(.page-title) > a:hover {
+  margin: -3px;
+  padding: 2px;
+  background: var(--link-highlight-color);
+  border: 1px solid var(--link-highlight-border-color);
+  border-radius: 5px;
+}
+
+/* .page :not(.page-title) > a:hover {
+  background: var(--post-background-color);
+} */
+
+.post-title a,
+.page-title a {
+  color: inherit;
+}
+
+.post-title a:hover,
+.page-title a:hover {
+  color: var(--accent-color) !important;
+}
+
+.post-title a:active,
+.page-title a:active {
+  opacity: 75%;
+}
+
+@media only screen and (max-width: 570px) {
+  .post,
+  .page {
+    margin: 0.75rem -0.75rem;
+    padding: 0.75rem;
+  }
+
+  .post-header img,
+  .page-header img {
+    width: calc(100% + 1.5rem + 2px) !important;
+    max-width: calc(100% + 1.5rem + 2px) !important;
+    margin: calc(-0.75rem - 1px);
+    margin-bottom: 0.75rem;
+  }
+}

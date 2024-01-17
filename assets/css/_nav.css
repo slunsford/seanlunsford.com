@@ -1,0 +1,41 @@
+.nav {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-family: var(--slab);
+  font-size: var(--font-size-minus-1);
+  font-weight: 500;
+  font-feature-settings: var(--all-small-caps);
+  letter-spacing: 1px;
+}
+
+.nav li {
+  margin: 0;
+  margin-right: 1rem;
+  display: inline-block;
+}
+
+.nav li:last-child {
+  margin-right: 0;
+}
+
+.nav a {
+  color: var(--secondary-text-color);
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: var(--accent-color);
+}
+
+.nav a:active {
+  opacity: 75%;
+}
+
+a.nav-current {
+  color: var(--accent-color);
+}
+
+a.nav-home {
+  color: var(--secondary-text-color);
+}

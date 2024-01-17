@@ -1,0 +1,23 @@
+.page-404 {
+  text-align: center;
+}
+
+.page-404 .page-title {
+  font-size: 6rem;
+  font-weight: 100;
+  font-feature-settings: var(--default-font-features), "zero";
+}
+
+.page-404 h2 {
+  margin: 0;
+}
+
+.page-404 .page-header {
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 370px) {  
+  .page-404 .page-title {
+    font-size: 30vw;
+  }
+}
