@@ -1,0 +1,54 @@
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin: 1.25rem auto;
+  font-size: var(--font-size-minus-3);
+  font-weight: 600;
+  color: var(--secondary-text-color);
+  text-align: center;
+  font-feature-settings: var(--default-font-features), "onum" off;
+  text-transform: uppercase;
+}
+
+.pagination a {
+  color: var(--secondary-text-color);
+}
+
+.pagination a:hover {
+  color: var(--accent-color);
+}
+
+.pagination a:active {
+  opacity: 75%;
+}
+
+.older-posts,
+.newer-posts,
+.prev-post,
+.next-post {
+  flex-grow: 1;
+}
+
+.older-posts,
+.prev-post {
+  text-align: left;
+}
+
+.newer-posts,
+.next-post {
+  text-align: right;
+}
+
+.extra-pagination {
+  display: none;
+}
+
+.extra-pagination .pagination {
+  width: auto;
+}
+
+/* On page2+ show extra pagination controls at the top of post list */
+.paged .extra-pagination {
+  display: flex;
+}

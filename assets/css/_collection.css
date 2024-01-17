@@ -1,0 +1,9 @@
+.collection-title {
+  font-size: var(--font-size-plus-6);
+}
+
+.collection-description {
+  font-size: var(--font-size-minus-1);
+  font-weight: 300;
+  color: var(--secondary-text-color);
+}

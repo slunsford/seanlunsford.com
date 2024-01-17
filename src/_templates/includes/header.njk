@@ -37,20 +37,15 @@
         {# {%- js %}{% include "assets/js/script.js" %}{% endjs %}
         <script>{% getBundle "js" %}</script> #}
         
-        {%- css %}{% include "assets/css/fonts.css" %}{% endcss %}
-        {%- css %}{% include "assets/css/style.css" %}{% endcss %}
-        <style>{% getBundle "css" %}</style>
-        
+        <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+
         <meta name="generator" content="{{ eleventy.generator }}">
     </head>
     <body>
         <a href="#skip" class="visually-hidden">Skip to main content</a>
 
-        <header class="main-header">
-            <div class="main-header-content">
-                <section class="site-title"><a href="/" class="home-link">{{ metadata.title }}</a></section>
-                {%if metadata.description %}<section class="site-description">{{ metadata.description }}</section>{% endif %}
-            </div>
+        <header class="main">
+            <section class="site-title"><a href="/" class="home-link">{{ metadata.title }}</a></section>
 
             {% include "includes/navigation.njk" %}
         </header>

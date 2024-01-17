@@ -1,0 +1,38 @@
+.bigfoot-footnote__content {
+  line-height: 1.3;
+  font-size: var(--font-size-minus-1);
+}
+
+.bigfoot-footnote__button {
+  font-feature-settings: "onum" off;
+  font-weight: 400;
+  background-color: var(--footnote-button-color);
+}
+
+.bigfoot-footnote__button:hover {
+  background-color: var(--accent-color);
+}
+
+.bigfoot-footnote__button.is-active {
+  opacity: 85%;
+}
+
+.bigfoot-footnote__button:after {
+  color: var(--main-text-color);
+}
+
+@media only screen and (max-width: 570px) {
+  .bigfoot-footnote__content {
+    padding: 0.65rem 0.75rem 0.75rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .bigfoot-footnote, .bigfoot-footnote__wrapper, .bigfoot-footnote__content, .bigfoot-footnote__tooltip {
+    background: var(--background-color);
+  }
+  
+  .bigfoot-footnote, .bigfoot-footnote__tooltip {
+    border-color: var(--post-border-color);
+  }
+}

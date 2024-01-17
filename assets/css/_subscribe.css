@@ -1,0 +1,69 @@
+.embeddable-buttondown-form .input-grid {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 0.25rem;
+  column-gap: 0.5rem;
+  margin: 0.75rem 0;
+}
+
+.embeddable-buttondown-form label {
+  display: none;
+}
+
+.embeddable-buttondown-form #bd-email,
+.embeddable-buttondown-form #bd-submit {
+  min-height: 1.75rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-family: var(--sans);
+  font-size: var(--font-size-plus-1);
+  border: 0.5px solid var(--post-border-color);
+}
+
+.embeddable-buttondown-form #bd-email {
+  flex-basis: 16rem;
+  flex-grow: 3;
+  max-width: 100%;
+  background-color: var(--post-background-color);
+  color: var(--main-text-color);
+  font-weight: 200;
+}
+
+.embeddable-buttondown-form #bd-submit {
+  flex-basis: 100px;
+  flex-grow: 1;
+  background-color: var(--main-text-color);
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.embeddable-buttondown-form #bd-submit:hover {
+  background-color: var(--accent-color);
+  color: #ffffff !important;
+}
+
+.powered-by-buttondown {
+  margin-top: 0.75rem;
+  font-size: var(--font-size-minus-2);
+}
+
+.powered-by-buttondown a {
+  color: var(--secondary-text-color);
+}
+
+.powered-by-buttondown a:hover {
+  color: var(--accent-color);
+}
+
+@media only screen and (max-width: 370px) {
+  .embeddable-buttondown-form #bd-email {
+    font-size: 1rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .embeddable-buttondown-form #bd-submit {
+    background-color: var(--post-background-color);
+    color: var(--main-text-color);
+  }
+}
