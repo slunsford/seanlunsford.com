@@ -1,13 +1,9 @@
-.main-header {
+header.main {
   position: relative;
   width: 100%;
   margin-bottom: 1.5rem;
   padding-top: 0.75rem;
   overflow: hidden;
-}
-
-.main-header-content {
-  height: auto;
 }
 
 .site-title {
