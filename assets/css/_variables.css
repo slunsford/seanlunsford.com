@@ -39,10 +39,12 @@
   --font-size-plus-7: 2.566rem;
   --font-size-plus-8: 2.887rem;
   
+  
   @media (prefers-color-scheme: dark) {
     --background-color: #060316;
     --post-background-color: #171823;
     --post-border-color: #22242f;
+    --footnote-background-color: #1d1e29;
     
     --main-text-color: #dfe1e2;
     --secondary-text-color: #9eabb3;
