@@ -2,6 +2,7 @@ module.exports = {
 	"title": "seanlunsford.com",
 	"url": "https://seanlunsford.com/",
 	"language": "en",
+	"github_url": "https://github.com/slunsford/seanlunsford.com",
 	"author": {
 		"name": "Sean Lunsford",
 		"email": "sean@seanlunsford.com",

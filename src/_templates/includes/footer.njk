@@ -1,9 +1,9 @@
     <footer class="main">
         <section class="copyright">&copy; 2012–{% year %} Sean Lunsford</section>
         <ul class="footer-links">
-            <li class="powered-by"><a href="https://www.11ty.dev/">Made with 11ty</a></li>
+            {# <li class="powered-by"><a href="https://www.11ty.dev/">Made with 11ty</a></li> #}
             <li><a href="/feed.xml"><i class="fa-solid fa-square-rss"></i></a></li>
-            {%if metadata.author.github_url %}<li><a rel="me" href="{{ metadata.author.github_url }}"><i class="fa-brands fa-github"></i></a></li>{% endif %}
+            {%if metadata.github_url %}<li><a rel="me" href="{{ metadata.github_url }}"><i class="fa-brands fa-github"></i></a></li>{% endif %}
             {%if metadata.author.mastodon_url %}<li><a rel="me" href="{{ metadata.author.mastodon_url }}"><i class="fa-brands fa-mastodon"></i></a></li>{% endif %}
             {%if metadata.author.threads_url %}<li><a rel="me" href="{{ metadata.author.threads_url }}"><i class="fa-brands fa-threads"></i></a></li>{% endif %}
         </ul>

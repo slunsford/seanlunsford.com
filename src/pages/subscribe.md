@@ -1,7 +1,5 @@
 ---
 title: Subscribe
-slug: subscribe
-pageID: subscribe
 eleventyNavigation:
   key: Subscribe
   order: 4

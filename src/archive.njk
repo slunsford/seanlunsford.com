@@ -13,8 +13,4 @@ eleventyNavigation:
 {% set posts = collections.posts %}
 {% include "includes/post-list.njk" %}
 
-<h1>Post Graph</h1>
-
-<p>This is a <a href="https://github.com/slunsford">GitHub-style</a> visualization by <a href="https://postgraph.rknight.me/">Robb Knight</a> of how (in)frequently I post.</p>
-
 {% postGraph collections.posts %}
