@@ -1,11 +1,9 @@
 ---
 title: Projects
 slug: projects
-date: 2019-09-03T10:26:42.000Z
-date_updated: 2023-03-21T19:50:34.000Z
 eleventyNavigation:
   key: Projects
-  order: 1
+  order: 2
 ---
 
 I’m a serial starter of side projects.

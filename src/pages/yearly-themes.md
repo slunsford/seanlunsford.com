@@ -1,8 +1,6 @@
 ---
 title: Yearly Themes
 slug: yearly-themes
-date: 2020-02-23T22:24:15.000Z
-date_updated: 2021-03-06T14:32:56.000Z
 ---
 
 My friend Elias and I have been picking [yearly themes](https://youtu.be/NVGuFdX5guE) on our podcast [since 2018](https://breadcrumbsfm.com/?name=breadcrumbs69.mp3). Starting in 2020, I'm recording those here. For reference/posterity.
