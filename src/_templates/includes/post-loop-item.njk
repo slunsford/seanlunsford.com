@@ -5,7 +5,7 @@
         {%- endif %}
         <h1 class="post-title">
             {%- if post.data.link -%}
-            <a href="{{ post.data.link }}">{{ post.data.title }}<span class="link-arrow"> &gt;--&gt;</span></a>
+            <a href="{{ post.data.link }}">{{ post.data.title }} <i class="fa-solid fa-square-arrow-up-right link-arrow"></i></a>
             {%- else -%}
             <a href="{{ post.url }}">{{ post.data.title }}</a>
             {%- endif -%}
