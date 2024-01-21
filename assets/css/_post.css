@@ -24,6 +24,15 @@
   margin: 0;
 }
 
+.post-title,
+.page-title {
+  font-size: var(--font-size-plus-6);
+}
+
+.post-loop-item .post-title {
+  font-size: var(--font-size-plus-4);
+}
+
 .link-post .link-arrow  {
   font-size: var(--font-size-plus-2);
 }
