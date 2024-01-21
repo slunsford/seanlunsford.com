@@ -1,6 +1,7 @@
 ---
 title: Thing Builder
 slug: thing-builder
+link: https://gist.github.com/slunsford/d19956fc8fbbbd9a9959b30275d1ef9e
 date: 2021-03-07T15:17:58.000Z
 date_updated: 2021-03-27T19:45:59.000Z
 featured_image: "/assets/img/thing-builder.png"
