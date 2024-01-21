@@ -26,6 +26,7 @@
 
 .link-post .link-arrow  {
   font-weight: 400;
+  text-wrap: nowrap;
 }
 
 .post-meta {
