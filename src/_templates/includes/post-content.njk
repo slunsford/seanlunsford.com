@@ -1,11 +1,18 @@
-<article class="post">
+<article class="post{% if link %} link-post{% endif %}">
     <header class="post-header">
         {% if featured_image -%}
         <img src="{{ featured_image }}" alt="{{ featured_image_alt }}" />
         {%- endif %}
-        <h1 class="post-title">{{ title }}</h1>
+        <h1 class="post-title">
+            {%- if link -%}
+            <a href="{{ link }}">{{ title }} <span class="link-arrow">&gt;--&gt;</span></a>
+            {%- else -%}
+            {{ title }}
+            {%- endif -%}
+        </h1>
         <section class="post-meta">
             <time class="post-date" datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+            <a href="{{ url }}" class="permalink"><i class="fa-solid fa-link"></i></a>
         </section>
     </header>
     <section class="post-content">
