@@ -24,12 +24,24 @@
   margin: 0;
 }
 
+.link-post .link-arrow  {
+  font-weight: 400;
+}
+
 .post-meta {
   font-family: var(--sans-text);
   margin-top: 0.25rem;
   font-size: var(--font-size-minus-1);
   color: var(--secondary-text-color);
   font-weight: 300;
+}
+
+.post-meta a {
+  color: inherit;
+}
+
+.post-meta a:hover {
+  color: var(--accent-color);
 }
 
 .post-header img {
