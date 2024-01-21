@@ -12,9 +12,9 @@
         </h1>
         <section class="post-meta">
             <time class="post-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-			{%- if post.data.link -%}
+			{% if post.data.link -%}
             <a href="{{ post.url }}" class="permalink"><i class="fa-solid fa-link"></i></a>
-			{%- endif -%}
+			{%- endif %}
         </section>
     </header>
     <section class="post-content">
