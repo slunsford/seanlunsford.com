@@ -44,3 +44,5 @@
 /2023-in-focus/ /2023/2023-in-focus/ 301
 /diapers-and-coffee/ /2023/diapers-and-coffee/ 301
 /:yyyy/:mm/:dd/:slug/ /:yyyy/:slug/ 301
+/tag/:slug/ /category/:slug/
+/categories/:slug/ /category/:slug/ 301
