@@ -34,7 +34,8 @@
 }
 
 .link-post .link-arrow  {
-  font-size: var(--font-size-plus-2);
+  font-size: var(--font-size);
+  vertical-align: super;
 }
 
 .post-meta {
