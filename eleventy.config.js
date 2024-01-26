@@ -7,7 +7,6 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginBundle = require("@11ty/eleventy-plugin-bundle");
 const pluginNavigation = require("@11ty/eleventy-navigation");
-const dynamicCategories = require('eleventy-plugin-dynamic-categories');
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 
 module.exports = function(eleventyConfig) {
@@ -32,11 +31,6 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPlugin(pluginNavigation);
     eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
     eleventyConfig.addPlugin(pluginBundle);
-    
-    eleventyConfig.addPlugin(dynamicCategories, {
-        categoryVar: "categories", // Name of your category variable from your frontmatter (default: categories)
-        itemsCollection: "posts", // Name of your collection to use for the items (default: posts)
-    });
     
     eleventyConfig.addPlugin(postGraph, {
         sort: 'desc',

@@ -3,7 +3,7 @@ title: Setting Things Straight
 slug: setting-things-straight
 date: 2013-02-09T08:46:35.000Z
 date_updated: 2020-02-07T10:11:58.000Z
-categories: "Christianity"
+tags: "Christianity"
 ---
 
 On Wednesday night, right before going to bed, I posted a link to an article titled “[There. I said it. I don’t want my kids to be Evangelicals.](http://deeperstory.com/there_i_said_it/)” In my (very) brief commentary I quoted the following from it:

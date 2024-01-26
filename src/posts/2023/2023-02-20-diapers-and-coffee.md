@@ -4,7 +4,7 @@ slug: diapers-and-coffee
 link: https://diapers.coffee
 date: 2023-02-19T21:33:26.000Z
 date_updated: 2024-01-20 23:10:00+3
-categories:
+tags:
   - "Blogging"
   - "Technology"
   - "Life"

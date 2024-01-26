@@ -3,7 +3,7 @@ title: If Necessary, Use Words
 slug: if-necessary-use-words
 date: 2012-03-20T13:25:10.000Z
 date_updated: 2020-02-07T10:16:45.000Z
-categories: "Christianity"
+tags: "Christianity"
 ---
 
 Today I’m thinking about the prophets. For the last several days I’ve been working on a study on the Old Testament prophets for my small group. And something that has really stuck out to me is how their lives are so wrapped up in their message. The classic example is Hosea, who God called to marry a prostitute and was doomed to a life of buying back and forgiving an unfaithful wife, to be a living allegory of Israel’s unfaithfulness to God—and God’s relentless love.

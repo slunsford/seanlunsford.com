@@ -3,7 +3,7 @@ title: We’re in This Together
 slug: were-in-this-together
 date: 2014-08-09T21:02:50.000Z
 date_updated: 2017-12-19T02:06:06.000Z
-categories: "Christianity"
+tags: "Christianity"
 ---
 
 You may or may not have heard of the controversy that’s erupted around Michael and Lisa Gungor, the Christian musicians who’ve caused an uproar by saying that they don’t believe in a six-day creation or a literal Adam and Eve. I’m not about to wade into the creation-evolution debate, and I know Christians are increasingly on both sides of the fence on the topic, but I have a few thoughts about how I’ve seen this news about Gungor unfold and the reactions of many Christians to it. Actually, these are all things that bother me in general, and this specific episode has just been the latest example of how these play out every time this kind of thing happens.

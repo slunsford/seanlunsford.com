@@ -3,7 +3,7 @@ title: Of Blogs and Lent
 slug: of-blogs-and-lent
 date: 2014-03-05T21:38:24.000Z
 date_updated: 2020-02-12T11:16:01.000Z
-categories: 
+tags: 
   - "Christianity"
   - "Blogging"
 ---

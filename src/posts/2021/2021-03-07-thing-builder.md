@@ -6,7 +6,7 @@ date: 2021-03-07T15:17:58.000Z
 date_updated: 2021-03-27T19:45:59.000Z
 featured_image: "/assets/img/thing-builder.png"
 featured_image_alt: "A screenshot of the first few blocks of the Thing Builder shortcut on an iPad"
-categories: "Technology"
+tags: "Technology"
 ---
 
 Today I’m taking the wraps off a side project I started almost three years ago. It started with me wishing for project templates in my task manager, [Things](https://culturedcode.com/things/). At the time, I was using [Drafts](https://getdrafts.com/) a lot for text automation, and I found a couple different user-created text parsers for Things in the [Action Directory](https://actions.getdrafts.com/). Inspired by these, I wanted something more Markdown-like, and as I thought about it, something in Shortcuts and not tied to a single third-party app.[^1]

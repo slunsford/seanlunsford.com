@@ -3,7 +3,7 @@ title: Of Ibuprofen and Ice Packs
 slug: of-ibuprofen-and-ice-packs
 date: 2012-10-15T00:11:18.000Z
 date_updated: 2020-02-12T11:24:26.000Z
-categories: "Christianity"
+tags: "Christianity"
 ---
 
 I write this with my legs stretched out in front of me, computer in my lap, and a cold pack on my knee, having just popped some ibuprofen. A week and a half ago, I was on my bike, my primary way of getting around campus (well…until a week and a half ago.) I was riding on the sidewalk, and getting ready to merge onto the road. A pickup was coming towards me, but still a little ways off. I was trying to decide whether to pull out into the road ahead of him, or let him pass first. Next thing I knew my front wheel went off the curb, my bike went over, and its weight combined with mine came down on my knee, which landed squarely on the curb. It was a minor scrape, through my jeans, nothing that would take too long to heal.
