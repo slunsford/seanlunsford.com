@@ -19,7 +19,16 @@ permalink: /tag/{{ tag | slugify }}/
         <h1 class="page-title">{{ tag }}</h1>
     </header>
     <section class="page-content">
+{# 
+        <h2>Tags</h2>
+        {% set activeTag = tag %}
+        {% include "includes/tags-list.njk" %}
+        
+        <h2>Posts</h2>
+ #}
         {% set posts = collections[ tag ] %}
         {% include "includes/post-list.njk" %}
+        
+        {% postGraph posts %}
     </section>
 </article>

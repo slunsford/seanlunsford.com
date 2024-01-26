@@ -4,14 +4,14 @@
   padding: 0;
 }
 
-.post-list li,
-.tags-list li {
+.post-list-item,
+.tag-list-item {
   align-items: baseline;
   counter-increment: start-from -1;
   margin-bottom: 0.5rem;
 }
 
 .post-list-title,
-.tags-list .post-tag {
+.tag-list-item-active {
   font-weight: 600;
 }
