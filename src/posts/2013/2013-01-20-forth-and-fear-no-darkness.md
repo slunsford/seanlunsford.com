@@ -5,9 +5,9 @@ date: 2013-01-20T16:31:33.000Z
 date_updated: 2020-02-20T13:53:58.000Z
 featured_image: "/assets/img/witch-king.jpeg"
 featured_image_alt: "A frame from The Return of the King with Gandalf and Pippin from behind, facing the Witch-king with a flaming sword pointed to the sky"
-categories: 
+tags: 
   - "Christianity"
-tags: highlights
+  - Highlights
 ---
 
 When I last posted I was nearing the end of *The Two Towers*. I’ve finished *The Return of the King* now, and I’m working on the appendices. And yes, I’m going to write about *The Lord of the Rings* again. (Don’t be surprised if this ends up becoming a series.)

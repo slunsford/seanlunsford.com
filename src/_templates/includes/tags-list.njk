@@ -1,0 +1,6 @@
+<ul class="tags-list">
+{% for tag in collections.all | getAllTags | filterTagList %}
+	{% set tagUrl %}/tag/{{ tag | slugify }}/{% endset %}
+	<li class="tag-list-item{% if tag == activeTag %} tag-list-item-active{% endif %}"><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a></li>
+{% endfor %}
+</ul>

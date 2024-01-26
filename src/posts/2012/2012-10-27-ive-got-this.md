@@ -3,7 +3,7 @@ title: “I’ve Got This.”
 slug: ive-got-this
 date: 2012-10-27T19:26:58.000Z
 date_updated: 2020-02-07T10:14:00.000Z
-categories: "Christianity"
+tags: "Christianity"
 ---
 
 I’m sitting on the back porch of a cabin at a retreat center twenty minutes outside of Blacksburg. The rain this morning has left a chill in the air, the ground wet, and a light mist hovering just above the treetops. The trees around me range from green to red to leafless, and the only sounds to be heard are the leaves rustling, the water still dripping from tree branches, and the birds. I sip coffee from a styrofoam cup and just sit, and soak it in. Everything is still, and peaceful. Right now, I could almost forget about all the projects and homework waiting for me back at Tech, the test I have coming up on Tuesday, the construction career fair on Thursday, life decisions to be made, even the anxiety of the uncertainty about my knee. Right now, it is enough to just sit in the arms of God, and let him take all the cares away.

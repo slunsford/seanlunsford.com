@@ -5,12 +5,13 @@ eleventyNavigation:
   key: Archive
   order: 3
 ---
-
-<h2>Categories</h2>
-{% include "includes/categories-list.njk" %}
+{# 
+<h2>Tags</h2>
+{% include "includes/tags-list.njk" %}
 
 <h2>All Posts</h2>
+ #}
 {% set posts = collections.posts %}
 {% include "includes/post-list.njk" %}
 
-{% postGraph collections.posts %}
+{% postGraph posts %}
