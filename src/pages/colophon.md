@@ -10,7 +10,7 @@ Popover footnotes (like the ones above) are powered by [bigfoot.js](https://gith
 
 [Email subscriptions](/subscribe/) are powered by [Buttondown](https://buttondown.email/refer/seanlunsford).
 
-The post graph at the bottom of the [archive](/archive/) is Robb Knight’s [Eleventy Post Graph](https://postgraph.rknight.me/) plugin.
+The post graph at the bottom of the [archive](/archive/) and [tag](/tag/technology/) pages is Robb Knight’s [Eleventy Post Graph](https://postgraph.rknight.me/) plugin.
 
 ## Typography
 Web fonts are by [ArrowType](https://www.arrowtype.com/):
