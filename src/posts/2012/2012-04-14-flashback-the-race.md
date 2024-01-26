@@ -3,9 +3,9 @@ title: The Race
 slug: flashback-the-race
 date: 2012-04-14T14:12:07.000Z
 date_updated: 2020-02-12T11:30:21.000Z
-categories: 
+tags: 
   - "Christianity"
-tags: highlights
+  - Highlights
 ---
 
 *In my first post I mentioned a couple things that had come to me that would’ve made good blog posts—the problem being I didn’t have a blog. This is one of them. It has been a Facebook note since its conception in October 2010, and seeing as I haven’t posted here in a while, I decided it was time to promote it to a real blog post. I’ve resisted the urge to make any changes, so here it is in its original, unaltered, state. I also will take this chance to say I have a couple ideas bouncing around in my head for new posts. Maybe once they’ve developed further I’ll get something original up here again.*

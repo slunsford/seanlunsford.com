@@ -3,7 +3,7 @@ title: "Missing Out: a response to “Look Up” and the argument that my iPhone
 slug: missing-out
 date: 2014-05-04T18:02:35.000Z
 date_updated: 2019-03-24T15:07:51.000Z
-categories: "Technology"
+tags: "Technology"
 ---
 
 So this post is a bit different from what I usually write here, but I’m feeling the need to get on a soapbox about something I’m seeing a lot of these days. It’s probably not what you might think. It’s about attitudes about our use of technology, and people’s fear of it turning us all into zombies at worst, or poor wretched souls with no life who will one day die alone, at best.

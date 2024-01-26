@@ -3,7 +3,7 @@ title: Because the Internet Isn’t Crowded Enough as It Is
 slug: because-the-internet-isnt-crowded-enough-as-it-is
 date: 2012-03-03T18:33:29.000Z
 date_updated: 2020-02-07T10:18:07.000Z
-categories: "Blogging"
+tags: "Blogging"
 ---
 
 The first thought of starting a blog came to me over a year ago. God spoke to me a couple different times, within a few weeks of each other, specifically showing me things that were meant to be shared. They ended up as notes on Facebook. But it got me thinking. What I really wanted to do was code the site from the ground up myself, as well as write the posts. It was a cool way to bring together two interests of mine. But being an engineering major, I just don’t have the time to do both. And so the idea ended up on a back burner for well over a year, coming to mind once in a while, but as something that I would just have to do one day when I have time to do it.

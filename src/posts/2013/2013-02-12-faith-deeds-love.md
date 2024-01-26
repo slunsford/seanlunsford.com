@@ -3,7 +3,7 @@ title: Scripture on Faith, Deeds, and Love
 slug: faith-deeds-love
 date: 2013-02-12T13:22:41.000Z
 date_updated: 2020-02-12T11:16:29.000Z
-categories: "Christianity"
+tags: "Christianity"
 ---
 
 A couple of well-known verses have been on my mind since my post, “[Setting things straight](/2013/setting-things-straight/)”:

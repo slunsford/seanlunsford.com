@@ -3,7 +3,7 @@ title: Checkmate
 slug: checkmate
 date: 2014-04-03T10:45:56.000Z
 date_updated: 2017-12-01T16:57:18.000Z
-categories: "Christianity"
+tags: "Christianity"
 ---
 
 Tuesday is my fullest day of the week this semester, followed closely by Thursday. Both days I have back-to-back classes from 8 to 4:45, except for a break between 10:45 and 12:30. On Tuesdays I go straight to work at 5, and don’t get off until after 9.

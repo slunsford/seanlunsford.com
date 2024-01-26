@@ -5,7 +5,7 @@ date: 2020-02-24T15:12:41.000Z
 date_updated: 2021-06-27T11:56:12.000Z
 featured_image: "/assets/img/doctor-who-regeneration.jpg"
 featured_image_alt: "The Twelfth Doctor regenerates."
-categories: 
+tags: 
   - "Life"
   - "Yearly Themes"
 ---

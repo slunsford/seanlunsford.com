@@ -1,17 +1,17 @@
 .post-list,
-.categories-list {
+.tags-list {
   list-style: none;
   padding: 0;
 }
 
-.post-list-item,
-.categories-list-item {
+.post-list li,
+.tags-list li {
   align-items: baseline;
   counter-increment: start-from -1;
   margin-bottom: 0.5rem;
 }
 
 .post-list-title,
-.categories-list-title {
+.tags-list .post-tag {
   font-weight: 600;
 }

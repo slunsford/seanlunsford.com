@@ -3,7 +3,7 @@ title: Priorities
 slug: priorities
 date: 2012-05-31T01:10:09.000Z
 date_updated: 2017-12-19T02:50:30.000Z
-categories: "Christianity"
+tags: "Christianity"
 ---
 
 **[Disclaimer: if you’re looking for something clean and family-friendly, this is not it. I’m dealing with a tough and messy topic that needs to be addressed]**
