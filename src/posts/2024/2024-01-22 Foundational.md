@@ -1,6 +1,6 @@
 ---
 title: Foundational
-date: 2023-01-22 22:50:00 +3
+date: 2024-01-22 22:50:00 +3
 draft: true
 tags:
   - Yearly Themes
