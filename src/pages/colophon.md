@@ -3,12 +3,12 @@ title: Colophon
 ---
 This website is built with [Eleventy](https://www.11ty.dev/) and deployed on [Cloudflare Pages](https://pages.cloudflare.com/). The source code is on [GitHub](https://github.com/slunsford/seanlunsford.com).
 
+[Email subscriptions](/subscribe/) are powered by [Buttondown](https://buttondown.email/refer/seanlunsford).
+
 Previous versions of this site have been on self-hosted [Ghost](https://ghost.org/)[^ghost] and, before that, [WordPress](https://wordpress.com/).[^wp]
 
 ## Dependencies
 Popover footnotes (like the ones above) are powered by [bigfoot.js](https://github.com/lemonmade/bigfoot).
-
-[Email subscriptions](/subscribe/) are powered by [Buttondown](https://buttondown.email/refer/seanlunsford).
 
 The post graph at the bottom of the [archive](/archive/) and [tag](/tag/technology/) pages is Robb Knight’s [Eleventy Post Graph](https://postgraph.rknight.me/) plugin.
 

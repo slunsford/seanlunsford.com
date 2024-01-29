@@ -80,6 +80,7 @@ ol {
   line-height: 1.45;
   -webkit-hyphens: auto;
   hyphens: auto;
+  text-wrap: pretty;
   hanging-punctuation: first;
   font-family: var(--sans-text);
 }
