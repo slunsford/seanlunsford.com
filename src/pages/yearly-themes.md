@@ -3,13 +3,13 @@ title: Yearly Themes
 slug: yearly-themes
 ---
 
-My friend Elias and I have been picking [yearly themes](https://youtu.be/NVGuFdX5guE) on our podcast [since 2018](https://breadcrumbsfm.com/?name=breadcrumbs69.mp3). Starting in 2020, I'm recording those here. For reference/posterity.
+My friend Elias and I have been picking [yearly themes](https://youtu.be/NVGuFdX5guE) on our podcast [since 2018](https://breadcrumbs.fm/69/). Starting in 2020, I'm recording those here. For reference/posterity.
 
 ## 2020: The Year of Regeneration
 
 *Allowing the things that need to to die and finding new life*
 
-- [Breadcrumbs episode](https://breadcrumbsfm.com/?name=breadcrumbs163.mp3)
+- [Breadcrumbs episode](https://breadcrumbs.fm/163/)
 - [Blog post](/2020/regeneration/)
 
 ### Ideal Outcomes

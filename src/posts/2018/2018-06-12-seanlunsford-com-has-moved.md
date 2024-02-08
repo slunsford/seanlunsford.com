@@ -22,4 +22,4 @@ I do have aspirations of starting to write more often again.[^4] So if you want 
 
 [^3]: Tinkering with servers and RSS feeds is a nice change from putting stuff into suitcases, boxes, and trash bags.
 
-[^4]: Though they may be [no more than aspirations](https://breadcrumbsfm.com/?name=breadcrumbs89.mp3).
+[^4]: Though they may be [no more than aspirations](https://breadcrumbs.fm/89/).
