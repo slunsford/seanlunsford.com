@@ -14,6 +14,7 @@
         <title>{{ pageTitle }}</title>
         <meta name="description" content="{{ description or site.description }}">
         
+        {#- OpenGraph metadata #}
         <meta property="og:title" content="{{ pageTitle }}" />
         <meta property="og:description" content="{{ description or site.description }}" />
         <meta property="og:type" content="website" />
@@ -28,7 +29,7 @@
         <link rel="alternate" href="/feed.xml" type="application/atom+xml" title="{{ site.title }}">
         <link rel="alternate" href="/feed.json" type="application/json" title="{{ site.title }}">
         
-        {# Favicons/Apple touch icons #}
+        {#- Favicons/Apple touch icons #}
         <link rel="shortcut icon" href="assets/img/icons/favicon.ico" />
         <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="assets/img/icons/favicon.ico">
         <link rel="icon" sizes="32x32" href="assets/img/icons/favicon-32.png" >
@@ -41,7 +42,7 @@
         <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icons/favicon-180.png">
         <link rel="apple-touch-icon" sizes="192x192" href="assets/img/icons/favicon-192.png">
         
-        {# Bigfoot - popover footnotes #}
+        {#- Bigfoot - popover footnotes #}
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script type="text/javascript" src="/assets/js/bigfoot.js"></script>
         <link rel="stylesheet" type="text/css" href="/assets/css/bigfoot-number.css" />
@@ -49,11 +50,11 @@
             $.bigfoot();
         </script>
         
-        {# Font Awesome icons #}
+        {#- Font Awesome icons #}
         <script src="https://kit.fontawesome.com/8be7adf8bc.js" crossorigin="anonymous"></script>
         
         {# {%- js %}{% include "assets/js/script.js" %}{% endjs %}
-        <script>{% getBundle "js" %}</script> #}
+        <script>{% getBundle "js" %}</script> -#}
         
         <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
 
@@ -64,23 +65,29 @@
 
         <header class="main">
             <section class="site-title"><a href="/" class="home-link">{{ site.title }}</a></section>
-
             {% include "includes/navigation.njk" %}
         </header>
         <main id="skip" class="content" role="main">
             {{ content | safe }}
         </main>
-    	<footer class="main">
-        	<section class="copyright">&copy; 2012–{% year %} Sean Lunsford</section>
-        	<ul class="footer-links">
-            	{# <li class="powered-by"><a href="https://www.11ty.dev/">Made with 11ty</a></li> #}
-            	<li><a href="/feed.xml"><i class="fa-solid fa-square-rss"></i></a></li>
-            	{%if site.github_url %}<li><a rel="me" href="{{ site.github_url }}"><i class="fa-brands fa-github"></i></a></li>{% endif %}
-            	{%if site.author.mastodon_url %}<li><a rel="me" href="{{ site.author.mastodon_url }}"><i class="fa-brands fa-mastodon"></i></a></li>{% endif %}
-            	{%if site.author.threads_url %}<li><a rel="me" href="{{ site.author.threads_url }}"><i class="fa-brands fa-threads"></i></a></li>{% endif %}
-        	</ul>
-    	</footer>
+        <footer class="main">
+            <section class="copyright">&copy; 2012–{% year %} Sean Lunsford</section>
+            <ul class="footer-links">
+                <li><a href="/feed.xml"><i class="fa-solid fa-square-rss"></i></a></li>
+                {%if site.github_url -%}
+                    <li><a rel="me" href="{{ site.github_url }}"><i class="fa-brands fa-github"></i></a></li>
+                {% endif -%}
+                
+                {%if site.author.mastodon_url -%}
+                    <li><a rel="me" href="{{ site.author.mastodon_url }}"><i class="fa-brands fa-mastodon"></i></a></li>
+                {% endif -%}
+                
+                {%if site.author.threads_url -%}
+                    <li><a rel="me" href="{{ site.author.threads_url }}"><i class="fa-brands fa-threads"></i></a></li>
+                {% endif -%}
+            </ul>
+        </footer>
     </body>
-    {# Run script after load #}
-    {# <script>acronyms();</script> #}
+    {#- Run script after load #}
+    {#- <script>acronyms();</script> #}
 </html>

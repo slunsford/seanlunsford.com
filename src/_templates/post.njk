@@ -1,3 +1,8 @@
+---
+layout: base.njk
+permalink: "/{{ page.date | readableDate('yyyy') }}/{{slug or title | slugify}}/"
+---
+
 <article class="post{% if link %} link-post{% endif %}">
     <header class="post-header">
         {% if featured_image -%}
@@ -19,3 +24,7 @@
         {{ content | safe }}
     </section>
 </article>
+
+{% include "includes/subscribe-form.njk" %}
+
+{% include "includes/post-pagination.njk" %}
