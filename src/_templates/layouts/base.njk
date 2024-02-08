@@ -1,27 +1,45 @@
+{%- set pageTitle %}
+    {%- if title -%}
+        {{ title }} | {{ site.title }}
+    {%- else -%}
+        {{ site.title }}
+    {%- endif -%}
+{% endset -%}
+
 <!doctype html>
-<html lang="{{ metadata.language }}">
+<html lang="{{ site.language }}">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{% if title %}{{ title }} |&nbsp;{% endif %}{{ metadata.title }}</title>
-        <meta name="description" content="{{ description or metadata.description }}">
+        <title>{{ pageTitle }}</title>
+        <meta name="description" content="{{ description or site.description }}">
+        
+        <meta property="og:title" content="{{ pageTitle }}" />
+        <meta property="og:description" content="{{ description or site.description }}" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="{{ site.url }}" />
+        {% if featured_image -%}
+            <meta property="og:image" content="{{ featured_image }}">
+        {% else -%}
+            <meta property="og:image" content="/assets/img/opengraph.png">
+        {% endif %}
 
         {#- Atom and JSON feeds included by default #}
-        <link rel="alternate" href="/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
-        <link rel="alternate" href="/feed.json" type="application/json" title="{{ metadata.title }}">
+        <link rel="alternate" href="/feed.xml" type="application/atom+xml" title="{{ site.title }}">
+        <link rel="alternate" href="/feed.json" type="application/json" title="{{ site.title }}">
         
         {# Favicons/Apple touch icons #}
-        <link rel="shortcut icon" href="assets/img/favicons/favicon.ico" />
-        <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="assets/img/favicons/favicon.ico">
-        <link rel="icon" sizes="32x32" href="assets/img/favicons/favicon-32.png" >
-        <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/favicon-57.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/favicon-72.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/favicon-114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/favicon-120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/favicon-144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/favicon-152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/favicon-180.png">
-        <link rel="apple-touch-icon" sizes="192x192" href="assets/img/favicons/favicon-192.png">
+        <link rel="shortcut icon" href="assets/img/icons/favicon.ico" />
+        <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="assets/img/icons/favicon.ico">
+        <link rel="icon" sizes="32x32" href="assets/img/icons/favicon-32.png" >
+        <link rel="apple-touch-icon" sizes="57x57" href="assets/img/icons/favicon-57.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/img/icons/favicon-72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/img/icons/favicon-114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="assets/img/icons/favicon-120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="assets/img/icons/favicon-144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="assets/img/icons/favicon-152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icons/favicon-180.png">
+        <link rel="apple-touch-icon" sizes="192x192" href="assets/img/icons/favicon-192.png">
         
         {# Bigfoot - popover footnotes #}
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -45,7 +63,7 @@
         <a href="#skip" class="visually-hidden">Skip to main content</a>
 
         <header class="main">
-            <section class="site-title"><a href="/" class="home-link">{{ metadata.title }}</a></section>
+            <section class="site-title"><a href="/" class="home-link">{{ site.title }}</a></section>
 
             {% include "includes/navigation.njk" %}
         </header>
@@ -57,9 +75,9 @@
         	<ul class="footer-links">
             	{# <li class="powered-by"><a href="https://www.11ty.dev/">Made with 11ty</a></li> #}
             	<li><a href="/feed.xml"><i class="fa-solid fa-square-rss"></i></a></li>
-            	{%if metadata.github_url %}<li><a rel="me" href="{{ metadata.github_url }}"><i class="fa-brands fa-github"></i></a></li>{% endif %}
-            	{%if metadata.author.mastodon_url %}<li><a rel="me" href="{{ metadata.author.mastodon_url }}"><i class="fa-brands fa-mastodon"></i></a></li>{% endif %}
-            	{%if metadata.author.threads_url %}<li><a rel="me" href="{{ metadata.author.threads_url }}"><i class="fa-brands fa-threads"></i></a></li>{% endif %}
+            	{%if site.github_url %}<li><a rel="me" href="{{ site.github_url }}"><i class="fa-brands fa-github"></i></a></li>{% endif %}
+            	{%if site.author.mastodon_url %}<li><a rel="me" href="{{ site.author.mastodon_url }}"><i class="fa-brands fa-mastodon"></i></a></li>{% endif %}
+            	{%if site.author.threads_url %}<li><a rel="me" href="{{ site.author.threads_url }}"><i class="fa-brands fa-threads"></i></a></li>{% endif %}
         	</ul>
     	</footer>
     </body>
