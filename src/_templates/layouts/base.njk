@@ -1,14 +1,14 @@
 <!doctype html>
-<html lang="{{ metadata.language }}">
+<html lang="{{ site.language }}">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{% if title %}{{ title }} |&nbsp;{% endif %}{{ metadata.title }}</title>
-        <meta name="description" content="{{ description or metadata.description }}">
+        <title>{% if title %}{{ title }} |&nbsp;{% endif %}{{ site.title }}</title>
+        <meta name="description" content="{{ description or site.description }}">
 
         {#- Atom and JSON feeds included by default #}
-        <link rel="alternate" href="/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
-        <link rel="alternate" href="/feed.json" type="application/json" title="{{ metadata.title }}">
+        <link rel="alternate" href="/feed.xml" type="application/atom+xml" title="{{ site.title }}">
+        <link rel="alternate" href="/feed.json" type="application/json" title="{{ site.title }}">
         
         {# Favicons/Apple touch icons #}
         <link rel="shortcut icon" href="assets/img/favicons/favicon.ico" />
@@ -45,7 +45,7 @@
         <a href="#skip" class="visually-hidden">Skip to main content</a>
 
         <header class="main">
-            <section class="site-title"><a href="/" class="home-link">{{ metadata.title }}</a></section>
+            <section class="site-title"><a href="/" class="home-link">{{ site.title }}</a></section>
 
             {% include "includes/navigation.njk" %}
         </header>
@@ -57,9 +57,9 @@
         	<ul class="footer-links">
             	{# <li class="powered-by"><a href="https://www.11ty.dev/">Made with 11ty</a></li> #}
             	<li><a href="/feed.xml"><i class="fa-solid fa-square-rss"></i></a></li>
-            	{%if metadata.github_url %}<li><a rel="me" href="{{ metadata.github_url }}"><i class="fa-brands fa-github"></i></a></li>{% endif %}
-            	{%if metadata.author.mastodon_url %}<li><a rel="me" href="{{ metadata.author.mastodon_url }}"><i class="fa-brands fa-mastodon"></i></a></li>{% endif %}
-            	{%if metadata.author.threads_url %}<li><a rel="me" href="{{ metadata.author.threads_url }}"><i class="fa-brands fa-threads"></i></a></li>{% endif %}
+            	{%if site.github_url %}<li><a rel="me" href="{{ site.github_url }}"><i class="fa-brands fa-github"></i></a></li>{% endif %}
+            	{%if site.author.mastodon_url %}<li><a rel="me" href="{{ site.author.mastodon_url }}"><i class="fa-brands fa-mastodon"></i></a></li>{% endif %}
+            	{%if site.author.threads_url %}<li><a rel="me" href="{{ site.author.threads_url }}"><i class="fa-brands fa-threads"></i></a></li>{% endif %}
         	</ul>
     	</footer>
     </body>
