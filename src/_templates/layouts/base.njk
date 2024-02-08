@@ -1,10 +1,28 @@
+{%- set pageTitle %}
+    {%- if title -%}
+        {{ title }} |&nbsp;{{ site.title }}
+    {%- else -%}
+        {{ site.title }}
+    {%- endif -%}
+{% endset -%}
+
 <!doctype html>
 <html lang="{{ site.language }}">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{% if title %}{{ title }} |&nbsp;{% endif %}{{ site.title }}</title>
+        <title>{{ pageTitle }}</title>
         <meta name="description" content="{{ description or site.description }}">
+        
+        <meta property="og:title" content="{{ pageTitle }}" />
+        <meta property="og:description" content="{{ description or site.description }}" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="{{ site.url }}" />
+        {% if featured_image -%}
+            <meta property="og:image" content="{{ featured_image }}">
+        {% else -%}
+            <meta property="og:image" content="/assets/img/og.png">
+        {% endif %}
 
         {#- Atom and JSON feeds included by default #}
         <link rel="alternate" href="/feed.xml" type="application/atom+xml" title="{{ site.title }}">
