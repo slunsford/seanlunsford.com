@@ -1,5 +1,4 @@
 const { DateTime } = require("luxon");
-const markdownItAnchor = require("markdown-it-anchor");
 const markdownItFootnote = require("markdown-it-footnote");
 
 const postGraph = require('@rknightuk/eleventy-plugin-post-graph');
@@ -82,16 +81,6 @@ module.exports = function(eleventyConfig) {
     // Customize Markdown library settings:
     eleventyConfig.amendLibrary("md", mdLib => {
         mdLib.enable("code");
-        // mdLib.use(markdownItAnchor, {
-        //     permalink: markdownItAnchor.permalink.ariaHidden({
-        //         placement: "after",
-        //         class: "header-anchor",
-        //         symbol: "#",
-        //         ariaHidden: false,
-        //     }),
-        //     level: [1,2,3,4],
-        //     slugify: eleventyConfig.getFilter("slugify")
-        // });
         mdLib.use(markdownItFootnote);
     });
 
