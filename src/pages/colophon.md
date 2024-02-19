@@ -18,7 +18,7 @@ Web fonts are by [ArrowType](https://www.arrowtype.com/):
 - [Name Mono](https://www.arrowtype.com/name-mono)
 - [Lang](https://www.arrowtype.com/lang)
 
-I use [Modern Font Stacks](https://modernfontstacks.com/) for fallback fonts.
+Fallback fonts use [Modern Font Stacks](https://modernfontstacks.com/).
 
 [^ghost]: This current design is an evolution of the custom theme I wrote for my Ghost blog.
 
