@@ -78,6 +78,11 @@ module.exports = function(eleventyConfig) {
         return (tags || []).filter(tag => ["all", "nav", "post", "posts", "pages"].indexOf(tag) === -1);
     });
     
+    // Link posts collection
+	eleventyConfig.addCollection("linkPosts", function (collection) {
+		return collection.getAll().filter((item) => item.data.link);
+	});
+    
     // Customize Markdown library settings:
     eleventyConfig.amendLibrary("md", mdLib => {
         mdLib.enable("code");
