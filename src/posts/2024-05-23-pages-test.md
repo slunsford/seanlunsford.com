@@ -6,6 +6,7 @@ tags:
   - Technology
   - Blogging
 date_updated: 2024-05-23
+featured_image: /assets/img/keyboard.jpeg
 excerpt: This is a test post created in the Pages CMS.
 ---
 _This is a test post created in the Pages CMS._
