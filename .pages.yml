@@ -54,3 +54,6 @@ content:
           - name: order
             label: Order
             type: number
+      - name: body
+        label: Body
+        type: rich-text
