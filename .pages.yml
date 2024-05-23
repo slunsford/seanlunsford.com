@@ -67,6 +67,7 @@ content:
           rows: 3
   - name: pages
     label: Pages
+    icon: panel-top
     path: src/pages
     type: collection
     view:
