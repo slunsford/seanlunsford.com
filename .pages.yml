@@ -14,7 +14,7 @@ content:
         type: string
       - name: slug
         label: Slug
-        type: text
+        type: string
       - name: date
         label: Date
         type: date
@@ -38,4 +38,4 @@ content:
         type: string
       - name: slug
         label: Slug
-        type: text
+        type: string
