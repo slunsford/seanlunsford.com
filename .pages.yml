@@ -1,0 +1,17 @@
+media:
+  input: assets/img
+  output: /assets/img
+content:
+  - name: posts
+    label: Posts
+    path: src/posts
+    type: collection
+    fields:
+      - title
+      - date
+      - draft
+      - tags
+  - name: pages
+    label: Pages
+    path: src/pages
+    type: collection
