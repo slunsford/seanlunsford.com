@@ -131,7 +131,7 @@ content:
           - name: threads_url
             label: Threads URL
             type: string
-            pattern: ^(https?:\/\/)?www.threads.net(\/[^\s]*)?$
+            pattern: ^(https?:\/\/)?www.threads.net\/@[^\s]+$
           - name: github_url
             label: GitHub URL
             type: string
