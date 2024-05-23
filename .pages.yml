@@ -85,7 +85,7 @@ content:
         type: object
         fields:
           - name: key
-            label: Navigation label
+            label: Label
             type: string
           - name: order
             label: Order
