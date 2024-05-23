@@ -95,7 +95,7 @@ content:
         type: rich-text
   - name: site
     label: Site settings
-    icon: settings
+    icon: settings-2
     type: file
     path: _data/site.json
     fields:
