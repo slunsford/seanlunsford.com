@@ -7,8 +7,8 @@ content:
     path: src/posts
     type: collection
     view: 
-      fields: [title, date, draft]
-      sort: [title, date, draft]
+      fields: [title, draft, date]
+      sort: [date, title, draft]
     fields:
       - name: title
         label: Title
