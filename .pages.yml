@@ -29,4 +29,10 @@ content:
     label: Pages
     path: src/pages
     type: collection
-    fields: [title]
+    view:
+      fields: [title]
+      sort: [title]
+    fields:
+      - name: title
+        label: Title
+        type: string
