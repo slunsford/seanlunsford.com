@@ -36,7 +36,7 @@ content:
     type: collection
     view:
       fields: [title, slug]
-      sort: [title]
+      sort: [title, eleventyNavigation.order]
     fields:
       - name: title
         label: Title
