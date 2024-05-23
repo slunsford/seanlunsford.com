@@ -1,0 +1,141 @@
+media:
+  input: assets/img
+  output: /assets/img
+content:
+  - name: posts
+    label: Posts
+    path: src/posts
+    type: collection
+    # subfolders: false
+    filename: '{year}-{month}-{day}-{primary}.md'
+    view: 
+      fields: [title, draft, date]
+      sort: [date, title, draft]
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: date
+        label: Date
+        type: date
+        options:
+          time: true
+          format: YYYY-MM-DDTHH:mm:ss Z
+          step: 60
+      - name: draft
+        label: Draft
+        type: boolean
+        default: false
+      - name: body
+        label: Body
+        type: rich-text
+      - name: slug
+        label: Slug
+        type: string
+      - name: tags
+        label: Tags
+        type: select
+        list: true
+        options:
+          values:
+            - Highlights
+            - Blogging
+            - Christianity
+            - Life
+            - Technology
+            - Yearly Themes
+      - name: date_updated
+        label: Date
+        type: date
+        options:
+          time: true
+          format: YYYY-MM-DDTHH:mm:ss Z
+          step: 60
+      - name: featured_image
+        label: Featured image
+        type: image
+      - name: featured_image_alt
+        label: Featured image alt text
+        type: text
+        options:
+          rows: 2
+      - name: excerpt
+        label: Excerpt
+        type: text
+        options:
+          rows: 3
+  - name: pages
+    label: Pages
+    icon: panel-top
+    path: src/pages
+    type: collection
+    view:
+      fields: [title, slug]
+      sort: [title, eleventyNavigation.order]
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: slug
+        label: Slug
+        type: string
+      - name: eleventyNavigation
+        label: Navigation
+        type: object
+        fields:
+          - name: key
+            label: Label
+            type: string
+          - name: order
+            label: Order
+            type: number
+      - name: body
+        label: Body
+        type: rich-text
+  - name: site
+    label: Site settings
+    icon: file-cog
+    type: file
+    path: _data/site.json
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: url
+        label: Website URL
+        type: string
+        pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$
+      - name: github_url
+        label: GitHub URL
+        type: string
+        pattern: ^(https?:\/\/)?github.com(\/[^\s]*)?$
+      - name: author
+        label: Author
+        type: object
+        fields:
+          - name: name
+            label: Name
+            type: string
+          - name: email
+            label: Email address
+            type: string
+            pattern: ^[a-zA-Z0-9.-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}
+          - name: url
+            label: URL
+            type: string
+            pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$
+          - name: mastodon_url
+            label: Mastodon URL
+            type: string
+            pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$
+          - name: threads_url
+            label: Threads URL
+            type: string
+            default: https://www.threads.net/
+            pattern: ^(https?:\/\/)?www.threads.net\/@[^\s]+$
+          - name: github_url
+            label: GitHub URL
+            type: string
+            default: https://github.com/
+            pattern: ^(https?:\/\/)?github.com(\/[^\s]*)?$
