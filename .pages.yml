@@ -44,3 +44,13 @@ content:
       - name: slug
         label: Slug
         type: string
+      - name: eleventyNavigation
+        label: Navigation
+        type: object
+        fields:
+          - name: key
+            label: Menu item
+            type: string
+          - name: order
+            label: Order
+            type: number
