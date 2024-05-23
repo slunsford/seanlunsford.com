@@ -15,3 +15,5 @@ content:
     label: Pages
     path: src/pages
     type: collection
+    fields:
+     - title
