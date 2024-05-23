@@ -7,7 +7,7 @@ content:
     path: src/posts
     type: collection
     view: 
-      fields: [title, date, draft, tags]
+      fields: [title, date, draft]
     fields:
       - name: draft
         label: Draft
