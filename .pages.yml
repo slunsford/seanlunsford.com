@@ -20,6 +20,8 @@ content:
         type: date
         options:
           time: true
+          format: YYYY-MM-DDTHH:mm:ss Z
+          step: 60
       - name: draft
         label: Draft
         type: boolean
