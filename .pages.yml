@@ -39,10 +39,12 @@ content:
         label: Featured image alt text
         type: text
         options:
-          rows: 3
+          rows: 2
       - name: excerpt
         label: Excerpt
         type: text
+        options:
+          rows: 3
   - name: pages
     label: Pages
     path: src/pages
