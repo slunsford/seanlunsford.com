@@ -30,9 +30,12 @@ content:
     path: src/pages
     type: collection
     view:
-      fields: [title]
+      fields: [title, slug]
       sort: [title]
     fields:
       - name: title
         label: Title
         type: string
+      - name: slug
+        label: Slug
+        type: text
