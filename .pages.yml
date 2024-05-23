@@ -15,6 +15,7 @@ content:
       - name: title
         label: Title
         type: string
+        required: true
       - name: date
         label: Date
         type: date
@@ -32,6 +33,13 @@ content:
       - name: slug
         label: Slug
         type: string
+      - name: date_updated
+        label: Date
+        type: date
+        options:
+          time: true
+          format: YYYY-MM-DDTHH:mm:ss Z
+          step: 60
       - name: featured_image
         label: Featured image
         type: image
