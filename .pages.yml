@@ -93,3 +93,42 @@ content:
       - name: body
         label: Body
         type: rich-text
+  - name: site
+    label: Site settings
+    type: file
+    path: _data/site.json
+    fields:
+      - name: title
+        label: Website title
+        type: string
+      - name: url
+        label: Website URL
+        type: string
+        pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$
+      - name: github_url
+        label: GitHub URL
+        type: string
+        pattern: ^(https?:\/\/)?github.com(\/[^\s]*)?$
+      - name: author
+        label: Author
+        type: object
+        fields:
+          - name: name
+            label: Name
+            type: string
+          - name: email
+            label: Email address
+            type: string
+            pattern: ^[a-zA-Z0-9.-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}
+          - name: url
+            label: URL
+            type: string
+            pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$
+          - name: mastodon_url
+            label: Mastodon URL
+            type: string
+            pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$
+          - name: github_url
+            label: GitHub URL
+            type: string
+            pattern: ^(https?:\/\/)?github.com(\/[^\s]*)?$
