@@ -100,7 +100,7 @@ content:
     path: _data/site.json
     fields:
       - name: title
-        label: Website title
+        label: Title
         type: string
       - name: url
         label: Website URL
