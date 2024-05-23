@@ -35,6 +35,8 @@ content:
       - name: featured_image_alt
         label: Featured image alt text
         type: text
+        options:
+          lines: 3
       - name: excerpt
         label: Excerpt
         type: text
