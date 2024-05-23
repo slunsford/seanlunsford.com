@@ -29,6 +29,15 @@ content:
         label: Draft
         type: boolean
         default: false
+      - name: featured_image
+        label: Featured image
+        type: image
+      - name: featured_image_alt
+        label: Featured image alt text
+        type: text
+      - name: excerpt
+        label: Excerpt
+        type: text
       - name: body
         label: Body
         type: rich-text
