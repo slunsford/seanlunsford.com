@@ -6,14 +6,9 @@ content:
     label: Posts
     path: src/posts
     type: collection
-    fields:
-      - title
-      - date
-      - draft
-      - tags
+    fields: [title, date, draft, tags]
   - name: pages
     label: Pages
     path: src/pages
     type: collection
-    fields:
-     - title
+    fields: [title]
