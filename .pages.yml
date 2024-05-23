@@ -38,6 +38,7 @@ content:
         type: select
         options:
           values: [Christianity, Technology, Blogging, Life, Yearly Themes, Highlights]
+          list: true
       - name: date_updated
         label: Date
         type: date
