@@ -2,6 +2,7 @@
 title: Pages Test
 date: 2024-05-23T18:00:00 +03:00
 draft: false
+tags: Blogging
 date_updated: 2024-05-23
 excerpt: This is a test post created in the Pages CMS.
 ---
