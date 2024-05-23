@@ -35,7 +35,6 @@ content:
         type: string
       - name: tags
         label: Tags
-        type: select
         options:
           values: [Christianity, Technology, Blogging, Life, Yearly Themes, Highlights]
       - name: date_updated
