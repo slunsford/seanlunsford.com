@@ -8,6 +8,7 @@ content:
     type: collection
     view: 
       fields: [title, date, draft]
+      sort: [title, date, draft]
     fields:
       - name: title
         label: Title
