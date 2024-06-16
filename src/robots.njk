@@ -2,10 +2,6 @@
 permalink: /robots.txt
 eleventyExcludeFromCollections: true
 ---
-User-agent: GPTBot
-Disallow: /
-
-User-agent: ChatGPT-User
-Disallow: /
+{% include "includes/ai.robots.txt/robots.txt" %}
 
 Sitemap: {{ site.url }}/sitemap.xml
