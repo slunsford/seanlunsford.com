@@ -124,22 +124,18 @@ content:
           - name: url
             label: URL
             type: string
-            required: false
-            pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$
+            pattern: (^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$)?
           - name: mastodon_url
             label: Mastodon URL
             type: string
-            required: false
-            pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$
+            pattern: (^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$)?
           - name: threads_url
             label: Threads URL
             type: string
-            required: false
             default: https://www.threads.net/
-            pattern: ^(https?:\/\/)?www.threads.net\/@[^\s]+$
+            pattern: (^(https?:\/\/)?www.threads.net\/@[^\s]+$)?
           - name: github_url
             label: GitHub URL
             type: string
-            required: false
             default: https://github.com/
-            pattern: ^(https?:\/\/)?github.com(\/[^\s]*)?$
+            pattern: (^(https?:\/\/)?github.com(\/[^\s]*)?$)?
