@@ -70,6 +70,7 @@ content:
     icon: panel-top
     path: src/pages
     type: collection
+    filename: '{primary}.md'
     view:
       fields: [title, slug]
     fields:
