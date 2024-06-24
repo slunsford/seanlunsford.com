@@ -73,6 +73,8 @@ content:
     filename: '{primary}.md'
     view:
       fields: [title, slug]
+      default:
+        order: asc
     fields:
       - name: title
         label: Title
