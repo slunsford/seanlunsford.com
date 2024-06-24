@@ -96,7 +96,7 @@ content:
         label: Title
         type: string
       - name: url
-        label: URL/slug
+        label: URL
         type: string
         pattern: ^((https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})?(\/[^\s]*\/?)?$
   - name: site
