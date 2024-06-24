@@ -3,7 +3,8 @@
     <h2 class="visually-hidden">Top level navigation menu</h2>
     <ul class="nav">
     {%- for entry in nav %}
-        <li class="nav-item{% if entry.url == page.url %} nav-current{% endif %}"><a href="{{ entry.url }}">{{ entry.title }}</a></li>
+        {% set absoluteEntryURL = entry.url | htmlBaseUrl(site.url) %}
+        <li class="nav-item{% if absoluteEntryURL == page.url %} nav-current{% endif %}"><a href="{{ entry.url }}">{{ entry.title }}</a></li>
     {%- endfor %}
     </ul>
 </nav>
