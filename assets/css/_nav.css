@@ -32,10 +32,10 @@
   opacity: 75%;
 }
 
-a.nav-current {
+.nav-current a {
   color: var(--accent-color);
 }
 
-a.nav-home {
+.nav-home a {
   color: var(--secondary-text-color);
 }
