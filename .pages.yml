@@ -89,7 +89,7 @@ content:
     label: Site settings
     icon: file-cog
     type: file
-    path: _data/site.json
+    path: _data/site.yaml
     fields:
       - name: title
         label: Title
