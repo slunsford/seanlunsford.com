@@ -57,7 +57,7 @@ content:
         type: object
         fields:
           - name: url
-            label: URL
+            label: Image
             type: image
           - name: alt
             label: Alt text
