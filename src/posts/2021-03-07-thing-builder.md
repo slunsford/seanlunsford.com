@@ -4,8 +4,9 @@ slug: thing-builder
 link: https://gist.github.com/slunsford/d19956fc8fbbbd9a9959b30275d1ef9e
 date: 2021-03-07T15:17:58.000Z
 date_updated: 2021-03-27T19:45:59.000Z
-featured_image: "/assets/img/thing-builder.png"
-featured_image_alt: "A screenshot of the first few blocks of the Thing Builder shortcut on an iPad"
+featured_image:
+  url: "/assets/img/thing-builder.png"
+  alt: "A screenshot of the first few blocks of the Thing Builder shortcut on an iPad"
 tags: "Technology"
 ---
 

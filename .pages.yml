@@ -54,12 +54,16 @@ content:
           step: 60
       - name: featured_image
         label: Featured image
-        type: image
-      - name: featured_image_alt
-        label: Featured image alt text
-        type: text
-        options:
-          rows: 2
+        type: object
+        fields:
+          - name: url
+            label: Image
+            type: image
+          - name: alt
+            label: Alt text
+            type: text
+            options:
+              rows: 2
       - name: excerpt
         label: Excerpt
         type: text

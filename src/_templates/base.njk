@@ -20,7 +20,7 @@
         <meta property="og:type" content="website" />
         <meta property="og:url" content="{{ site.url }}" />
         {% if featured_image -%}
-            <meta property="og:image" content="{{ featured_image }}">
+            <meta property="og:image" content="{{ featured_image.url }}">
         {% else -%}
             <meta property="og:image" content="/assets/img/opengraph.png">
         {% endif %}
