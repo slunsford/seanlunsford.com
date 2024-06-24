@@ -1,5 +1,6 @@
 const { DateTime } = require("luxon");
 const markdownItFootnote = require("markdown-it-footnote");
+const yaml = require("js-yaml");
 
 const postGraph = require('@rknightuk/eleventy-plugin-post-graph');
 const pluginRss = require("@11ty/eleventy-plugin-rss");
@@ -77,6 +78,8 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
         return (tags || []).filter(tag => ["all", "nav", "post", "posts", "pages"].indexOf(tag) === -1);
     });
+    
+    eleventyConfig.addDataExtension("yml, yaml", (contents) => yaml.load(contents));
     
     // Link posts collection
 	eleventyConfig.addCollection("linkPosts", function (collection) {

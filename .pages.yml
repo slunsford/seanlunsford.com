@@ -72,7 +72,6 @@ content:
     type: collection
     view:
       fields: [title, slug]
-      sort: [title, eleventyNavigation.order]
     fields:
       - name: title
         label: Title
@@ -80,16 +79,6 @@ content:
       - name: slug
         label: Slug
         type: string
-      - name: eleventyNavigation
-        label: Navigation
-        type: object
-        fields:
-          - name: key
-            label: Label
-            type: string
-          - name: order
-            label: Order
-            type: number
       - name: body
         label: Body
         type: rich-text

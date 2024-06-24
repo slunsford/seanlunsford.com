@@ -1,8 +1,5 @@
 ---
 title: Projects
-eleventyNavigation:
-  key: Projects
-  order: 2
 ---
 
 I’m a serial starter of side projects.
