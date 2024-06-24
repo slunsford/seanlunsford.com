@@ -2,7 +2,7 @@
 title: About Me
 slug: about
 ---
-I’m a digital nomad currently based in Antalya, Türkiye, with my wife, daughter, and son. I’m an [adult TCK](https://en.wikipedia.org/wiki/Third_culture_kid) who spent eight years back in the United States (four in college; four after) before [returning to Asia](/2018/eleven-days/).
+I’m a digital nomad currently based in Antalya, Türkiye, with my wife, daughter, and son. I’m an [ATCK](https://en.wikipedia.org/wiki/Third_culture_kid) who spent eight years back in the United States (four in college; four after) before [returning to Asia](/2018/eleven-days/).
 
 ## Work
 
@@ -10,6 +10,4 @@ I’m an [analytics engineer](https://www.getdbt.com/what-is-analytics-engineeri
 
 ## Interests
 
-I enjoy the intersection of technology and creativity, with a trail of [current and past projects](/projects/) to show for it. I’ve done photography and videography—as a [hobby](/2023/365/) and as a [side gig](https://lunsford.tech/). I had a [podcast](https://breadcrumbs.fm) that lasted 4 years. I’ve been running sound for church and occasionally other live events since college. I taught myself the basics of web development in middle school and have continued to code ever since—including the current and previous versions of this blog.
-
-The juicy details about this site are over on the [colophon](/colophon/).
+I enjoy the intersection of technology and creativity, with a trail of [current and past projects](/projects/) to show for it. I’m into photography and videography—as a [hobby](/2023/365/) and as a [side gig](https://lunsford.tech/). I had a [podcast](https://breadcrumbs.fm) that lasted 4 years. I’ve been running sound for church and occasionally other live events since college. I taught myself the basics of web development in middle school and have continued to code ever since—including the current and previous versions of this blog. (For more technical details about the site, check out the [colophon](/colophon/).)
