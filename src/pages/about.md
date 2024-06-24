@@ -1,9 +1,5 @@
 ---
 title: About Me
-slug: about
-eleventyNavigation:
-  key: About
-  order: 1
 ---
 I’m a digital nomad currently based in Antalya, Türkiye, with my wife, daughter, and a son on the way. I’m an [adult TCK](https://en.wikipedia.org/wiki/Third_culture_kid) who spent eight years back in the United States (four in college; four after) before [returning to Asia](/2018/eleven-days/).
 

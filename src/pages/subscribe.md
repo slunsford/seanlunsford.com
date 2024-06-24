@@ -1,8 +1,5 @@
 ---
 title: Subscribe
-eleventyNavigation:
-  key: Subscribe
-  order: 4
 ---
 
 Subscribe via [RSS](/feed.xml) or [JSON Feed](/feed.json) or enter your email below to get new posts delivered to your inbox.
