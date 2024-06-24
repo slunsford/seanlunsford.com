@@ -1,7 +1,7 @@
 {
   "name": "seanlunsford.com",
   "version": "1.0.0",
-  "description": "Sean's website built on [Eleventy](https://www.11ty.dev/) ([v2](https://www.11ty.dev/blog/eleventy-v2/)).",
+  "description": "Sean's website built on Eleventy",
   "main": "index.js",
   "scripts": {
     "build": "npx @11ty/eleventy",
