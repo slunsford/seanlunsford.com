@@ -4,7 +4,7 @@
     <ul class="nav">
     {%- for entry in nav %}
         {% set entryUrlWithSlash = entry.url + '/' %}
-        <li class="nav-item{% if entry.url == page.url or entryUrlWithSlash | log == page.url %} nav-current{% endif %}"><a href="{{ entry.url }}">{{ entry.title }}</a></li>
+        <li class="nav-item{% if entry.url == page.url or entryUrlWithSlash == page.url %} nav-current{% endif %}"><a href="{{ entry.url }}">{{ entry.title }}</a></li>
     {%- endfor %}
     </ul>
 </nav>
