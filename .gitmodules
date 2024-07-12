@@ -1,3 +1,0 @@
-[submodule "src/_templates/includes/ai.robots.txt"]
-	path = src/_templates/includes/ai.robots.txt
-	url = git@github.com:ai-robots-txt/ai.robots.txt.git

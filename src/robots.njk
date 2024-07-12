@@ -2,6 +2,4 @@
 permalink: /robots.txt
 eleventyExcludeFromCollections: true
 ---
-{% include "includes/ai.robots.txt/robots.txt" %}
-
-Sitemap: {{ site.url }}/sitemap.xml
+Sitemap: {{ "sitemap.xml" | htmlBaseUrl(site.url) }}
