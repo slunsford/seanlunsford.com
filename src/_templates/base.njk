@@ -19,10 +19,13 @@
         <meta property="og:description" content="{{ description or site.description }}" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="{{ site.url }}" />
+        {% if site.author.mastodon_handle -%}
+            <meta name="fediverse:creator" content="{{ site.author.mastodon_handle }}" />
+        {%- endif %}
         {% if featured_image -%}
-            <meta property="og:image" content="{{ featured_image.url }}">
+            <meta property="og:image" content="{{ featured_image.url }}" />
         {% else -%}
-            <meta property="og:image" content="/assets/img/opengraph.png">
+            <meta property="og:image" content="/assets/img/opengraph.png" />
         {% endif %}
 
         {#- Atom and JSON feeds included by default #}
