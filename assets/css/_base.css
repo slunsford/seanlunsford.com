@@ -22,8 +22,8 @@ body {
 }
 
 @media screen and (min-width: 801px) {
-  body {
-    font-size: 1.2rem;
+  html {
+    font-size: 1.1rem;
   }
 }
 
