@@ -14,18 +14,26 @@ permalink: /feed.json
 		"url": "{{ site.author.url }}"
 	},
 	"items": [
+    {%- set comma = joiner() %}
 		{%- for post in collections.posts | reverse %}
 		{%- set absolutePostUrl = post.url | htmlBaseUrl(site.url) %}
+    {{- comma() }}
 		{
 			"id": "{{ absolutePostUrl }}",
 			"url": "{{ absolutePostUrl }}",
-			{% if post.data.title %}"title": "{{ post.data.title }}",{% endif %}
+			"external_url": "{{ post.data.link }}",
+			"title": "{{ post.data.title }}",
 			"content_html": {% if post.templateContent %}{{ post.templateContent | transformWithHtmlBase(absolutePostUrl, post.url) | dump | safe }}{% else %}""{% endif %},
-			{% if post.data.featured_image %}"image": "{{ post.data.featured_image }}",{% endif %}
+			"image": "{% if post.data.featured_image.url -%}
+        {{ post.data.featured_image.url | htmlBaseUrl(site.url) }}
+      {%- endif %}",
 			"date_published": "{{ post.date | dateToRfc3339 }}",
-			"date_modified": "{{ post.date_updated or post.date | dateToRfc3339 }}"
+			"date_modified": "{{ post.date_updated or post.date | dateToRfc3339 }}",
+      {%- set comma = joiner() %}
+      "tags": [ {%- for tag in post.data.tags | filterTagList -%}
+        {{ comma() }} "{{ tag }}"
+      {%- endfor %} ]
 		}
-		{% if not loop.last %},{% endif %}
 		{%- endfor %}
 	]
 }
