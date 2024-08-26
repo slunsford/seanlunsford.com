@@ -11,13 +11,14 @@ permalink: "/{{ page.date | readableDate('yyyy') }}/{{slug or title | slugify}}/
         
         <h1 class="post-title">
             {%- if link -%}
-            <a href="{{ link }}">{{ title }} <i class="fa-solid fa-square-arrow-up-right link-arrow"></i></a>
+            <a href="{{ link }}">{{ title }} <i class="fa-duotone fa-solid fa-square-arrow-up-right link-arrow"></i></a>
             {%- else -%}
             {{ title }}
             {%- endif -%}
         </h1>
         <section class="post-meta">
             <time class="post-date" datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+            <a href="{{ post.url }}" class="permalink"><i class="fa-solid fa-link-simple"></i></a>
         </section>
     </header>
     <section class="post-content">
