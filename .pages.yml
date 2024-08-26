@@ -93,7 +93,7 @@ content:
     label: Navigation
     icon: signpost
     type: file
-    path: _data/nav.yaml
+    path: _data/nav.yml
     list: true
     fields:
       - name: title
@@ -107,7 +107,7 @@ content:
     label: Site settings
     icon: file-cog
     type: file
-    path: _data/site.yaml
+    path: _data/site.yml
     fields:
       - name: title
         label: Title
