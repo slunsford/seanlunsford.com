@@ -75,21 +75,21 @@
         </main>
         <footer class="main">
             <section class="copyright">&copy; 2012–{% year %} Sean Lunsford</section>
-            <ul class="footer-links">
-                <li><a href="/feed.xml"><i class="fa-solid fa-rss"></i></a></li>
+            <ul class="footer-nav">
+                <li><a href="/feed.xml" title="RSS"><i class="fa-solid fa-rss"></i></a></li>
                 
-                <li><a href="/feed.json"><i class="fa-solid fa-brackets-curly"></i></a></li>
+                <li><a href="/feed.json" title="JSON Feed"><i class="fa-solid fa-brackets-curly"></i></a></li>
                 
                 {%if site.github_url -%}
-                    <li><a rel="me" href="{{ site.github_url }}"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a rel="me" href="{{ site.github_url }}" title="GitHub"><i class="fa-brands fa-github"></i></a></li>
                 {% endif -%}
                 
                 {%if site.author.mastodon_url -%}
-                    <li><a rel="me" href="{{ site.author.mastodon_url }}"><i class="fa-brands fa-mastodon"></i></a></li>
+                    <li><a rel="me" href="{{ site.author.mastodon_url }}" title="Mastodon"><i class="fa-brands fa-mastodon"></i></a></li>
                 {% endif -%}
                 
                 {%if site.author.threads_url -%}
-                    <li><a rel="me" href="{{ site.author.threads_url }}"><i class="fa-brands fa-threads"></i></a></li>
+                    <li><a rel="me" href="{{ site.author.threads_url }}" title="Threads"><i class="fa-brands fa-threads"></i></a></li>
                 {% endif -%}
             </ul>
         </footer>
