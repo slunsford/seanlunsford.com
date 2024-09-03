@@ -1,9 +1,16 @@
 :root {
-  --background-color: #f4f4f4;
+  --light-background-color: #f4f4f4;
+  --dark-background-color: #060316;
+  --background-color: var(--light-background-color);
   --post-background-color: #ffffff;
-  --post-border-color: #e5e7e9;
+  --table-header-background-color: #bfc3c5;
+  --light-border-color: #e5e7e9;
+  --dark-border-color: #22242f;
+  --post-border-color: var(--light-border-color);
   
-  --main-text-color: #262a2c;
+  --dark-text-color: #262a2c;
+  --light-text-color: #dfe1e2;
+  --main-text-color: var(--dark-text-color);
   --secondary-text-color: #5f676b;
   --footnote-button-color: #bfc3c5;
   --accent-color: #ff4500;
@@ -24,7 +31,7 @@
   --sans-text: 'Name Sans Text', var(--sans);
   --slab: Lang, Rockwell, 'Rockwell Nova', 'Roboto Slab',
           'DejaVu Serif', 'Sitka Small', serif;
-  --mono: 'Name Mono', ui-monospace, 'Cascadia Code', 'Source Code Pro',
+  --mono: MonoLisa, ui-monospace, 'Cascadia Code', 'Source Code Pro',
           Menlo, Consolas, 'DejaVu Sans Mono', monospace;
 
   --font-size-minus-3: 0.702rem;
@@ -42,12 +49,13 @@
   
   
   @media (prefers-color-scheme: dark) {
-    --background-color: #060316;
+    --background-color: var(--dark-background-color);
     --post-background-color: #171823;
-    --post-border-color: #22242f;
+    --post-border-color: var(--dark-border-color);
     --footnote-background-color: #1d1e29;
+    --table-header-background-color: #5f676b;
     
-    --main-text-color: #dfe1e2;
+    --main-text-color: var(--light-text-color);
     --secondary-text-color: #9eabb3;
     --footnote-button-color: #5f676b;
     

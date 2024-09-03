@@ -12,7 +12,7 @@ body {
   height: 100%;
   max-height: 100%;
   width: 80%;
-  max-width: 35rem;
+  max-width: 38rem;
   margin: 0 auto;
   font-family: var(--sans);
   font-style: normal;
@@ -85,7 +85,6 @@ ul,
 ol {
   margin: 0 0 0.75rem;
   line-height: 1.45;
-  -webkit-hyphens: auto;
   hyphens: auto;
   text-wrap: pretty;
   hanging-punctuation: first;
@@ -97,21 +96,23 @@ tt,
 pre {
   font-family: var(--mono);
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   font-size: var(--font-size-minus-1);
-  white-space: pre-wrap;
+  font-feature-settings: "ss02", "liga", "calt", "onum";
+  white-space: pre;
+  overflow: auto;
   border: none;
   background: none;
-  -webkit-hyphens: none;
   hyphens: none;
 }
 
 pre {
   margin: 0.75rem;
   padding: 0.75rem;
-  background: var(--background-color);
+  background: var(--dark-background-color);
   border: 1px solid var(--post-border-color);
   border-radius: 5px;
+  color: var(--light-text-color);
   font-size: var(--font-size-minus-2);
 }
 
@@ -120,12 +121,13 @@ pre b {
   font-weight: 700;
 }
 
-/* :not(pre) > code {
-  padding: 2px 4px;
+:not(pre) > code {
+  margin: 0 2px;
+  padding: 1px 3px;
   background: var(--background-color);
   border: 1px solid var(--post-border-color);
   border-radius: 5px;
-} */
+}
 
 acronym, .small-caps {
   font-feature-settings: var(--all-small-caps);

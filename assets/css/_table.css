@@ -1,0 +1,21 @@
+table {
+  border-collapse: collapse;
+  margin: 0 auto 0.75rem;
+  overflow: auto;
+  
+  @media screen and (max-width: 500px) {
+      font-size: var(--font-size-minus-2);
+  }
+  
+  th,
+  td {
+    padding: 2px 4px;
+    border: 1px solid var(--main-text-color);
+    overflow: auto;
+    overflow-wrap: break-word;
+  }
+  
+  th {
+    background: var(--table-header-background-color);
+  }
+}

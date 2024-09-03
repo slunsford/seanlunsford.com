@@ -1,4 +1,7 @@
+@import "_prism_night_owl.css";
+
 @import "_fonts.css";
+@import "_monolisa.css";
 @import "_variables.css";
 @import "_base.css";
 
@@ -7,6 +10,7 @@
 @import "_footer.css";
 @import "_pagination.css";
 @import "_post.css";
+@import "_table.css";
 
 @import "_footnotes.css";
 @import "_post_list.css";
