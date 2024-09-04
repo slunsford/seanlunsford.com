@@ -1,9 +1,4 @@
 @font-face {
-	font-family: 'Name Sans';
-	src: url('/assets/fonts/ATNameSansVariable-Regular.woff2') format('woff2');
-}
-
-@font-face {
 	font-family: Lang;
 	src: url('/assets/fonts/AT-Lang-Variable.woff2') format('woff2');
 }
@@ -15,14 +10,8 @@
 }
 
 @font-face {
-	font-family: 'Name Mono';
-	src: url('/assets/fonts/AT-NameMono-Variable.woff2') format('woff2');
-}
-
-@font-face {
-	font-family: 'Name Mono';
-	src: url('/assets/fonts/AT-NameMonoItalic-Variable.woff2') format('woff2');
-	font-style: italic;
+	font-family: 'Name Sans';
+	src: url('/assets/fonts/ATNameSansVariable-Regular.woff2') format('woff2');
 }
 
 @font-face {

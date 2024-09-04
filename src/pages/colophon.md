@@ -13,10 +13,10 @@ Popover footnotes (like the ones above) are powered by [bigfoot.js](https://gith
 The post graph at the bottom of the [archive](/archive/) and [tag](/tag/technology/) pages is Robb Knight’s [Eleventy Post Graph](https://postgraph.rknight.me/) plugin.
 
 ## Typography
-Web fonts are by [ArrowType](https://www.arrowtype.com/):
+I use these web fonts:
 - [Name Sans](https://www.arrowtype.com/name-sans)
-- [Name Mono](https://www.arrowtype.com/name-mono)
 - [Lang](https://www.arrowtype.com/lang)
+- [Mono Lisa](https://www.monolisa.dev/)
 
 Fallback fonts use [Modern Font Stacks](https://modernfontstacks.com/).
 

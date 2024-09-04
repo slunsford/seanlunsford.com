@@ -3,14 +3,15 @@ title: Bringing SQL to a Python Fight
 slug: sql-to-a-python-fight
 date: 2024-09-03
 tags:
+  - Technology
   - Data
 ---
-I read [two](https://leancrew.com/all-this/2024/08/pandas-and-the-electoral-college/) [posts](https://leancrew.com/all-this/2024/08/the-electoral-college-again-this-time-with-aggregation/) last week about the use of [Pandas](https://pandas.pydata.org/), the preeminent data analysis tool for the Python programming language. Working with data is my day job now, so it was an interesting read—and of course it got me thinking about how I’d approach the problem with my preferred tools.
+Last week I read [two](https://leancrew.com/all-this/2024/08/pandas-and-the-electoral-college/) [posts](https://leancrew.com/all-this/2024/08/the-electoral-college-again-this-time-with-aggregation/) by Dr. Drang. He was documenting the creation of a table for a [previous blog post](https://leancrew.com/all-this/2024/08/what-i-didn-t-learn-about-the-electoral-college/) using [Pandas](https://pandas.pydata.org/), a data analysis package for [Python](https://en.wikipedia.org/wiki/Python_(programming_language)). Working with data is my day job now, so it was interesting to follow his process and the updates he made in the follow-up post—and of course it got me thinking about how I’d approach the problem with my preferred tools.
 
-This will be the most technical piece I’ve written here, but if you’re interested, read on.
+This will be the most technical piece I’ve written here, so if wrangling code and crunching numbers sounds like a good time, read on.
 
 ## The Problem
-In these posts, Dr. Drang was documenting the creation of a table for [a previous blog post](https://leancrew.com/all-this/2024/08/what-i-didn-t-learn-about-the-electoral-college/), in which he compared the percentage of the US population by state to each state’s percentage of the Electoral College. He started with [a CSV](https://leancrew.com/all-this/downloads/states.csv) containing a list of states with their name, abbreviation, population, and number of electors. The header and first ten rows look like this:
+[The original post](https://leancrew.com/all-this/2024/08/what-i-didn-t-learn-about-the-electoral-college/)—and the table in question—was looking at states’ percentage of the Electoral College vote compared to their population as a percentage of the US total. He started with [a CSV](https://leancrew.com/all-this/downloads/states.csv) containing data for each state. The header and first ten rows look like this:
 
 |        State         |  Abbrev  |   Population |   Electors |
 |:--------------------:|:--------:|-------------:|-----------:|
@@ -25,7 +26,7 @@ In these posts, Dr. Drang was documenting the creation of a table for [a previou
 | District of Columbia |    DC    |       678972 |          3 |
 |       Florida        |    FL    |     22610726 |         30 |
 
-From that he generated this table for his blog post:
+From that he calculated this table for his post:
 
 |  Electors  |           States           |   Pop Pct |   EC Pct |
 |:----------:|:--------------------------:|----------:|---------:|
@@ -50,7 +51,7 @@ From that he generated this table for his blog post:
 |     40     |             TX             |     9.11% |    7.43% |
 |     54     |             CA             |    11.63% |   10.04% |
 
-Both Dr. Drang and I write our posts in Markdown, so the plaintext version of the table to be generated looks like this:
+Both Dr. Drang and I write our posts in [Markdown](https://en.wikipedia.org/wiki/Markdown), so the plaintext version of the table looks like this:
 
 ```md
 |  Electors  |           States           |   Pop Pct |   EC Pct |
@@ -78,173 +79,167 @@ Both Dr. Drang and I write our posts in Markdown, so the plaintext version of th
 ```
 
 ## The Tools
-I have used Python for some data transformation/analysis,[^python] but my go-to language for working with data is [SQL](https://en.wikipedia.org/wiki/SQL). Python, for me, is a fallback for things that involve more scripting (like loops or complex functions). But for most data analysis needs, I find SQL better suited to the job.
+My go-to language for working with data is [SQL](https://en.wikipedia.org/wiki/SQL). I turn to Python[^py] for things that involve more scripting (like loops or complex functions). But for most data analysis needs, I find SQL better suited to the job.
 
-For processing, when I’m not working in a cloud data warehouse like [Snowflake](https://www.snowflake.com/en/), I often turn to [DuckDB](https://duckdb.org/)—in its own words, “a fast in-process analytical database”. DuckDB can import a variety of file and database formats, or even query them directly. DuckDB can also be used within Python, which allows for workflows combining DuckDB and Pandas.
+[^py]: Some Pandas, but mostly the [Snowpark API](https://docs.snowflake.com/en/developer-guide/snowpark/python/index), which is Pandas-inspired but native to [Snowflake](https://www.snowflake.com/en/), which we use at work.
+
+From personal projects to one-off data transformation/analysis tasks at work, I keep finding more and more uses for [DuckDB](https://duckdb.org/)—in its own words, “a fast in-process analytical database”. DuckDB can import (and export) a variety of file and database formats or even query them directly. It can also be used from within Python, which allows for workflows combining DuckDB and Pandas.
 
 ## The Solution
-I worked through this a couple different ways. The first was more step-by-step, and then I condensed that down to a one-shot query, which is what I then used in a Python script to generate the final Markdown table.[^md]
+I worked through this a couple different ways. The first was more piece-by-piece, and then I condensed that down to a one-shot query, which is what I used in a (very short) Python script to generate the final Markdown table.
 
-In DuckDB, I could query the contents of the CSV with 
-
-```sql
-select * from "states.csv"
-```
-
-DuckDB has a convenient syntax for those `select *` queries—namely, you can drop the `select *`:
-
-```sql
-from "states.csv"
-```
-
-So to import the file to a new table in the database, I wrote:
+I started by importing the CSV to a new table in the database:[^select]
 
 ```sql
 create table states as from "states.csv";
 ```
 
-After this, the first query I wrote gave me something like Drang’s first summary table:
+[^select]: To pick this apart a bit: I could query the file with `select * from "states.csv"`, which gives me every column (and row) of the data. DuckDB has a convenient syntax for those `select *` queries—namely, you can drop the `select *` and just type `from "states.csv"`. Here I’m creating a table from the results of that query.
 
-```sql
-create or replace view agg_states as
-
-with totals as (
-     select sum(population) as total_pop,
-            sum(electors) as total_electors
-       from states
-)
-
-select electors,
-       string_agg(abbrev, ', ') as states,
-       sum(population) as pop_sum,
-       sum(population/total_pop) as pop_pct,
-       sum(electors) as electors_sum,
-       sum(electors/total_electors) as ec_pct
-
-  from states, totals
- group by all;
- ```
-
-When I query that view[^view] DuckDB outputs the following:
-
-```
-┌──────────┬────────────────────────────┬──────────┬──────────────────────┬──────────────┬──────────────────────┐
-│ Electors │           states           │ pop_sum  │       pop_pct        │ electors_sum │        ec_pct        │
-│  int64   │          varchar           │  int128  │        double        │    int128    │        double        │
-├──────────┼────────────────────────────┼──────────┼──────────────────────┼──────────────┼──────────────────────┤
-│        3 │ AK, DE, DC, ND, SD, VT, WY │  5379033 │ 0.016060895111876104 │           21 │ 0.039033457249070626 │
-│        4 │ HI, ID, ME, MT, NH, RI, WV │ 10196485 │ 0.030445003050700387 │           28 │ 0.052044609665427496 │
-│        5 │ NE, NM                     │  4092750 │ 0.012220268674524016 │           10 │  0.01858736059479554 │
-│        6 │ AR, IA, KS, MS, NV, UT     │ 18766882 │  0.05603477862637313 │           36 │  0.06691449814126393 │
-│        7 │ CT, OK                     │  7671000 │  0.02290432618710494 │           14 │ 0.026022304832713755 │
-│        8 │ KY, LA, OR                 │ 13333261 │  0.03981089285383978 │           24 │  0.04460966542750929 │
-│        9 │ AL, SC                     │ 10482023 │ 0.031297571880163765 │           18 │  0.03345724907063197 │
-│       10 │ CO, MD, MN, MO, WI         │ 29902889 │  0.08928503762127392 │           50 │   0.0929368029739777 │
-│       11 │ AZ, IN, MA, TN             │ 28421431 │  0.08486165119649276 │           44 │  0.08178438661710037 │
-│       12 │ WA                         │  7812880 │ 0.023327956196155443 │           12 │ 0.022304832713754646 │
-│       13 │ VA                         │  8715698 │ 0.026023620119971076 │           13 │ 0.024163568773234202 │
-│       14 │ NJ                         │  9290841 │  0.02774090116236843 │           14 │ 0.026022304832713755 │
-│       15 │ MI                         │ 10037261 │ 0.029969586751284978 │           15 │ 0.027881040892193308 │
-│       16 │ GA, NC                     │ 21864718 │  0.06528440008617711 │           32 │  0.05947955390334572 │
-│       17 │ OH                         │ 11785935 │  0.03519083557033198 │           17 │ 0.031598513011152414 │
-│       19 │ IL, PA                     │ 25511372 │    0.076172700530384 │           38 │  0.07063197026022305 │
-│       28 │ NY                         │ 19571216 │  0.05843638575704434 │           28 │  0.05204460966542751 │
-│       30 │ FL                         │ 22610726 │  0.06751185551183085 │           30 │ 0.055762081784386616 │
-│       40 │ TX                         │ 30503301 │  0.09107776768184646 │           40 │  0.07434944237918216 │
-│       54 │ CA                         │ 38965193 │  0.11634356543025655 │           54 │  0.10037174721189591 │
-├──────────┴────────────────────────────┴──────────┴──────────────────────┴──────────────┴──────────────────────┤
-│ 20 rows                                                                                             6 columns │
-└───────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
-```
-
-I made something matching the format of Dr. Drang’s table (but not in Markdown) by running another query based on the view:
-
-```sql
-select electors as "Electors",
-       states as "States",
-       printf('%.2f%s', pop_pct*100, '%') as "Pop Pct",
-       printf('%.2f%s', ec_pct*100, '%') as "EC Pct"
-  from agg_states;
-```
-
-This gives me:
-
-```
-┌──────────┬────────────────────────────┬─────────┬─────────┐
-│ Electors │           States           │ Pop Pct │ EC Pct  │
-│  int64   │          varchar           │ varchar │ varchar │
-├──────────┼────────────────────────────┼─────────┼─────────┤
-│        3 │ AK, DE, DC, ND, SD, VT, WY │ 1.61%   │ 3.90%   │
-│        4 │ HI, ID, ME, MT, NH, RI, WV │ 3.04%   │ 5.20%   │
-│        5 │ NE, NM                     │ 1.22%   │ 1.86%   │
-│        6 │ AR, IA, KS, MS, NV, UT     │ 5.60%   │ 6.69%   │
-│        7 │ CT, OK                     │ 2.29%   │ 2.60%   │
-│        8 │ KY, LA, OR                 │ 3.98%   │ 4.46%   │
-│        9 │ AL, SC                     │ 3.13%   │ 3.35%   │
-│       10 │ CO, MD, MN, MO, WI         │ 8.93%   │ 9.29%   │
-│       11 │ AZ, IN, MA, TN             │ 8.49%   │ 8.18%   │
-│       12 │ WA                         │ 2.33%   │ 2.23%   │
-│       13 │ VA                         │ 2.60%   │ 2.42%   │
-│       14 │ NJ                         │ 2.77%   │ 2.60%   │
-│       15 │ MI                         │ 3.00%   │ 2.79%   │
-│       16 │ GA, NC                     │ 6.53%   │ 5.95%   │
-│       17 │ OH                         │ 3.52%   │ 3.16%   │
-│       19 │ IL, PA                     │ 7.62%   │ 7.06%   │
-│       28 │ NY                         │ 5.84%   │ 5.20%   │
-│       30 │ FL                         │ 6.75%   │ 5.58%   │
-│       40 │ TX                         │ 9.11%   │ 7.43%   │
-│       54 │ CA                         │ 11.63%  │ 10.04%  │
-├──────────┴────────────────────────────┴─────────┴─────────┤
-│ 20 rows                                         4 columns │
-└───────────────────────────────────────────────────────────┘
-```
-
-Finally, I rewrote the query to cut out the intermediate steps and go straight from the CSV to the final results:
+I queried that table to get something like Dr. Drang’s initial summary table.
 
 ```sql
 with totals as (
      -- Sum population and electors for all states
      select sum(population) as total_pop,
             sum(electors) as total_electors
-       from 'states.csv'
+       from states
 )
 
-select electors as "Electors",
-       string_agg(abbrev, ', ') as "States",
-       sum(population/total_pop) as "Pop Pct",
-       sum(electors/total_electors) as "EC Pct"
+   select electors,
+          string_agg(abbrev, ', ') as states,
+          count(*) as num_states,
+          sum(population) as population,
+          sum(population/total_pop) as pop_pct,
+          sum(electors) as electors_sum,
+          sum(electors/total_electors) as ec_pct
+     
+     from states,
+          totals
+ group by electors;
+ ```
 
-  from 'states.csv', totals
- group by all
- order by all;
+This is where the meat of the aggregation happens.
+
+In the first part, I sum the `population` and `electors` columns for the whole `states` table. This gives me a single-row result set which I use along with the `states` table in the second part.
+
+The `group by electors` clause tells the query what to group, and all the other columns are aggregate functions for all rows (or states) with that number of electors. `string_agg` does the thing Dr. Drang wrote a custom lambda function for, combining the column values with a given separator—in this case, a comma and space.
+
+Here’s DuckDB’s output:
+
+```
+┌──────────┬────────────────────────────┬────────────┬────────────┬──────────────────────┬──────────────┬──────────────────────┐
+│ Electors │           states           │ num_states │ population │       pop_pct        │ electors_sum │        ec_pct        │
+│  int64   │          varchar           │   int64    │   int128   │        double        │    int128    │        double        │
+├──────────┼────────────────────────────┼────────────┼────────────┼──────────────────────┼──────────────┼──────────────────────┤
+│        3 │ AK, DE, DC, ND, SD, VT, WY │          7 │    5379033 │ 0.016060895111876104 │           21 │ 0.039033457249070626 │
+│        4 │ HI, ID, ME, MT, NH, RI, WV │          7 │   10196485 │ 0.030445003050700387 │           28 │ 0.052044609665427496 │
+│        5 │ NE, NM                     │          2 │    4092750 │ 0.012220268674524016 │           10 │  0.01858736059479554 │
+│        6 │ AR, IA, KS, MS, NV, UT     │          6 │   18766882 │  0.05603477862637313 │           36 │  0.06691449814126393 │
+│        7 │ CT, OK                     │          2 │    7671000 │  0.02290432618710494 │           14 │ 0.026022304832713755 │
+│        8 │ KY, LA, OR                 │          3 │   13333261 │  0.03981089285383978 │           24 │  0.04460966542750929 │
+│        9 │ AL, SC                     │          2 │   10482023 │ 0.031297571880163765 │           18 │  0.03345724907063197 │
+│       10 │ CO, MD, MN, MO, WI         │          5 │   29902889 │  0.08928503762127392 │           50 │   0.0929368029739777 │
+│       11 │ AZ, IN, MA, TN             │          4 │   28421431 │  0.08486165119649276 │           44 │  0.08178438661710037 │
+│       12 │ WA                         │          1 │    7812880 │ 0.023327956196155443 │           12 │ 0.022304832713754646 │
+│       13 │ VA                         │          1 │    8715698 │ 0.026023620119971076 │           13 │ 0.024163568773234202 │
+│       14 │ NJ                         │          1 │    9290841 │  0.02774090116236843 │           14 │ 0.026022304832713755 │
+│       15 │ MI                         │          1 │   10037261 │ 0.029969586751284978 │           15 │ 0.027881040892193308 │
+│       16 │ GA, NC                     │          2 │   21864718 │  0.06528440008617711 │           32 │  0.05947955390334572 │
+│       17 │ OH                         │          1 │   11785935 │  0.03519083557033198 │           17 │ 0.031598513011152414 │
+│       19 │ IL, PA                     │          2 │   25511372 │    0.076172700530384 │           38 │  0.07063197026022305 │
+│       28 │ NY                         │          1 │   19571216 │  0.05843638575704434 │           28 │  0.05204460966542751 │
+│       30 │ FL                         │          1 │   22610726 │  0.06751185551183085 │           30 │ 0.055762081784386616 │
+│       40 │ TX                         │          1 │   30503301 │  0.09107776768184646 │           40 │  0.07434944237918216 │
+│       54 │ CA                         │          1 │   38965193 │  0.11634356543025655 │           54 │  0.10037174721189591 │
+├──────────┴────────────────────────────┴────────────┴────────────┴──────────────────────┴──────────────┴──────────────────────┤
+│ 20 rows                                                                                                            7 columns │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
-Personally I find this far more elegant a solution for the aggregation of the data. To get it into a Markdown table, we can run this SQL from Python and use the `to_markdown` function on the resulting Pandas dataframe:
+Finally, I rewrote the query to cut out the import step and select just the columns for the final table. For some reason, when doing it this way the table was no longer sorted by the electors column, even though it had been in the two-step query before. That can be remedied with `order by electors`:
 
-```py
+```sql
+with totals as (
+   	 -- Sum population and electors for all states  
+     select sum(population) as total_pop,
+            sum(electors) as total_electors
+       from "states.csv"
+)
+
+   select electors as "Electors",
+          string_agg(abbrev, ', ') as "States",
+          sum(population/total_pop) as "Pop Pct",
+          sum(electors/total_electors) as "EC Pct"
+
+     from "states.csv",
+          totals
+ group by electors
+ order by electors;
+```
+
+This gets closer, but it’s not Markdown yet:
+
+```
+┌──────────┬────────────────────────────┬──────────────────────┬──────────────────────┐
+│ Electors │           States           │       Pop Pct        │        EC Pct        │
+│  int64   │          varchar           │        double        │        double        │
+├──────────┼────────────────────────────┼──────────────────────┼──────────────────────┤
+│        3 │ AK, DE, DC, ND, SD, VT, WY │ 0.016060895111876104 │ 0.039033457249070626 │
+│        4 │ HI, ID, ME, MT, NH, RI, WV │ 0.030445003050700387 │ 0.052044609665427496 │
+│        5 │ NE, NM                     │ 0.012220268674524016 │  0.01858736059479554 │
+│        6 │ AR, IA, KS, MS, NV, UT     │  0.05603477862637313 │  0.06691449814126393 │
+│        7 │ CT, OK                     │  0.02290432618710494 │ 0.026022304832713755 │
+│        8 │ KY, LA, OR                 │  0.03981089285383978 │  0.04460966542750929 │
+│        9 │ AL, SC                     │ 0.031297571880163765 │  0.03345724907063197 │
+│       10 │ CO, MD, MN, MO, WI         │  0.08928503762127392 │   0.0929368029739777 │
+│       11 │ AZ, IN, MA, TN             │  0.08486165119649276 │  0.08178438661710037 │
+│       12 │ WA                         │ 0.023327956196155443 │ 0.022304832713754646 │
+│       13 │ VA                         │ 0.026023620119971076 │ 0.024163568773234202 │
+│       14 │ NJ                         │  0.02774090116236843 │ 0.026022304832713755 │
+│       15 │ MI                         │ 0.029969586751284978 │ 0.027881040892193308 │
+│       16 │ GA, NC                     │  0.06528440008617711 │  0.05947955390334572 │
+│       17 │ OH                         │  0.03519083557033198 │ 0.031598513011152414 │
+│       19 │ IL, PA                     │    0.076172700530384 │  0.07063197026022305 │
+│       28 │ NY                         │  0.05843638575704434 │  0.05204460966542751 │
+│       30 │ FL                         │  0.06751185551183085 │ 0.055762081784386616 │
+│       40 │ TX                         │  0.09107776768184646 │  0.07434944237918216 │
+│       54 │ CA                         │  0.11634356543025655 │  0.10037174721189591 │
+├──────────┴────────────────────────────┴──────────────────────┴──────────────────────┤
+│ 20 rows                                                                   4 columns │
+└─────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+To get it into a Markdown table, we can run this query from Python, convert it to a Pandas dataframe, and run that through the `to_markdown` function.
+
+```python
 import duckdb
 import pandas
 
 df = duckdb.sql("\
-     with totals as (\
-          select sum(population) as total_pop,\
-                 sum(electors) as total_electors\
-            from 'states.csv'\
-     )\
-     select electors as 'Electors',\
-            string_agg(abbrev, ', ') as 'States',\
-            sum(population/total_pop) as 'Pop Pct',\
-            sum(electors/total_electors) as 'EC Pct'\
-       from 'states.csv', totals\
-      group by all\
-      order by all;\
-   ").df()
+        with totals as (\
+        			 -- Sum population and electors for all states\
+             select sum(population) as total_pop,\
+                    sum(electors) as total_electors\
+               from 'states.csv'\
+        )\
+           select electors as 'Electors',\
+                  string_agg(abbrev, ', ') as 'States',\
+                  sum(population/total_pop) as 'Pop Pct',\
+                  sum(electors/total_electors) as 'EC Pct'\
+             from 'states.csv',\
+                  totals\
+         group by electors\
+         order by electors;\
+     ").df()
 
 print(df.to_markdown(index=False, floatfmt='.2%',\
       colalign=['center', 'center', 'right', 'right'] ))
 ```
 
-And, running that:
+I’ve made two tweaks to the `to_markdown` call from Dr. Drang’s code. It was adding an index column by default, so I’ve disabled that. Second, since I’ve already renamed the columns in SQL, the `headers` parameter is no longer needed.
+
+This code covers all the steps, so just running this script in the same working directory as `states.csv` generates the Markdown table we’re looking for:
 
 ```md
 |  Electors  |           States           |   Pop Pct |   EC Pct |
@@ -272,9 +267,3 @@ And, running that:
 ```
 
 Success!
-
-[^python]: Some Pandas, but more commonly [the Snowpark API](https://docs.snowflake.com/en/developer-guide/snowpark/python/index), which is Pandas-inspired but native to Snowflake.
-
-[^md]: Exporting to Markdown is presumably not a common use-case for DuckDB. When I’m doing quick analysis I generally just want to see the results directly, or maybe exported to a CSV which can be imported to spreadsheet applications like Excel. For data *transformation*, which is the core of my day job, I use [dbt](https://www.getdbt.com/) to create downstream tables or views in the warehouse, which can then be queried by external reporting or visualization applications (such as dashboards).
-
-[^view]: If you’re unfamiliar with SQL-based databases, a view is like a table, except instead of storing the resulting data, the original query is stored and then executed again anytime the view is referenced in another query.
