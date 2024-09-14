@@ -6,9 +6,11 @@ tags:
   - Technology
   - Data
 ---
-Last week I read [two](https://leancrew.com/all-this/2024/08/pandas-and-the-electoral-college/) [posts](https://leancrew.com/all-this/2024/08/the-electoral-college-again-this-time-with-aggregation/) by Dr. Drang. He was documenting the creation of a table for a [previous blog post](https://leancrew.com/all-this/2024/08/what-i-didn-t-learn-about-the-electoral-college/) using [Pandas](https://pandas.pydata.org/), a data analysis package for [Python](https://en.wikipedia.org/wiki/Python_(programming_language)). Working with data is my day job now, so it was interesting to follow his process and the updates he made in the follow-up post—and of course it got me thinking about how I’d approach the problem with my preferred tools.
+A couple weeks ago I read [two](https://leancrew.com/all-this/2024/08/pandas-and-the-electoral-college/) [posts](https://leancrew.com/all-this/2024/08/the-electoral-college-again-this-time-with-aggregation/) by Dr. Drang. He was documenting the creation of a table for a [previous blog post](https://leancrew.com/all-this/2024/08/what-i-didn-t-learn-about-the-electoral-college/) using [Pandas](https://pandas.pydata.org/), a data analysis package for [Python](https://en.wikipedia.org/wiki/Python_(programming_language)). Working with data is my day job now, so it was interesting to follow his process and the updates he made in the follow-up post. Of course I got [nerd-sniped](https://xkcd.com/356/), and just had to work out how I’d approach the problem with my own preferred tools.
 
-This will be the most technical piece I’ve written here, so if wrangling code and crunching numbers sounds like a good time, read on.
+This will be the most technical piece I’ve written here, so if wrangling code and crunching numbers sounds like a good time, read on. [^ns]
+
+[^ns]: Joke’s on me: writing this post and updating my website to handle all these tables and code blocks nicely ended up being way more involved than solving the original problem.
 
 ## The Problem
 [The original post](https://leancrew.com/all-this/2024/08/what-i-didn-t-learn-about-the-electoral-college/)—and the table in question—was looking at states’ percentage of the Electoral College vote compared to their population as a percentage of the US total. He started with [a CSV](https://leancrew.com/all-this/downloads/states.csv) containing data for each state. The header and first ten rows look like this:
@@ -86,7 +88,7 @@ My go-to language for working with data is [SQL](https://en.wikipedia.org/wiki/S
 From personal projects to one-off data transformation/analysis tasks at work, I keep finding more and more uses for [DuckDB](https://duckdb.org/)—in its own words, “a fast in-process analytical database”. DuckDB can import (and export) a variety of file and database formats or even query them directly. It can also be used from within Python, which allows for workflows combining DuckDB and Pandas.
 
 ## The Solution
-I worked through this a couple different ways. The first was more piece-by-piece, and then I condensed that down to a one-shot query, which is what I used in a (very short) Python script to generate the final Markdown table.
+I worked through this a couple different ways. The first time through was more piece-by-piece, and then I condensed that down to a one-shot query, which is what I used in a (very short) Python script to generate the final Markdown table.
 
 I started by importing the CSV to a new table in the database:[^select]
 
@@ -94,7 +96,7 @@ I started by importing the CSV to a new table in the database:[^select]
 create table states as from "states.csv";
 ```
 
-[^select]: To pick this apart a bit: I could query the file with `select * from "states.csv"`, which gives me every column (and row) of the data. DuckDB has a convenient syntax for those `select *` queries—namely, you can drop the `select *` and just type `from "states.csv"`. Here I’m creating a table from the results of that query.
+[^select]: To pick this apart a bit: I could read the contents of the file with `select * from "states.csv"`, which gives me every column (and row) of the data. DuckDB has a convenient syntax for those `select *` queries—namely, you can drop the `select *` and just type `from "states.csv"`. Here I’m taking it a step further and creating a table from the results of that query.
 
 I queried that table to get something like Dr. Drang’s initial summary table.
 
@@ -218,7 +220,6 @@ import pandas
 
 df = duckdb.sql("\
         with totals as (\
-        			 -- Sum population and electors for all states\
              select sum(population) as total_pop,\
                     sum(electors) as total_electors\
                from 'states.csv'\
@@ -239,7 +240,7 @@ print(df.to_markdown(index=False, floatfmt='.2%',\
 
 I’ve made two tweaks to the `to_markdown` call from Dr. Drang’s code. It was adding an index column by default, so I’ve disabled that. Second, since I’ve already renamed the columns in SQL, the `headers` parameter is no longer needed.
 
-This code covers all the steps, so just running this script in the same working directory as `states.csv` generates the Markdown table we’re looking for:
+This code combines everything: reading from the CSV, transforming it to the new table, and converting the results (via Pandas) to Markdown. So all we have to do is run this script in the same working directory as `states.csv`.
 
 ```md
 |  Electors  |           States           |   Pop Pct |   EC Pct |
