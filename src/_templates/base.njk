@@ -13,7 +13,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{{ pageTitle }}</title>
         <meta name="description" content="{{ description or site.description }}">
-        
+
         {#- OpenGraph metadata #}
         <meta property="og:title" content="{{ pageTitle }}" />
         <meta property="og:description" content="{{ description or site.description }}" />
@@ -31,7 +31,7 @@
         {#- Atom and JSON feeds included by default #}
         <link rel="alternate" href="/feed.xml" type="application/atom+xml" title="{{ site.title }}">
         <link rel="alternate" href="/feed.json" type="application/json" title="{{ site.title }}">
-        
+
         {#- Favicons/Apple touch icons #}
         <link rel="shortcut icon" href="assets/icons/favicon.ico" />
         <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="assets/icons/favicon.ico">
@@ -44,7 +44,7 @@
         <link rel="apple-touch-icon" sizes="152x152" href="assets/icons/favicon-152.png">
         <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/favicon-180.png">
         <link rel="apple-touch-icon" sizes="192x192" href="assets/icons/favicon-192.png">
-        
+
         {#- Bigfoot - popover footnotes #}
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script type="text/javascript" src="/assets/js/bigfoot.js"></script>
@@ -52,13 +52,13 @@
         <script type="text/javascript">
             $.bigfoot();
         </script>
-        
+
         {#- Font Awesome icons #}
         <script src="https://kit.fontawesome.com/8be7adf8bc.js" crossorigin="anonymous"></script>
-        
+
         {# {%- js %}{% include "assets/js/script.js" %}{% endjs %}
         <script>{% getBundle "js" %}</script> -#}
-        
+
         <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
 
         <meta name="generator" content="{{ eleventy.generator }}">
@@ -77,23 +77,27 @@
             <section class="copyright">&copy; 2012–{% year %} Sean Lunsford</section>
             <ul class="footer-nav">
                 <li><a href="/feed.xml" title="RSS"><i class="fa-solid fa-rss"></i></a></li>
-                
+
                 <li><a href="/feed.json" title="JSON Feed"><i class="fa-solid fa-brackets-curly"></i></a></li>
-                
+
                 {%if site.github_url -%}
                     <li><a rel="me" href="{{ site.github_url }}" title="GitHub"><i class="fa-brands fa-github"></i></a></li>
                 {% endif -%}
-                
+
                 {%if site.author.mastodon_url -%}
                     <li><a rel="me" href="{{ site.author.mastodon_url }}" title="Mastodon"><i class="fa-brands fa-mastodon"></i></a></li>
                 {% endif -%}
-                
+
+                {%if site.author.blueksky_url -%}
+                    <li><a rel="me" href="{{ site.author.blueksky_url }}" title="Bluesky"><i class="fa-brands fa-bluesky"></i></a></li>
+                {% endif -%}
+
                 {%if site.author.threads_url -%}
                     <li><a rel="me" href="{{ site.author.threads_url }}" title="Threads"><i class="fa-brands fa-threads"></i></a></li>
                 {% endif -%}
             </ul>
         </footer>
-        
+
         {# Tinylytics #}
         <script src="https://tinylytics.app/embed/5MB2sUsgaykoyWM5G1fs.js" defer></script>
     </body>
