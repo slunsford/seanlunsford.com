@@ -1,5 +1,8 @@
 /rss /feed.xml 301
 /rss/ /feed.xml 301
+/.well-known/host-meta* https://mastodon.seanlunsford.com/.well-known/host-meta:splat 301
+/.well-known/webfinger* https://mastodon.seanlunsford.com/.well-known/webfinger:splat 301
+/.well-known/nodeinfo* https://mastodon.seanlunsford.com/.well-known/nodeinfo:splat 301
 /because-the-internet-isnt-crowded-enough-as-it-is/ /2012/because-the-internet-isnt-crowded-enough-as-it-is/ 301
 /losing-all-control/ /2012/losing-all-control/ 301
 /taking-a-step/ /2012/taking-a-step/ 301
