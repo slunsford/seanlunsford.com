@@ -142,7 +142,9 @@ content:
           - name: mastodon_handle
             label: Mastodon handle
             type: string
-            pattern: ^@\w+@[\.\w]+$
+            pattern: 
+              regex: (^@\w+@[\.\w]+$)?
+              message: This must be a valid Mastodon handle, e.g. `me@example.social`
           - name: threads_url
             label: Threads URL
             type: string
