@@ -139,6 +139,10 @@ content:
             label: Mastodon URL
             type: string
             pattern: (^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$)?
+          - name: mastodon_handle
+            label: Mastodon handle
+            type: string
+            pattern: ^@\w+@[\.\w]+$
           - name: threads_url
             label: Threads URL
             type: string
