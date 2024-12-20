@@ -15,8 +15,6 @@ module.exports = function(eleventyConfig) {
     // Copy `public/` to `_site/`
     eleventyConfig.addPassthroughCopy({ "public": "/" });
 
-    eleventyConfig.addPassthroughCopy({ "node_modules/@zachleat/snow-fall/snow-fall.js": "assets/js/" });
-
     // Watch content images for the image pipeline.
     eleventyConfig.addWatchTarget("src/**/*.{svg,webp,png,jpeg}");
 

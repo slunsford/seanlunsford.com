@@ -30,7 +30,6 @@
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "@rknightuk/eleventy-plugin-post-graph": "^1.0.7",
-    "@zachleat/snow-fall": "^1.0.3",
     "js-yaml": "^4.1.0",
     "luxon": "^3.4.4",
     "markdown-it-footnote": "^4.0.0"
