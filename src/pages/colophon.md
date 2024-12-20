@@ -10,6 +10,13 @@ Previous versions of this site have been on self-hosted [Ghost](https://ghost.or
 ## Dependencies
 Popover footnotes (like the ones above) are powered by [bigfoot.js](https://github.com/lemonmade/bigfoot).
 
+{{ snowfallEnabled }}
+
+{%- set currentMonth %}{% currentMonth %}{% endset %}
+{% if currentMonth == 12 -%}
+The `<snow-fall>` web component is by [Zach Leatherman](https://github.com/zachleat/snow-fall/blob/main/snow-fall.js).
+{%- endif %}
+
 The post graph at the bottom of the [archive](/archive/) and [tag](/tag/technology/) pages is Robb Knight’s [Eleventy Post Graph](https://postgraph.rknight.me/) plugin.
 
 ## Typography
