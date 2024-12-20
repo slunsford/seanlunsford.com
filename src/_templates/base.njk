@@ -56,7 +56,7 @@
         {#- Font Awesome icons #}
         <script src="https://kit.fontawesome.com/8be7adf8bc.js" crossorigin="anonymous"></script>
 
-        <script type="module" src="snow-fall.js"></script>
+        <script type="module" src="/assets/js/snow-fall.js"></script>
 
         {# {%- js %}{% include "assets/js/script.js" %}{% endjs %}
         <script>{% getBundle "js" %}</script> -#}
@@ -68,8 +68,14 @@
     <body>
         <a href="#skip" class="visually-hidden">Skip to main content</a>
 
+        {%- set currentMonth %}{% currentMonth %}{% endset %}
+        {%- if currentMonth == 12 %}
+
         <!-- Add snow to the page -->
-        <snow-fall></snow-fall>
+        <is-land on:media="(prefers-reduced-motion: no-preference)">
+            <snow-fall></snow-fall>
+        </is-land>
+        {%- endif %}
 
         <header class="main">
             <section class="site-title"><a href="/" class="home-link">{{ site.title }}</a></section>
@@ -79,7 +85,7 @@
             {{ content | safe }}
         </main>
         <footer class="main">
-            <section class="copyright">&copy; 2012–{% year %} Sean Lunsford</section>
+            <section class="copyright">&copy; 2012–{% currentYear %} Sean Lunsford</section>
             <ul class="footer-nav">
                 <li><a href="/feed.xml" title="RSS"><i class="fa-solid fa-rss"></i></a></li>
 
