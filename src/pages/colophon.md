@@ -24,10 +24,8 @@ The post graph at the bottom of the [archive](/archive/) and [tag](/tag/technolo
 
 Web fonts are by [ArrowType](https://www.arrowtype.com/):
 
-*   [Name Sans](https://www.arrowtype.com/name-sans)
-    
+*   [Name Sans](https://www.arrowtype.com/name-sans) 
 *   [Name Mono](https://www.arrowtype.com/name-mono)
-    
 *   [Lang](https://www.arrowtype.com/lang)
     
 
