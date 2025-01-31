@@ -1,0 +1,73 @@
+{
+  "autoquotes": null,
+  "brandColors": [],
+  "corsProxy": "/corsprox",
+  "name": "seanlunsford.com",
+  "sidebar": [
+    {
+      "label": "Dashboard",
+      "icon": "grid",
+      "target": {
+        "name": "Project"
+      },
+      "protected": true
+    },
+    {
+      "icon": "document-stack",
+      "label": "Blog Posts",
+      "target": {
+        "name": "Project.Collection",
+        "params": {
+          "path": "/.mattrbld/collections/posts.json"
+        }
+      },
+      "showInDashboard": true
+    },
+    {
+      "icon": "document",
+      "label": "Pages",
+      "target": {
+        "name": "Project.Collection",
+        "params": {
+          "path": "/.mattrbld/collections/pages.json"
+        }
+      }
+    },
+    {
+      "label": "Media Library",
+      "icon": "image-stack",
+      "target": {
+        "name": "Project.MediaLibrary"
+      },
+      "protected": true
+    },
+    {
+      "label": "Settings",
+      "icon": "settings",
+      "target": {
+        "name": "Project.Settings"
+      },
+      "onlyPrivileged": true,
+      "protected": true
+    }
+  ],
+  "slugifyOptions": {
+    "lowercase": true
+  },
+  "customRoles": [],
+  "draftsDir": null,
+  "previewUrl": null,
+  "languages": [],
+  "media": {
+    "advanced": false,
+    "customFields": null,
+    "dir": "/assets/img",
+    "maxSize": null,
+    "outputPath": "/assets/img",
+    "permissions": {
+      "everybody": [
+        "everything"
+      ]
+    }
+  }
+}

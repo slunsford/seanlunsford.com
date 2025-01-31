@@ -1,0 +1,19 @@
+{
+  "allowedTypes": [],
+  "dir": "/src/posts",
+  "disableComments": false,
+  "disablePreview": false,
+  "draftByDefault": false,
+  "schemas": [
+    "/.mattrbld/schemas/blog-post.json"
+  ],
+  "linkable": true,
+  "maxSize": null,
+  "permissions": {
+    "everybody": [
+      "everything"
+    ]
+  },
+  "type": "md",
+  "urlTemplate": ":date[year]/:slug/"
+}
