@@ -6,7 +6,7 @@
   "sidebar": [
     {
       "label": "Dashboard",
-      "icon": "grid",
+      "icon": "dashboard",
       "target": {
         "name": "Project"
       },
