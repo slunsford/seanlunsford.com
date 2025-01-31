@@ -1,6 +1,11 @@
 {
   "autoquotes": null,
-  "brandColors": [],
+  "brandColors": [
+    {
+      "label": "Orange",
+      "value": "rgb(255, 69, 0)"
+    }
+  ],
   "corsProxy": "/corsprox",
   "name": "seanlunsford.com",
   "sidebar": [
