@@ -1,6 +1,7 @@
 ---
 layout: base.njk
-permalink: "/{{slug or title | slugify}}/"
+eleventyComputed:
+  permalink: "/{{slug or title | slugify}}/"
 ---
 
 <article class="page">
