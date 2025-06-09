@@ -2,8 +2,8 @@
 title: In Over My Head
 slug: in-over-my-head
 link: https://www.nlcf.net/latest-news/blog/in-over-my-head/
-date: 2013-02-28T14:58:03.000Z
-date_updated: 2020-02-12T11:12:38.000Z
+date: 2013-02-28T14:58:03 +00:00
+updated_date: 2020-02-12T11:12:38 +00:00
 tags: "Christianity"
 ---
 

@@ -2,8 +2,8 @@
 title: Diapers & Coffee
 slug: diapers-and-coffee
 link: https://diapers.coffee
-date: 2023-02-19T21:33:26.000Z
-date_updated: 2024-01-20 23:10:00+3
+date: 2023-02-19T21:33:26 +00:00
+updated_date: 2024-01-20T23:10:00 +03:00
 tags:
   - "Blogging"
   - "Technology"

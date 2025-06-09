@@ -1,8 +1,8 @@
 ---
 title: The Race
 slug: flashback-the-race
-date: 2012-04-14T14:12:07.000Z
-date_updated: 2020-02-12T11:30:21.000Z
+date: 2012-04-14T14:12:07 +00:00
+updated_date: 2020-02-12T11:30:21 +00:00
 tags: 
   - "Christianity"
   - Highlights

@@ -1,8 +1,8 @@
 ---
 title: "Flashback: Purpose In Every Step"
 slug: flashback-purpose-in-every-step
-date: 2013-01-03T18:44:27.000Z
-date_updated: 2020-02-12T11:19:57.000Z
+date: 2013-01-03T18:44:27 +00:00
+updated_date: 2020-02-12T11:19:57 +00:00
 featured_image:
   url: "/assets/img/relay-race.jpg"
   alt: "A photo of Sean holding a baton and sprinting in a track meet"

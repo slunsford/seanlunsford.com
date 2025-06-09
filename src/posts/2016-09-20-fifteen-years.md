@@ -1,8 +1,8 @@
 ---
 title: Fifteen Years
 slug: fifteen-years
-date: 2016-09-19T21:26:18.000Z
-date_updated: 2020-02-10T19:42:28.000Z
+date: 2016-09-19T21:26:18 +00:00
+updated_date: 2020-02-10T19:42:28 +00:00
 tags: 
   - Christianity
   - Highlights

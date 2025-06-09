@@ -1,8 +1,8 @@
 ---
 title: Losing All Control
 slug: losing-all-control
-date: 2012-03-05T19:31:19.000Z
-date_updated: 2020-02-12T11:31:29.000Z
+date: 2012-03-05T19:31:19 +00:00
+updated_date: 2020-02-12T11:31:29 +00:00
 tags: "Christianity"
 ---
 

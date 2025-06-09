@@ -1,8 +1,8 @@
 ---
 title: Letting Go
 slug: letting-go
-date: 2012-11-26T23:46:27.000Z
-date_updated: 2020-02-12T11:20:54.000Z
+date: 2012-11-26T23:46:27 +00:00
+updated_date: 2020-02-12T11:20:54 +00:00
 tags: "Christianity"
 ---
 

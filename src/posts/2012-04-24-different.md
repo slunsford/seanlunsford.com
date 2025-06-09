@@ -1,8 +1,8 @@
 ---
 title: Different
 slug: different
-date: 2012-04-24T01:23:43.000Z
-date_updated: 2020-02-12T10:23:06.000Z
+date: 2012-04-24T01:23:43 +00:00
+updated_date: 2020-02-12T10:23:06 +00:00
 tags: 
   - "Life"
   - "Christianity"

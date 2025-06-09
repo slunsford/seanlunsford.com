@@ -1,8 +1,8 @@
 ---
 title: Two Months
 slug: two-months
-date: 2014-03-18T15:12:30.000Z
-date_updated: 2020-02-12T11:08:49.000Z
+date: 2014-03-18T15:12:30 +00:00
+updated_date: 2020-02-12T11:08:49 +00:00
 tags: 
   - "Life"
   - "Christianity"

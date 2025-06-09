@@ -1,3 +1,6 @@
+settings:
+  content:
+    merge: true
 media:
   input: assets/img
   output: /assets/img
@@ -21,7 +24,7 @@ content:
         type: date
         options:
           time: true
-          format: yyyy-MM-dd'T'HH:mm
+          format: yyyy-MM-dd'T'HH:mm:ss xxx
           step: 60
       - name: draft
         label: Draft
@@ -36,8 +39,10 @@ content:
       - name: tags
         label: Tags
         type: select
-        list: true
+        # list: true
         options:
+          multiple: true
+          createable: true
           values:
             - Highlights
             - Blogging
@@ -45,12 +50,13 @@ content:
             - Life
             - Technology
             - Yearly Themes
-      - name: date_updated
+      - name: updated_date
         label: Date updated
         type: date
         options:
+          hidden: true
           time: true
-          format: YYYY-MM-DDTHH:mm:ss Z
+          format: yyyy-MM-dd'T'HH:mm:ss xxx
           step: 60
       - name: featured_image
         label: Featured image
