@@ -242,18 +242,18 @@
       "permanent": true
     },
     {
-      "source": "/:year(\\d{4})/:month(\\d{2})/:day(\\d{2})/:slug",
-      "destination": "/:year/:slug",
+      "source": "/([0-9]{4})/([0-9]{2})/([0-9]{2})/(.*)",
+      "destination": "/$1/$4",
       "permanent": true
     },
     {
-      "source": "/category/:slug",
-      "destination": "/tag/:slug",
+      "source": "/category/(.*)",
+      "destination": "/tag/$1",
       "permanent": true
     },
     {
-      "source": "/categories/:slug",
-      "destination": "/tag/:slug",
+      "source": "/categories/(.*)",
+      "destination": "/tag/$1",
       "permanent": true
     }
   ]
