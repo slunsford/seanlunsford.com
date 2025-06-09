@@ -1,0 +1,260 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/rss",
+      "destination": "/feed.xml",
+      "permanent": true
+    },
+    {
+      "source": "/rss/",
+      "destination": "/feed.xml",
+      "permanent": true
+    },
+    {
+      "source": "/.well-known/host-meta:path*",
+      "destination": "https://mastodon.seanlunsford.com/.well-known/host-meta:path*",
+      "permanent": true
+    },
+    {
+      "source": "/.well-known/webfinger:path*",
+      "destination": "https://mastodon.seanlunsford.com/.well-known/webfinger:path*",
+      "permanent": true
+    },
+    {
+      "source": "/.well-known/nodeinfo:path*",
+      "destination": "https://mastodon.seanlunsford.com/.well-known/nodeinfo:path*",
+      "permanent": true
+    },
+    {
+      "source": "/because-the-internet-isnt-crowded-enough-as-it-is/",
+      "destination": "/2012/because-the-internet-isnt-crowded-enough-as-it-is/",
+      "permanent": true
+    },
+    {
+      "source": "/losing-all-control/",
+      "destination": "/2012/losing-all-control/",
+      "permanent": true
+    },
+    {
+      "source": "/taking-a-step/",
+      "destination": "/2012/taking-a-step/",
+      "permanent": true
+    },
+    {
+      "source": "/if-necessary-use-words/",
+      "destination": "/2012/if-necessary-use-words/",
+      "permanent": true
+    },
+    {
+      "source": "/flashback-the-race/",
+      "destination": "/2012/flashback-the-race/",
+      "permanent": true
+    },
+    {
+      "source": "/the-time-is-now/",
+      "destination": "/2012/the-time-is-now/",
+      "permanent": true
+    },
+    {
+      "source": "/different/",
+      "destination": "/2012/different/",
+      "permanent": true
+    },
+    {
+      "source": "/priorities/",
+      "destination": "/2012/priorities/",
+      "permanent": true
+    },
+    {
+      "source": "/some-more-food-for-thought/",
+      "destination": "/2012/some-more-food-for-thought/",
+      "permanent": true
+    },
+    {
+      "source": "/homesick/",
+      "destination": "/2012/homesick/",
+      "permanent": true
+    },
+    {
+      "source": "/through-the-valley/",
+      "destination": "/2012/through-the-valley/",
+      "permanent": true
+    },
+    {
+      "source": "/of-ibuprofen-and-ice-packs/",
+      "destination": "/2012/of-ibuprofen-and-ice-packs/",
+      "permanent": true
+    },
+    {
+      "source": "/what-if/",
+      "destination": "/2012/what-if/",
+      "permanent": true
+    },
+    {
+      "source": "/ive-got-this/",
+      "destination": "/2012/ive-got-this/",
+      "permanent": true
+    },
+    {
+      "source": "/good-books/",
+      "destination": "/2012/good-books/",
+      "permanent": true
+    },
+    {
+      "source": "/receiving-the-baton/",
+      "destination": "/2012/receiving-the-baton/",
+      "permanent": true
+    },
+    {
+      "source": "/letting-go/",
+      "destination": "/2012/letting-go/",
+      "permanent": true
+    },
+    {
+      "source": "/going-to-hell-with-ted-haggard/",
+      "destination": "/2012/going-to-hell-with-ted-haggard/",
+      "permanent": true
+    },
+    {
+      "source": "/flashback-purpose-in-every-step/",
+      "destination": "/2013/flashback-purpose-in-every-step/",
+      "permanent": true
+    },
+    {
+      "source": "/its-like-in-the-great-stories/",
+      "destination": "/2013/its-like-in-the-great-stories/",
+      "permanent": true
+    },
+    {
+      "source": "/forth-and-fear-no-darkness/",
+      "destination": "/2013/forth-and-fear-no-darkness/",
+      "permanent": true
+    },
+    {
+      "source": "/pivot/",
+      "destination": "/2013/pivot/",
+      "permanent": true
+    },
+    {
+      "source": "/oops/",
+      "destination": "/2013/oops/",
+      "permanent": true
+    },
+    {
+      "source": "/setting-things-straight/",
+      "destination": "/2013/setting-things-straight/",
+      "permanent": true
+    },
+    {
+      "source": "/unplugged/",
+      "destination": "/2013/unplugged/",
+      "permanent": true
+    },
+    {
+      "source": "/faith-deeds-love/",
+      "destination": "/2013/faith-deeds-love/",
+      "permanent": true
+    },
+    {
+      "source": "/in-over-my-head/",
+      "destination": "/2013/in-over-my-head/",
+      "permanent": true
+    },
+    {
+      "source": "/whats-in-front-of-me/",
+      "destination": "/2013/whats-in-front-of-me/",
+      "permanent": true
+    },
+    {
+      "source": "/prayer/",
+      "destination": "/2013/prayer/",
+      "permanent": true
+    },
+    {
+      "source": "/of-blogs-and-lent/",
+      "destination": "/2014/of-blogs-and-lent/",
+      "permanent": true
+    },
+    {
+      "source": "/two-months/",
+      "destination": "/2014/two-months/",
+      "permanent": true
+    },
+    {
+      "source": "/checkmate/",
+      "destination": "/2014/checkmate/",
+      "permanent": true
+    },
+    {
+      "source": "/missing-out/",
+      "destination": "/2014/missing-out/",
+      "permanent": true
+    },
+    {
+      "source": "/were-in-this-together/",
+      "destination": "/2014/were-in-this-together/",
+      "permanent": true
+    },
+    {
+      "source": "/new-blog/",
+      "destination": "/2014/new-blog/",
+      "permanent": true
+    },
+    {
+      "source": "/where-is-your-sting/",
+      "destination": "/2016/where-is-your-sting/",
+      "permanent": true
+    },
+    {
+      "source": "/fifteen-years/",
+      "destination": "/2016/fifteen-years/",
+      "permanent": true
+    },
+    {
+      "source": "/eleven-days/",
+      "destination": "/2018/eleven-days/",
+      "permanent": true
+    },
+    {
+      "source": "/seanlunsford-com-has-moved/",
+      "destination": "/2018/seanlunsford-com-has-moved/",
+      "permanent": true
+    },
+    {
+      "source": "/regeneration/",
+      "destination": "/2020/regeneration/",
+      "permanent": true
+    },
+    {
+      "source": "/thing-builder/",
+      "destination": "/2021/thing-builder/",
+      "permanent": true
+    },
+    {
+      "source": "/2023-in-focus/",
+      "destination": "/2023/2023-in-focus/",
+      "permanent": true
+    },
+    {
+      "source": "/diapers-and-coffee/",
+      "destination": "/2023/diapers-and-coffee/",
+      "permanent": true
+    },
+    {
+      "source": "/([0-9]{4})/([0-9]{2})/([0-9]{2})/(.*)",
+      "destination": "/$1/$4",
+      "permanent": true
+    },
+    {
+      "source": "/category/(.*)",
+      "destination": "/tag/$1",
+      "permanent": true
+    },
+    {
+      "source": "/categories/(.*)",
+      "destination": "/tag/$1",
+      "permanent": true
+    }
+  ]
+}
