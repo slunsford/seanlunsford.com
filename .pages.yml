@@ -36,8 +36,10 @@ content:
       - name: tags
         label: Tags
         type: select
-        list: true
+        # list: true
         options:
+          multiple: true
+          createable: true
           values:
             - Highlights
             - Blogging
