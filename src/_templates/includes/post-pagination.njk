@@ -4,10 +4,10 @@
     {%- if nextPost or previousPost %}
         <nav class="pagination" role="navigation">
             {% if previousPost -%}
-                <a class="prev-post" href="{{ previousPost.url }}">&lt;-: {% if previousPost.data.title %}{{ previousPost.data.title }}{% else %}Previous{% endif %} :-&lt;</a>
+                <a class="prev-post" href="{{ previousPost.url }}">&larr; {% if previousPost.data.title %}{{ previousPost.data.title }}{% else %}Previous{% endif %}</a>
             {% endif -%}
             {% if nextPost -%}
-                <a class="next-post" href="{{ nextPost.url }}">&gt;-: {%if nextPost.data.title %}{{ nextPost.data.title }}{% else %}Next{% endif %} :-&gt;</a>
+                <a class="next-post" href="{{ nextPost.url }}">{%if nextPost.data.title %}{{ nextPost.data.title }}{% else %}Next{% endif %} &rarr;</a>
             {%- endif %}
         </nav>
     {%- endif %}

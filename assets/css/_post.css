@@ -39,7 +39,7 @@
 }
 
 .post-meta {
-  font-family: var(--sans-text);
+  font-family: var(--sans);
   margin-top: 0.25rem;
   font-size: var(--font-size-minus-1);
   color: var(--secondary-text-color);

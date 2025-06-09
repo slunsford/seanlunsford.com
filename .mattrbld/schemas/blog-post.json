@@ -1,0 +1,371 @@
+{
+  "fields": [
+    {
+      "type": "text",
+      "default": null,
+      "icon": "text-input",
+      "key": "title",
+      "label": "Title",
+      "localised": false,
+      "options": {
+        "wrapping": true,
+        "multiline": false
+      },
+      "tab": "basic",
+      "validation": {
+        "enforceMinMax": true,
+        "max": null,
+        "min": null,
+        "regex": null,
+        "regexError": null,
+        "required": true,
+        "unit": "length"
+      },
+      "value": null,
+      "version": 1,
+      "visibility": {
+        "hidden": false,
+        "showByValue": {
+          "field": null
+        }
+      }
+    },
+    {
+      "type": "text",
+      "default": null,
+      "icon": "text-input",
+      "key": "slug",
+      "label": "Slug",
+      "localised": false,
+      "options": {
+        "wrapping": true,
+        "multiline": false
+      },
+      "tab": "basic",
+      "validation": {
+        "enforceMinMax": true,
+        "max": null,
+        "min": null,
+        "regex": "[a-z-]+",
+        "regexError": null,
+        "required": false,
+        "unit": "length"
+      },
+      "value": null,
+      "version": 1,
+      "visibility": {
+        "hidden": false,
+        "showByValue": {
+          "field": null
+        }
+      }
+    },
+    {
+      "type": "link",
+      "default": null,
+      "icon": "link",
+      "key": "link",
+      "label": "Link",
+      "localised": false,
+      "options": {
+        "type": "external",
+        "byFilePath": false,
+        "urlSuffix": "/",
+        "urlTemplate": ""
+      },
+      "tab": "advanced",
+      "validation": {
+        "required": false
+      },
+      "value": null,
+      "version": 1,
+      "visibility": {
+        "hidden": false,
+        "showByValue": {
+          "field": null
+        }
+      }
+    },
+    {
+      "type": "date",
+      "default": null,
+      "icon": "calendar",
+      "key": "date",
+      "label": "Date",
+      "options": {
+        "outputFormat": "iso",
+        "removable": false,
+        "showTime": true,
+        "defaultToNow": true,
+        "useAsUpdatedAt": false,
+        "only": null
+      },
+      "tab": "basic",
+      "validation": {
+        "max": null,
+        "min": null,
+        "required": false,
+        "unit": "date",
+        "isString": true
+      },
+      "value": null,
+      "version": 2,
+      "visibility": {
+        "hidden": false,
+        "showByValue": {
+          "field": null
+        }
+      }
+    },
+    {
+      "type": "date",
+      "default": null,
+      "icon": "calendar",
+      "key": "date_updated",
+      "label": "Date updated",
+      "options": {
+        "outputFormat": "iso",
+        "removable": false,
+        "showTime": true,
+        "defaultToNow": false,
+        "useAsUpdatedAt": true,
+        "only": null
+      },
+      "tab": "advanced",
+      "validation": {
+        "max": null,
+        "min": null,
+        "required": false,
+        "unit": "date",
+        "isString": true
+      },
+      "value": null,
+      "version": 2,
+      "visibility": {
+        "hidden": true,
+        "showByValue": {
+          "field": null
+        }
+      }
+    },
+    {
+      "type": "group",
+      "displayField": "url",
+      "icon": "group",
+      "key": "featured_image",
+      "label": "Featured image",
+      "tab": "advanced",
+      "value": [
+        {
+          "type": "image",
+          "default": null,
+          "icon": "image",
+          "key": "url",
+          "label": "Image",
+          "options": {
+            "resolutionHint": "",
+            "removable": true,
+            "simple": false
+          },
+          "tab": "advanced",
+          "validation": {
+            "max": null,
+            "required": false,
+            "unit": "filesize (MB)"
+          },
+          "value": null,
+          "version": 1,
+          "visibility": {
+            "hidden": false,
+            "showByValue": {
+              "field": null
+            }
+          }
+        },
+        {
+          "type": "text",
+          "default": null,
+          "icon": "text-input",
+          "key": "alt",
+          "label": "Alt text",
+          "localised": false,
+          "options": {
+            "wrapping": true,
+            "multiline": false
+          },
+          "tab": "advanced",
+          "validation": {
+            "enforceMinMax": true,
+            "max": null,
+            "min": null,
+            "regex": null,
+            "regexError": null,
+            "required": false,
+            "unit": "length"
+          },
+          "value": null,
+          "version": 1,
+          "visibility": {
+            "hidden": false,
+            "showByValue": {
+              "field": null
+            }
+          }
+        }
+      ],
+      "version": 1,
+      "visibility": {
+        "hidden": false,
+        "showByValue": {
+          "field": null
+        }
+      }
+    },
+    {
+      "type": "tags",
+      "default": null,
+      "icon": "tags",
+      "key": "tags",
+      "label": "Tags",
+      "localised": false,
+      "options": {
+        "allowUnsuggested": true,
+        "autocompleteModel": [
+          "Blogging",
+          "Christianity",
+          "Highlights",
+          "Life",
+          "Technology"
+        ]
+      },
+      "tab": "basic",
+      "validation": {
+        "max": null,
+        "min": null,
+        "unit": "tags"
+      },
+      "value": null,
+      "version": 1,
+      "visibility": {
+        "hidden": false,
+        "showByValue": {
+          "field": null
+        }
+      }
+    },
+    {
+      "type": "text",
+      "default": null,
+      "icon": "text-input",
+      "key": "excerpt",
+      "label": "Excerpt",
+      "localised": false,
+      "options": {
+        "wrapping": true,
+        "multiline": false
+      },
+      "tab": "basic",
+      "validation": {
+        "enforceMinMax": true,
+        "max": null,
+        "min": null,
+        "regex": null,
+        "regexError": null,
+        "required": false,
+        "unit": "length"
+      },
+      "value": null,
+      "version": 1,
+      "visibility": {
+        "hidden": false,
+        "showByValue": {
+          "field": null
+        }
+      }
+    },
+    {
+      "type": "rich text",
+      "default": null,
+      "icon": "text",
+      "key": "content",
+      "label": "Content",
+      "localised": false,
+      "options": {
+        "outputFormat": "markdown",
+        "blockFormats": [
+          "blockquote",
+          "heading",
+          "hr",
+          "orderedList",
+          "unorderedList",
+          "image",
+          "codeBlock"
+        ],
+        "inlineFormats": [
+          "em",
+          "strong",
+          "link",
+          "code",
+          "strike"
+        ],
+        "formatOptions": [
+          "allowQuoteFooters",
+          "allowNestedLists",
+          "allowImageCaptions"
+        ],
+        "inputRuleOptions": [
+          "autoquotes",
+          "dashes",
+          "ellipsis",
+          "noDoubleCaps",
+          "noDoubleSpace"
+        ],
+        "minHeading": 2,
+        "maxHeading": 3,
+        "codeLangs": [
+          "html",
+          "css",
+          "javascript",
+          "markdown",
+          "sql",
+          "python"
+        ],
+        "allowRaw": false,
+        "urlTemplate": "",
+        "urlSuffix": "",
+        "linkOptions": [
+          "allowExternal",
+          "allowInternal"
+        ]
+      },
+      "tab": "basic",
+      "validation": {
+        "enforceMinMax": true,
+        "max": null,
+        "min": null,
+        "regex": null,
+        "regexError": null,
+        "required": false,
+        "unit": "length"
+      },
+      "value": null,
+      "version": 1,
+      "visibility": {
+        "hidden": false,
+        "showByValue": {
+          "field": null
+        }
+      }
+    }
+  ],
+  "tabs": [
+    {
+      "label": "basic",
+      "groupAs": null
+    },
+    {
+      "label": "advanced",
+      "groupAs": null
+    }
+  ]
+}

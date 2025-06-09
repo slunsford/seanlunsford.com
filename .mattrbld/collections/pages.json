@@ -1,0 +1,19 @@
+{
+  "allowedTypes": [],
+  "dir": "/src/pages",
+  "disableComments": false,
+  "disablePreview": false,
+  "draftByDefault": false,
+  "schemas": [
+    "/.mattrbld/schemas/page.json"
+  ],
+  "linkable": true,
+  "maxSize": null,
+  "permissions": {
+    "everybody": [
+      "everything"
+    ]
+  },
+  "type": "md",
+  "urlTemplate": "/:slug"
+}
