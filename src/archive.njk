@@ -7,11 +7,11 @@ eleventyNavigation:
 ---
 {# 
 <h2>Tags</h2>
-{% include "includes/tags-list.njk" %}
+{% include "tags-list.njk" %}
 
 <h2>All Posts</h2>
  #}
 {% set posts = collections.posts %}
-{% include "includes/post-list.njk" %}
+{% include "post-list.njk" %}
 
 {% postGraph posts %}
