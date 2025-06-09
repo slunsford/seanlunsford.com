@@ -118,6 +118,9 @@ content:
         label: GitHub URL
         type: string
         pattern: ^(https?:\/\/)?github.com(\/[^\s]*)?$
+      - name: opengraph_image
+        label: OpenGraph Image
+        type: image
       - name: author
         label: Author
         type: object
