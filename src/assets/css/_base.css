@@ -132,7 +132,7 @@ pre b {
 
 acronym, .small-caps {
   font-feature-settings: var(--all-small-caps);
-  letter-spacing: 1px;
+  letter-spacing: 0.1em;
 }
 
 blockquote {
