@@ -55,7 +55,7 @@ h6 {
 
 h1 {
   font-size: var(--font-size-plus-4);
-  font-weight: 900;
+  font-weight: 800;
 }
 
 h2 {
@@ -65,7 +65,7 @@ h2 {
 
 h3 {
   font-size: var(--font-size-plus-1);
-  font-weight: 800;
+  font-weight: 700;
 }
 
 h1 b,
@@ -89,7 +89,8 @@ ol {
   hyphens: auto;
   text-wrap: pretty;
   hanging-punctuation: first;
-  font-family: var(--sans-text);
+  font-family: var(--serif);
+  font-weight: 400;
 }
 
 code,
@@ -104,6 +105,7 @@ pre {
   background: none;
   -webkit-hyphens: none;
   hyphens: none;
+  font-feature-settings: var(--mono-font-features);
 }
 
 pre {
