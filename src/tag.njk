@@ -12,8 +12,15 @@ pagination:
 layout: page.njk
 eleventyComputed:
   title: "{{ tag }}"
-  permalink: /tag/{{ tag | slugify }}/
+permalink: /tag/{{ tag | slugify }}/
 ---
+{#- 
+<h2>Tags</h2>
+{% set activeTag = tag %}
+{% include "includes/tags-list.njk" %}
+
+<h2>Posts</h2>
+#}
 {% set posts = collections[ tag ] %}
 {% include "includes/post-list.njk" %}
 

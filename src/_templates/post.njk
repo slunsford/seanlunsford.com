@@ -1,7 +1,6 @@
 ---
 layout: base.njk
-eleventyComputed:
-  permalink: "/{{ page.date | readableDate('yyyy') }}/{{slug or title | slugify}}/"
+permalink: "/{{ page.date | readableDate('yyyy') }}/{{slug or title | slugify}}/"
 ---
 
 <article class="post{% if link %} link-post{% endif %}">
