@@ -34,6 +34,16 @@ module.exports = function(eleventyConfig) {
         sort: 'desc',
     })
 
+    // Auto-populate updated_date for posts in production only
+    eleventyConfig.addGlobalData("eleventyComputed", {
+        updated_date: (data) => {
+            if (data.page.inputPath.startsWith('./src/posts/') && process.env.NODE_ENV === 'production') {
+                return "git Last Modified";
+            }
+            return data.updated_date;
+        }
+    });
+
     eleventyConfig.addShortcode("currentYear", () => `${new Date().getFullYear()}`);
     eleventyConfig.addShortcode("currentMonth", () => `${new Date().getMonth() + 1}`);
 

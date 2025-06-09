@@ -54,6 +54,7 @@ content:
         label: Date updated
         type: date
         options:
+          hidden: true
           time: true
           format: yyyy-MM-dd'T'HH:mm:ss xxx
           step: 60
