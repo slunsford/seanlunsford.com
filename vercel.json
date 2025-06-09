@@ -242,7 +242,7 @@
       "permanent": true
     },
     {
-      "source": "/:year([0-9]{4})/:month([0-9]{2})/:day([0-9]{2})/:slug",
+      "source": "/:year(\\d{4})/:month(\\d{2})/:day(\\d{2})/:slug",
       "destination": "/:year/:slug",
       "permanent": true
     },
