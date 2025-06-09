@@ -2,8 +2,8 @@
 title: Receiving the Baton
 slug: receiving-the-baton
 link: https://catchjohnfischer.wordpress.com/2012/11/14/receiving-the-baton/
-date: 2012-11-14T12:59:31.000Z
-updated_date: 2020-02-12T11:21:21.000Z
+date: 2012-11-14T12:59:31 +00:00
+updated_date: 2020-02-12T11:21:21 +00:00
 tags: "Christianity"
 ---
 

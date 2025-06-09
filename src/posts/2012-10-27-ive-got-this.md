@@ -1,8 +1,8 @@
 ---
 title: “I’ve Got This.”
 slug: ive-got-this
-date: 2012-10-27T19:26:58.000Z
-updated_date: 2020-02-07T10:14:00.000Z
+date: 2012-10-27T19:26:58 +00:00
+updated_date: 2020-02-07T10:14:00 +00:00
 tags: "Christianity"
 ---
 

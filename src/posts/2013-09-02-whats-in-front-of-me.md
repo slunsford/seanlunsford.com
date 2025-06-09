@@ -1,8 +1,8 @@
 ---
 title: What’s in Front of Me
 slug: whats-in-front-of-me
-date: 2013-09-01T22:03:01.000Z
-updated_date: 2020-02-12T11:11:57.000Z
+date: 2013-09-01T22:03:01 +00:00
+updated_date: 2020-02-12T11:11:57 +00:00
 tags: 
   - "Life"
   - "Christianity"

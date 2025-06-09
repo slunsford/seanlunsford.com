@@ -1,8 +1,8 @@
 ---
 title: Some More Food for Thought
 slug: some-more-food-for-thought
-date: 2012-05-31T06:02:24.000Z
-updated_date: 2020-02-07T10:15:58.000Z
+date: 2012-05-31T06:02:24 +00:00
+updated_date: 2020-02-07T10:15:58 +00:00
 tags: "Christianity"
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: Unplugged (Sort Of)
 slug: unplugged
-date: 2013-02-11T00:20:59.000Z
-updated_date: 2020-02-12T11:14:30.000Z
+date: 2013-02-11T00:20:59 +00:00
+updated_date: 2020-02-12T11:14:30 +00:00
 featured_image:
   url: "/assets/img/unplugged.jpeg"
   alt: "Assorted technology in a trash can"

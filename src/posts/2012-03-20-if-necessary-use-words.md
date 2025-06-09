@@ -1,8 +1,8 @@
 ---
 title: If Necessary, Use Words
 slug: if-necessary-use-words
-date: 2012-03-20T13:25:10.000Z
-updated_date: 2020-02-07T10:16:45.000Z
+date: 2012-03-20T13:25:10 +00:00
+updated_date: 2020-02-07T10:16:45 +00:00
 tags: "Christianity"
 ---
 
