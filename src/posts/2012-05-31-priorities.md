@@ -2,7 +2,7 @@
 title: Priorities
 slug: priorities
 date: 2012-05-31T01:10:09.000Z
-date_updated: 2017-12-19T02:50:30.000Z
+updated_date: 2017-12-19T02:50:30.000Z
 tags: "Christianity"
 ---
 

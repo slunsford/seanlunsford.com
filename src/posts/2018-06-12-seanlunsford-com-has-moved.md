@@ -2,7 +2,7 @@
 title: seanlunsford.com Has Moved (and so Have I)
 slug: seanlunsford-com-has-moved
 date: 2018-06-12T08:17:58.000Z
-date_updated: 2020-02-25T20:26:54.000Z
+updated_date: 2020-02-25T20:26:54.000Z
 tags: 
   - "Blogging"
   - "Technology"

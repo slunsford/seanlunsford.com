@@ -2,7 +2,7 @@
 title: Regeneration
 slug: regeneration
 date: 2020-02-24T15:12:41.000Z
-date_updated: 2021-06-27T11:56:12.000Z
+updated_date: 2021-06-27T11:56:12.000Z
 featured_image:
   url: "/assets/img/doctor-who-regeneration.jpg"
   alt: "The Twelfth Doctor regenerates."

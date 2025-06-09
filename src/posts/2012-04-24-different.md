@@ -2,7 +2,7 @@
 title: Different
 slug: different
 date: 2012-04-24T01:23:43.000Z
-date_updated: 2020-02-12T10:23:06.000Z
+updated_date: 2020-02-12T10:23:06.000Z
 tags: 
   - "Life"
   - "Christianity"

@@ -121,7 +121,7 @@
       "type": "date",
       "default": null,
       "icon": "calendar",
-      "key": "date_updated",
+      "key": "updated_date",
       "label": "Date updated",
       "options": {
         "outputFormat": "iso",

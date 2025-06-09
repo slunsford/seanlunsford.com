@@ -2,7 +2,7 @@
 title: The Time Is Now
 slug: the-time-is-now
 date: 2012-04-18T18:35:00.000Z
-date_updated: 2020-02-07T10:16:32.000Z
+updated_date: 2020-02-07T10:16:32.000Z
 tags: "Christianity"
 ---
 

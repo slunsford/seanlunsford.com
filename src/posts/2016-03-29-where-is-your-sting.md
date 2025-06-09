@@ -2,7 +2,7 @@
 title: Where Is Your Sting?
 slug: where-is-your-sting
 date: 2016-03-28T22:56:12.000Z
-date_updated: 2020-02-12T21:19:34.000Z
+updated_date: 2020-02-12T21:19:34.000Z
 tags:
   - "Christianity"
   - Highlights

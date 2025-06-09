@@ -2,7 +2,7 @@
 title: The Great Stories
 slug: its-like-in-the-great-stories
 date: 2013-01-13T16:29:00.000Z
-date_updated: 2020-02-12T11:18:46.000Z
+updated_date: 2020-02-12T11:18:46.000Z
 featured_image:
   url: "/assets/img/the-great-stories.jpeg"
   alt: "A close shot of Samwise in The Two Towers."

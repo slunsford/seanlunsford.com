@@ -45,7 +45,7 @@ content:
             - Life
             - Technology
             - Yearly Themes
-      - name: date_updated
+      - name: updated_date
         label: Date updated
         type: date
         options:

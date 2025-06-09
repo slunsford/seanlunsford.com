@@ -2,7 +2,7 @@
 title: Scripture on Faith, Deeds, and Love
 slug: faith-deeds-love
 date: 2013-02-12T13:22:41.000Z
-date_updated: 2020-02-12T11:16:29.000Z
+updated_date: 2020-02-12T11:16:29.000Z
 tags: "Christianity"
 ---
 

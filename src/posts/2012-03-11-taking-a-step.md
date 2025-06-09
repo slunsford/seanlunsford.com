@@ -2,7 +2,7 @@
 title: Taking a Step
 slug: taking-a-step
 date: 2012-03-10T22:53:09.000Z
-date_updated: 2020-02-07T10:16:54.000Z
+updated_date: 2020-02-07T10:16:54.000Z
 tags: "Christianity"
 ---
 
