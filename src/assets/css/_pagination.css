@@ -7,8 +7,8 @@
   font-weight: 600;
   color: var(--secondary-text-color);
   text-align: center;
-  font-feature-settings: var(--default-font-features), "onum" off;
-  text-transform: uppercase;
+  font-feature-settings: var(--all-small-caps), "onum" off;
+  letter-spacing: 0.1em;
 }
 
 .pagination a {

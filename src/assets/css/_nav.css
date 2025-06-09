@@ -6,7 +6,7 @@
   font-size: var(--font-size-minus-1);
   font-weight: 500;
   font-feature-settings: var(--all-small-caps);
-  letter-spacing: 1px;
+  letter-spacing: 0.1em;
 }
 
 .nav li {
