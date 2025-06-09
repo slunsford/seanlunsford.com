@@ -21,7 +21,7 @@ content:
         type: date
         options:
           time: true
-          format: YYYY-MM-DDTHH:mm:ss Z
+          format: yyyy-MM-dd'T'HH:mm
           step: 60
       - name: draft
         label: Draft
@@ -142,7 +142,7 @@ content:
           - name: mastodon_handle
             label: Mastodon handle
             type: string
-            pattern: 
+            pattern:
               regex: (^@\w+@[\.\w]+$)?
               message: This must be a valid Mastodon handle, e.g. @me@example.social
           - name: threads_url
