@@ -2,6 +2,7 @@
 title: Bringing SQL to a Python Fight
 slug: sql-to-a-python-fight
 date: 2024-09-03
+draft: true
 tags:
   - Technology
   - Data
@@ -115,7 +116,7 @@ with totals as (
           sum(population/total_pop) as pop_pct,
           sum(electors) as electors_sum,
           sum(electors/total_electors) as ec_pct
-     
+
      from states,
           totals
  group by electors;
@@ -163,7 +164,7 @@ Finally, I rewrote the query to cut out the import step and select just the colu
 
 ```sql
 with totals as (
-   	 -- Sum population and electors for all states  
+   	 -- Sum population and electors for all states
      select sum(population) as total_pop,
             sum(electors) as total_electors
        from "states.csv"
