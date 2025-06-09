@@ -2,7 +2,7 @@ settings:
   content:
     merge: true
 media:
-  input: assets/img
+  input: src/assets/img
   output: /assets/img
 content:
   - name: posts
@@ -91,7 +91,7 @@ content:
     label: Navigation
     icon: signpost
     type: file
-    path: _data/nav.yml
+    path: src/_data/nav.yml
     list: true
     fields:
       - name: title
@@ -105,7 +105,7 @@ content:
     label: Site settings
     icon: file-cog
     type: file
-    path: _data/site.yml
+    path: src/_data/site.yml
     fields:
       - name: title
         label: Title

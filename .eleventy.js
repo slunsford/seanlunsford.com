@@ -10,10 +10,10 @@ const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 
 module.exports = function(eleventyConfig) {
     // Copy `assets/` to `_site/assets/`
-    eleventyConfig.addPassthroughCopy("assets");
+    eleventyConfig.addPassthroughCopy("src/assets");
 
     // Copy `public/` to `_site/`
-    eleventyConfig.addPassthroughCopy({ "public": "/" });
+    eleventyConfig.addPassthroughCopy({ "src/public": "/" });
 
     // Watch content images for the image pipeline.
     eleventyConfig.addWatchTarget("src/**/*.{svg,webp,png,jpeg}");
@@ -120,7 +120,7 @@ module.exports = function(eleventyConfig) {
         dir: {
             input: "src",               // default: "."
             includes: "_templates",     // default: "_includes"
-            data: "../_data",           // default: "_data"
+            data: "_data",              // default: "_data"
             output: "_site"             // default: "_site"
         }
     }
