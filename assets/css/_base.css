@@ -99,13 +99,12 @@ pre {
   font-style: normal;
   font-weight: 300;
   font-size: var(--font-size-minus-2);
-  font-feature-settings: "ss02", "liga", "calt", "onum";
+  font-feature-settings: var(--mono-font-features);
   white-space: pre;
   overflow: auto;
   border: none;
   background: none;
   hyphens: none;
-  font-feature-settings: var(--mono-font-features);
 }
 
 pre {

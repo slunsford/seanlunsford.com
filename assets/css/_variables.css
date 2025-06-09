@@ -7,7 +7,7 @@
   --light-border-color: #e5e7e9;
   --dark-border-color: #22242f;
   --post-border-color: var(--light-border-color);
-  
+
   --dark-text-color: #262a2c;
   --light-text-color: #dfe1e2;
   --main-text-color: var(--dark-text-color);
@@ -25,7 +25,7 @@
   --default-font-features: "onum";
   --small-caps: var(--default-font-features), "smcp";
   --all-small-caps: var(--default-font-features), "c2sc", "smcp";
-  --mono-font-features: "onum", "ss11", "ss13";
+  --mono-font-features: "ss02", "liga", "calt", "onum", "ss11", "ss13";
 
   --sans: Concourse, sans-serif;
   --serif: Valkyrie, serif;
@@ -51,7 +51,7 @@
     --post-border-color: var(--dark-border-color);
     --footnote-background-color: #1d1e29;
     --table-header-background-color: #5f676b;
-    
+
     --main-text-color: var(--light-text-color);
     --secondary-text-color: #9eabb3;
     --footnote-button-color: #5f676b;
