@@ -17,11 +17,11 @@ permalink: /tag/{{ tag | slugify }}/
 {#- 
 <h2>Tags</h2>
 {% set activeTag = tag %}
-{% include "includes/tags-list.njk" %}
+{% include "tags-list.njk" %}
 
 <h2>Posts</h2>
 #}
 {% set posts = collections[ tag ] %}
-{% include "includes/post-list.njk" %}
+{% include "post-list.njk" %}
 
 {% postGraph posts %}

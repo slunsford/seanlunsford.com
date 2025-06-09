@@ -1,9 +1,0 @@
-{% if pagination.pageNumber > 0 -%}
-	{% include "includes/post-loop-pagination.njk" %}
-{%- endif -%}
-
-{% for post in posts %}
-	{% include "includes/post-loop-item.njk" %}
-{% endfor %}
-
-{% include "includes/post-loop-pagination.njk" %}
