@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   gap: 0.25rem;
   margin: 1.25rem auto;
-  font-size: var(--font-size-minus-3);
+  font-size: var(--font-size-minus-1);
   font-weight: 600;
   color: var(--secondary-text-color);
   text-align: center;
