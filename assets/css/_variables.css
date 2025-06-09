@@ -1,9 +1,16 @@
 :root {
-  --background-color: #f4f4f4;
+  --light-background-color: #f4f4f4;
+  --dark-background-color: #060316;
+  --background-color: var(--light-background-color);
   --post-background-color: #ffffff;
-  --post-border-color: #e5e7e9;
+  --table-header-background-color: #bfc3c5;
+  --light-border-color: #e5e7e9;
+  --dark-border-color: #22242f;
+  --post-border-color: var(--light-border-color);
 
-  --main-text-color: #262a2c;
+  --dark-text-color: #262a2c;
+  --light-text-color: #dfe1e2;
+  --main-text-color: var(--dark-text-color);
   --secondary-text-color: #5f676b;
   --footnote-button-color: #bfc3c5;
   --accent-color: #ff4500;
@@ -18,7 +25,7 @@
   --default-font-features: "onum";
   --small-caps: var(--default-font-features), "smcp";
   --all-small-caps: var(--default-font-features), "c2sc", "smcp";
-  --mono-font-features: "onum", "ss11", "ss13";
+  --mono-font-features: "ss02", "liga", "calt", "onum", "ss11", "ss13";
 
   --sans: Concourse, sans-serif;
   --serif: Valkyrie, serif;
@@ -39,12 +46,13 @@
 
 
   @media (prefers-color-scheme: dark) {
-    --background-color: #060316;
+    --background-color: var(--dark-background-color);
     --post-background-color: #171823;
-    --post-border-color: #22242f;
+    --post-border-color: var(--dark-border-color);
     --footnote-background-color: #1d1e29;
+    --table-header-background-color: #5f676b;
 
-    --main-text-color: #dfe1e2;
+    --main-text-color: var(--light-text-color);
     --secondary-text-color: #9eabb3;
     --footnote-button-color: #5f676b;
 
