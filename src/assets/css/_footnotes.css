@@ -27,15 +27,3 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .bigfoot-footnote,
-  .bigfoot-footnote__wrapper,
-  .bigfoot-footnote__content,
-  .bigfoot-footnote__tooltip {
-    background: var(--footnote-background-color);
-  }
-  
-  .bigfoot-footnote, .bigfoot-footnote__tooltip {
-    border-color: var(--post-border-color);
-  }
-}

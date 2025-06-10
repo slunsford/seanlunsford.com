@@ -31,9 +31,9 @@
 
 .embeddable-buttondown-form #bd-submit {
   flex-basis: 100px;
-  flex-grow: 1;
-  background-color: var(--main-text-color);
-  color: #ffffff;
+  flex-grow: 1;  
+  background-color: light-dark(var(--main-text-color), var(--post-background-color));
+  color: light-dark(#ffffff, var(--main-text-color));
   font-weight: 900;
 }
 
@@ -61,9 +61,3 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .embeddable-buttondown-form #bd-submit {
-    background-color: var(--post-background-color);
-    color: var(--main-text-color);
-  }
-}

@@ -1,18 +1,20 @@
 :root {
   --light-background-color: #f4f4f4;
   --dark-background-color: #060316;
-  --background-color: var(--light-background-color);
-  --post-background-color: #ffffff;
-  --table-header-background-color: #bfc3c5;
+  --background-color: light-dark(var(--light-background-color), var(--dark-background-color));
+  --post-background-color: light-dark(#ffffff, #171823);
+  --post-border-color: light-dark(var(--light-border-color), var(--dark-border-color));
+  --footnote-background-color: light-dark(#fafafa, #1d1e29);
+  --footnote-border-color: light-dark(#c3c3c3, var(--dark-border-color));
+  --table-header-background-color: light-dark(#bfc3c5, #5f676b);
   --light-border-color: #e5e7e9;
   --dark-border-color: #22242f;
-  --post-border-color: var(--light-border-color);
 
   --dark-text-color: #262a2c;
   --light-text-color: #dfe1e2;
-  --main-text-color: var(--dark-text-color);
-  --secondary-text-color: #5f676b;
-  --footnote-button-color: #bfc3c5;
+  --main-text-color: light-dark(var(--dark-text-color), var(--light-text-color));
+  --secondary-text-color: light-dark(#5f676b, #9eabb3);
+  --footnote-button-color: light-dark(#bfc3c5, #5f676b);
   --accent-color: #ff4500;
 
   --link-highlight-color: rgba(158, 171, 179, 0.2);
@@ -44,18 +46,4 @@
   --font-size-plus-7: 2.566rem;
   --font-size-plus-8: 2.887rem;
 
-
-  @media (prefers-color-scheme: dark) {
-    --background-color: var(--dark-background-color);
-    --post-background-color: #171823;
-    --post-border-color: var(--dark-border-color);
-    --footnote-background-color: #1d1e29;
-    --table-header-background-color: #5f676b;
-
-    --main-text-color: var(--light-text-color);
-    --secondary-text-color: #9eabb3;
-    --footnote-button-color: #5f676b;
-
-    /* --post-shadow: 1px 2px 2px rgba(0, 0, 0, 0.9); */
-  }
 }
