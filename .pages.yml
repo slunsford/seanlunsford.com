@@ -30,6 +30,10 @@ content:
         label: Draft
         type: boolean
         default: false
+      - name: link
+        label: External Link
+        type: string
+        pattern: ^((https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})?(\/[^\s]*\/?)?$
       - name: body
         label: Body
         type: rich-text
@@ -49,6 +53,7 @@ content:
             - Christianity
             - Life
             - Technology
+            - Data
             - Yearly Themes
       - name: featured_image
         label: Featured image

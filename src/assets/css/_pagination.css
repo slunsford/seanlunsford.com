@@ -4,11 +4,10 @@
   gap: 0.25rem;
   margin: 1.25rem auto;
   font-size: var(--font-size-minus-1);
-  font-weight: 600;
+  font-weight: 300;
   color: var(--secondary-text-color);
   text-align: center;
   font-feature-settings: var(--all-small-caps), "onum" off;
-  letter-spacing: 0.1em;
 }
 
 .pagination a {
