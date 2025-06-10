@@ -13,7 +13,6 @@
   -webkit-border-radius: var(--post-border-radius);
   -moz-box-shadow: var(--post-shadow);
   -webkit-box-shadow: var(--post-shadow);
-  overflow: hidden;
 }
 
 .post-header {
@@ -59,8 +58,10 @@
 }
 
 .post-header img {
-  width: calc(100% + 2 * var(--post-padding) + 2px);
-  margin: calc(-1 * var(--post-padding) - 1px);
+  width: calc(100% + 2 * var(--post-padding));
+  margin: calc(-1 * var(--post-padding));
+  border-top-left-radius: var(--post-border-radius);
+  border-top-right-radius: var(--post-border-radius);
   margin-bottom: 0.5rem;
   aspect-ratio: auto;
   height: auto;
