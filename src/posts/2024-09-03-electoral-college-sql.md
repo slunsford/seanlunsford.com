@@ -1,6 +1,7 @@
 ---
 title: Bringing SQL to a Python Fight
 date: 2024-09-03T16:13:19 +00:00
+link: https://leancrew.com/all-this/2024/08/the-electoral-college-again-this-time-with-aggregation/?ref=seanlunsford.com
 draft: false
 slug: bringing-sql-to-a-python-fight
 tags:
@@ -17,43 +18,43 @@ This will be the most technical piece I’ve written here, so if wrangling code 
 
 [The original post](https://leancrew.com/all-this/2024/08/what-i-didn-t-learn-about-the-electoral-college/?ref=seanlunsford.com)—and the table in question—was looking at states’ percentage of the Electoral College vote compared to their population as a percentage of the US total. He started with [a CSV](https://leancrew.com/all-this/downloads/states.csv?ref=seanlunsford.com) containing data for each state. The header and first ten rows look like this:
 
-| State | Abbrev | Population | Electors |
-| --- | --- | --- | --- |
-| Alabama | AL  | 5108468 | 9   |
-| Alaska | AK  | 733406 | 3   |
-| Arizona | AZ  | 7431344 | 11  |
-| Arkansas | AR  | 3067732 | 6   |
-| California | CA  | 38965193 | 54  |
-| Colorado | CO  | 5877610 | 10  |
-| Connecticut | CT  | 3617176 | 7   |
-| Delaware | DE  | [1031890](tel:1031890) | 3   |
-| District of Columbia | DC  | 678972 | 3   |
-| Florida | FL  | 22610726 | 30  |
+|        State         |  Abbrev  |   Population |   Electors |
+|:--------------------:|:--------:|-------------:|-----------:|
+|       Alabama        |    AL    |      5108468 |          9 |
+|        Alaska        |    AK    |       733406 |          3 |
+|       Arizona        |    AZ    |      7431344 |         11 |
+|       Arkansas       |    AR    |      3067732 |          6 |
+|      California      |    CA    |     38965193 |         54 |
+|       Colorado       |    CO    |      5877610 |         10 |
+|     Connecticut      |    CT    |      3617176 |          7 |
+|       Delaware       |    DE    |      1031890 |          3 |
+| District of Columbia |    DC    |       678972 |          3 |
+|       Florida        |    FL    |     22610726 |         30 |
 
 From that he calculated this table for his post:
 
-| Electors | States | Pop Pct | EC Pct |
-| --- | --- | --- | --- |
-| 3   | AK, DE, DC, ND, SD, VT, WY | 1.61% | 3.90% |
-| 4   | HI, ID, ME, MT, NH, RI, WV | 3.04% | 5.20% |
-| 5   | NE, NM | 1.22% | 1.86% |
-| 6   | AR, IA, KS, MS, NV, UT | 5.60% | 6.69% |
-| 7   | CT, OK | 2.29% | 2.60% |
-| 8   | KY, LA, OR | 3.98% | 4.46% |
-| 9   | AL, SC | 3.13% | 3.35% |
-| 10  | CO, MD, MN, MO, WI | 8.93% | 9.29% |
-| 11  | AZ, IN, MA, TN | 8.49% | 8.18% |
-| 12  | WA  | 2.33% | 2.23% |
-| 13  | VA  | 2.60% | 2.42% |
-| 14  | NJ  | 2.77% | 2.60% |
-| 15  | MI  | 3.00% | 2.79% |
-| 16  | GA, NC | 6.53% | 5.95% |
-| 17  | OH  | 3.52% | 3.16% |
-| 19  | IL, PA | 7.62% | 7.06% |
-| 28  | NY  | 5.84% | 5.20% |
-| 30  | FL  | 6.75% | 5.58% |
-| 40  | TX  | 9.11% | 7.43% |
-| 54  | CA  | 11.63% | 10.04% |
+|  Electors  |           States           |   Pop Pct |   EC Pct |
+|:----------:|:--------------------------:|----------:|---------:|
+|     3      | AK, DE, DC, ND, SD, VT, WY |     1.61% |    3.90% |
+|     4      | HI, ID, ME, MT, NH, RI, WV |     3.04% |    5.20% |
+|     5      |           NE, NM           |     1.22% |    1.86% |
+|     6      |   AR, IA, KS, MS, NV, UT   |     5.60% |    6.69% |
+|     7      |           CT, OK           |     2.29% |    2.60% |
+|     8      |         KY, LA, OR         |     3.98% |    4.46% |
+|     9      |           AL, SC           |     3.13% |    3.35% |
+|     10     |     CO, MD, MN, MO, WI     |     8.93% |    9.29% |
+|     11     |       AZ, IN, MA, TN       |     8.49% |    8.18% |
+|     12     |             WA             |     2.33% |    2.23% |
+|     13     |             VA             |     2.60% |    2.42% |
+|     14     |             NJ             |     2.77% |    2.60% |
+|     15     |             MI             |     3.00% |    2.79% |
+|     16     |           GA, NC           |     6.53% |    5.95% |
+|     17     |             OH             |     3.52% |    3.16% |
+|     19     |           IL, PA           |     7.62% |    7.06% |
+|     28     |             NY             |     5.84% |    5.20% |
+|     30     |             FL             |     6.75% |    5.58% |
+|     40     |             TX             |     9.11% |    7.43% |
+|     54     |             CA             |    11.63% |   10.04% |
 
 Both Dr. Drang and I write our posts in [Markdown](https://en.wikipedia.org/wiki/Markdown), so the plaintext version of the table looks like this:
 
