@@ -1,58 +1,59 @@
 ---
 title: Bringing SQL to a Python Fight
-slug: sql-to-a-python-fight
-date: 2024-09-03T16:13:19 +00:00
+date: 2024-09-03T16:13:00 +00:00
 draft: true
+slug: bringing-sql-to-a-python-fight
 tags:
   - Technology
   - Data
 ---
-A couple weeks ago I read [two](https://leancrew.com/all-this/2024/08/pandas-and-the-electoral-college/?ref=seanlunsford.com) [posts](https://leancrew.com/all-this/2024/08/the-electoral-college-again-this-time-with-aggregation/?ref=seanlunsford.com) by Dr. Drang. He was documenting the creation of a table for a [previous blog post](https://leancrew.com/all-this/2024/08/what-i-didn-t-learn-about-the-electoral-college/?ref=seanlunsford.com) using [Pandas](https://pandas.pydata.org/), a data analysis package for [Python](https://en.wikipedia.org/wiki/Python_(programming_language)). Working with data is my day job now, so it was interesting to follow his process and the updates he made in the follow-up post. Of course I got [nerd-sniped](https://xkcd.com/356/), and just had to work out how I’d approach the problem with my own preferred tools.
+A couple weeks ago I read [two](https://leancrew.com/all-this/2024/08/pandas-and-the-electoral-college/?ref=seanlunsford.com) [posts](https://leancrew.com/all-this/2024/08/the-electoral-college-again-this-time-with-aggregation/?ref=seanlunsford.com) by Dr. Drang. He was documenting the creation of a table for a [previous blog post](https://leancrew.com/all-this/2024/08/what-i-didn-t-learn-about-the-electoral-college/?ref=seanlunsford.com) using [Pandas](https://pandas.pydata.org/), a data analysis package for [Python](https://en.wikipedia.org/wiki/Python_\(programming_language\)). Working with data is my day job now, so it was interesting to follow his process and the updates he made in the follow-up post. Of course I got [nerd-sniped](https://xkcd.com/356/), and just had to work out how I’d approach the problem with my own preferred tools.
 
-This will be the most technical piece I’ve written here, so if wrangling code and crunching numbers sounds like a good time, read on.[^ns]
+This will be the most technical piece I’ve written here, so if wrangling code and crunching numbers sounds like a good time, read on.\[^ns\]
 
-[^ns]: Joke’s on me: writing this post and updating my website to handle all these tables and code blocks nicely ended up being way more involved than solving the original problem.
+\[^ns\]: Joke’s on me: writing this post and updating my website to handle all these tables and code blocks nicely ended up being way more involved than solving the original problem.
 
 ## The Problem
+
 [The original post](https://leancrew.com/all-this/2024/08/what-i-didn-t-learn-about-the-electoral-college/?ref=seanlunsford.com)—and the table in question—was looking at states’ percentage of the Electoral College vote compared to their population as a percentage of the US total. He started with [a CSV](https://leancrew.com/all-this/downloads/states.csv?ref=seanlunsford.com) containing data for each state. The header and first ten rows look like this:
 
-|        State         |  Abbrev  |   Population |   Electors |
-|:--------------------:|:--------:|-------------:|-----------:|
-|       Alabama        |    AL    |      5108468 |          9 |
-|        Alaska        |    AK    |       733406 |          3 |
-|       Arizona        |    AZ    |      7431344 |         11 |
-|       Arkansas       |    AR    |      3067732 |          6 |
-|      California      |    CA    |     38965193 |         54 |
-|       Colorado       |    CO    |      5877610 |         10 |
-|     Connecticut      |    CT    |      3617176 |          7 |
-|       Delaware       |    DE    |      1031890 |          3 |
-| District of Columbia |    DC    |       678972 |          3 |
-|       Florida        |    FL    |     22610726 |         30 |
+| State | Abbrev | Population | Electors |
+| --- | --- | --- | --- |
+| Alabama | AL  | 5108468 | 9   |
+| Alaska | AK  | 733406 | 3   |
+| Arizona | AZ  | 7431344 | 11  |
+| Arkansas | AR  | 3067732 | 6   |
+| California | CA  | 38965193 | 54  |
+| Colorado | CO  | 5877610 | 10  |
+| Connecticut | CT  | 3617176 | 7   |
+| Delaware | DE  | 1031890 | 3   |
+| District of Columbia | DC  | 678972 | 3   |
+| Florida | FL  | 22610726 | 30  |
 
 From that he calculated this table for his post:
 
-|  Electors  |           States           |   Pop Pct |   EC Pct |
-|:----------:|:--------------------------:|----------:|---------:|
-|     3      | AK, DE, DC, ND, SD, VT, WY |     1.61% |    3.90% |
-|     4      | HI, ID, ME, MT, NH, RI, WV |     3.04% |    5.20% |
-|     5      |           NE, NM           |     1.22% |    1.86% |
-|     6      |   AR, IA, KS, MS, NV, UT   |     5.60% |    6.69% |
-|     7      |           CT, OK           |     2.29% |    2.60% |
-|     8      |         KY, LA, OR         |     3.98% |    4.46% |
-|     9      |           AL, SC           |     3.13% |    3.35% |
-|     10     |     CO, MD, MN, MO, WI     |     8.93% |    9.29% |
-|     11     |       AZ, IN, MA, TN       |     8.49% |    8.18% |
-|     12     |             WA             |     2.33% |    2.23% |
-|     13     |             VA             |     2.60% |    2.42% |
-|     14     |             NJ             |     2.77% |    2.60% |
-|     15     |             MI             |     3.00% |    2.79% |
-|     16     |           GA, NC           |     6.53% |    5.95% |
-|     17     |             OH             |     3.52% |    3.16% |
-|     19     |           IL, PA           |     7.62% |    7.06% |
-|     28     |             NY             |     5.84% |    5.20% |
-|     30     |             FL             |     6.75% |    5.58% |
-|     40     |             TX             |     9.11% |    7.43% |
-|     54     |             CA             |    11.63% |   10.04% |
+| Electors | States | Pop Pct | EC Pct |
+| --- | --- | --- | --- |
+| 3   | AK, DE, DC, ND, SD, VT, WY | 1.61% | 3.90% |
+| 4   | HI, ID, ME, MT, NH, RI, WV | 3.04% | 5.20% |
+| 5   | NE, NM | 1.22% | 1.86% |
+| 6   | AR, IA, KS, MS, NV, UT | 5.60% | 6.69% |
+| 7   | CT, OK | 2.29% | 2.60% |
+| 8   | KY, LA, OR | 3.98% | 4.46% |
+| 9   | AL, SC | 3.13% | 3.35% |
+| 10  | CO, MD, MN, MO, WI | 8.93% | 9.29% |
+| 11  | AZ, IN, MA, TN | 8.49% | 8.18% |
+| 12  | WA  | 2.33% | 2.23% |
+| 13  | VA  | 2.60% | 2.42% |
+| 14  | NJ  | 2.77% | 2.60% |
+| 15  | MI  | 3.00% | 2.79% |
+| 16  | GA, NC | 6.53% | 5.95% |
+| 17  | OH  | 3.52% | 3.16% |
+| 19  | IL, PA | 7.62% | 7.06% |
+| 28  | NY  | 5.84% | 5.20% |
+| 30  | FL  | 6.75% | 5.58% |
+| 40  | TX  | 9.11% | 7.43% |
+| 54  | CA  | 11.63% | 10.04% |
 
 Both Dr. Drang and I write our posts in [Markdown](https://en.wikipedia.org/wiki/Markdown), so the plaintext version of the table looks like this:
 
@@ -82,22 +83,24 @@ Both Dr. Drang and I write our posts in [Markdown](https://en.wikipedia.org/wiki
 ```
 
 ## The Tools
-My go-to language for working with data is [SQL](https://en.wikipedia.org/wiki/SQL). I turn to Python[^py] for things that involve more scripting (like loops or complex functions). But for most data analysis needs, I find SQL better suited to the job.
 
-[^py]: Some Pandas, but mostly [Snowpark Python](https://docs.snowflake.com/en/developer-guide/snowpark/python/index), which is Pandas-inspired but native to [Snowflake](https://www.snowflake.com/en/), which we use at work.
+My go-to language for working with data is [SQL](https://en.wikipedia.org/wiki/SQL). I turn to Python\[^py\] for things that involve more scripting (like loops or complex functions). But for most data analysis needs, I find SQL better suited to the job.
+
+\[^py\]: Some Pandas, but mostly [Snowpark Python](https://docs.snowflake.com/en/developer-guide/snowpark/python/index), which is Pandas-inspired but native to [Snowflake](https://www.snowflake.com/en/), which we use at work.
 
 From personal projects to one-off data transformation/analysis tasks at work, I keep finding more and more uses for [DuckDB](https://duckdb.org/)—in its own words, “a fast in-process analytical database”. DuckDB can import (and export) a variety of file and database formats or even query them directly. It can also be used from within Python, which allows for workflows combining DuckDB and Pandas.
 
 ## The Solution
+
 I worked through this a couple different ways. The first time through was more piece-by-piece, and then I condensed that down to a one-shot query, which is what I used in a (very short) Python script to generate the final Markdown table.
 
-I started by importing the CSV to a new table in the database:[^sql]
+I started by importing the CSV to a new table in the database:\[^sql\]
 
 ```sql
 create table states as from "states.csv";
 ```
 
-[^sql]: To pick this apart a bit: I could read the contents of the file with `select * from "states.csv"`, which gives me every column (and row) of the data. DuckDB has a convenient syntax for those `select *` queries—namely, you can drop the `select *` and just type `from "states.csv"`. Here I’m taking it a step further and creating a table from the results of that query.
+\[^sql\]: To pick this apart a bit: I could read the contents of the file with `select * from "states.csv"`, which gives me every column (and row) of the data. DuckDB has a convenient syntax for those `select *` queries—namely, you can drop the `select *` and just type `from "states.csv"`. Here I’m taking it a step further and creating a table from the results of that query.
 
 I queried that table to get something like Dr. Drang’s initial summary table.
 
@@ -120,7 +123,7 @@ with totals as (
      from states,
           totals
  group by electors;
- ```
+```
 
 This is where the meat of the aggregation happens.
 
@@ -164,7 +167,7 @@ Finally, I rewrote the query to cut out the import step and select just the colu
 
 ```sql
 with totals as (
-   	 -- Sum population and electors for all states
+        -- Sum population and electors for all states
      select sum(population) as total_pop,
             sum(electors) as total_electors
        from "states.csv"
