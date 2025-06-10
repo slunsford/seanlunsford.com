@@ -6,6 +6,7 @@
   --post-border-color: light-dark(var(--light-border-color), var(--dark-border-color));
   --footnote-background-color: light-dark(#fafafa, #1d1e29);
   --footnote-border-color: light-dark(#c3c3c3, var(--dark-border-color));
+  --post-padding: clamp(0.75rem, 2vw, 1.25rem);
   --table-header-background-color: light-dark(#bfc3c5, #5f676b);
   --light-border-color: #e5e7e9;
   --dark-border-color: #22242f;

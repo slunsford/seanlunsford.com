@@ -1,7 +1,7 @@
 .post {
   position: relative;
-  margin: 1.25rem -1.25rem;
-  padding: 1.25rem;
+  margin: var(--post-padding) calc(-1 * var(--post-padding));
+  padding: var(--post-padding);
   padding-bottom: 0.5rem; /* Account for bottom margin of last paragraph/element */
   word-break: break-word;
   background-color: var(--post-background-color);
@@ -13,6 +13,7 @@
   -webkit-border-radius: var(--post-border-radius);
   -moz-box-shadow: var(--post-shadow);
   -webkit-box-shadow: var(--post-shadow);
+  overflow: hidden;
 }
 
 .post-header {
@@ -33,8 +34,8 @@
 }
 
 .link-post .link-arrow  {
-  font-size: var(--font-size);
-  vertical-align: super;
+  font-size: var(--font-size-plus-1);
+  vertical-align: baseline;
 }
 
 .post-meta {
@@ -53,15 +54,16 @@
   color: var(--accent-color);
 }
 
+.post-meta .permalink {
+  font-size: var(--font-size-minus-2);
+}
+
 .post-header img {
-  width: calc(100% + 2.5rem + 2px);
-  max-width: calc(100% + 2.5rem + 2px);
+  width: calc(100% + 2 * var(--post-padding) + 2px);
+  margin: calc(-1 * var(--post-padding) - 1px);
+  margin-bottom: 0.5rem;
   aspect-ratio: auto;
   height: auto;
-  margin: calc(-1.25rem - 1px);
-  margin-bottom: 0.5rem;
-  border-top-left-radius: var(--post-border-radius);
-  border-top-right-radius: var(--post-border-radius);
 }
 
 .footnotes-sep {
@@ -89,16 +91,3 @@
   opacity: 75%;
 }
 
-@media only screen and (max-width: 570px) {
-  .post {
-    margin: 0.75rem -0.75rem;
-    padding: 0.75rem;
-  }
-
-  .post-header img {
-    width: calc(100% + 1.5rem + 2px) !important;
-    max-width: calc(100% + 1.5rem + 2px) !important;
-    margin: calc(-0.75rem - 1px);
-    margin-bottom: 0.75rem;
-  }
-}

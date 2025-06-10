@@ -21,9 +21,4 @@
   color: var(--main-text-color);
 }
 
-@media only screen and (max-width: 570px) {
-  .bigfoot-footnote__content {
-    padding: 0.65rem 0.75rem 0.75rem;
-  }
-}
 
