@@ -6,9 +6,9 @@
 
         <h1 class="post-title">
             {% if post.data.link -%}
-                <a href="{{ post.data.link }}">{{ post.data.title }} <i class="fa-duotone fa-solid fa-square-arrow-up-right link-arrow"></i></a>
+                <a href="{{ post.data.link }}">{{ post.data.title | abbr | safe }} <i class="fa-duotone fa-solid fa-square-arrow-up-right link-arrow"></i></a>
             {%- else -%}
-                <a href="{{ post.url }}">{{ post.data.title }}</a>
+                <a href="{{ post.url }}">{{ post.data.title | abbr | safe }}</a>
             {%- endif %}
         </h1>
         <section class="post-meta">

@@ -1,5 +1,6 @@
 const { DateTime } = require("luxon");
 const markdownItFootnote = require("markdown-it-footnote");
+const markdownItAbbr = require("./.eleventy.abbreviations");
 const yaml = require("js-yaml");
 
 const postGraph = require('@rknightuk/eleventy-plugin-post-graph');
@@ -88,6 +89,11 @@ module.exports = function(eleventyConfig) {
         return (tags || []).filter(tag => ["all", "nav", "post", "posts", "pages"].indexOf(tag) === -1);
     });
 
+    eleventyConfig.addFilter("abbr", function(text) {
+        if (!text) return text;
+        return text.replace(/\b([A-Z]{2,}s?)\b/g, '<abbr>$1</abbr>');
+    });
+
     eleventyConfig.addDataExtension("yml, yaml", (contents) => yaml.load(contents));
 
     // Link posts collection
@@ -99,6 +105,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.amendLibrary("md", mdLib => {
         mdLib.enable("code");
         mdLib.use(markdownItFootnote);
+        mdLib.use(markdownItAbbr);
     });
 
     return {

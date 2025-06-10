@@ -133,9 +133,9 @@ pre b {
   white-space: pre-wrap;
 }
 
-acronym, .small-caps {
+abbr, .small-caps {
   font-feature-settings: var(--all-small-caps);
-  letter-spacing: 0.1em;
+  /* letter-spacing: 0.1em; */
 }
 
 blockquote {

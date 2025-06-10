@@ -11,9 +11,9 @@ permalink: "/{{ page.date | readableDate('yyyy') }}/{{slug or title | slugify}}/
 
         <h1 class="post-title">
             {%- if link -%}
-            <a href="{{ link }}">{{ title }} <i class="fa-duotone fa-solid fa-square-arrow-up-right link-arrow"></i></a>
+            <a href="{{ link }}">{{ title | abbr | safe }} <i class="fa-duotone fa-solid fa-square-arrow-up-right link-arrow"></i></a>
             {%- else -%}
-            {{ title }}
+            {{ title | abbr | safe }}
             {%- endif -%}
         </h1>
         <section class="post-meta">
