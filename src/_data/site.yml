@@ -5,6 +5,7 @@ opengraph_image: /assets/img/opengraph.png
 author:
   name: Sean Lunsford
   email: sean@seanlunsford.com
+  avatar: /assets/img/sean.png
   url: https://seanlunsford.com
   mastodon_url: https://mastodon.seanlunsford.com/@sean
   mastodon_handle: "@sean@seanlunsford.com"
