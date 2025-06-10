@@ -1,6 +1,6 @@
 ---
 title: Bringing SQL to a Python Fight
-date: 2024-09-03T16:13:00 +00:00
+date: 2024-09-03T16:13:19 +00:00
 draft: false
 slug: bringing-sql-to-a-python-fight
 tags:
