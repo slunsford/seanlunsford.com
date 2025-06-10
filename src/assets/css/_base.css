@@ -7,6 +7,8 @@ html {
   max-height: 100%;
   background-color: var(--background-color);
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  /* Use Dynamic Type */
   font-size: 0.9em;
   font: -apple-system-body;
 }
@@ -25,6 +27,7 @@ body {
   color: var(--main-text-color);
 }
 
+/* Override Dynamic Type on Macs */
 @media screen and (min-width: 801px) {
   html {
     font-size: 1.1rem;

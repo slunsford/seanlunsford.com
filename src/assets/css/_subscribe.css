@@ -16,7 +16,7 @@
   padding: 0.5rem;
   border-radius: 5px;
   font-family: var(--sans);
-  font-size: var(--font-size-plus-1);
+  font-size: clamp(1rem, var(--font-size-plus-1), var(--font-size-plus-1));
   border: 0.5px solid var(--post-border-color);
 }
 
@@ -55,9 +55,4 @@
   color: var(--accent-color);
 }
 
-@media only screen and (max-width: 370px) {
-  .embeddable-buttondown-form #bd-email {
-    font-size: 1rem;
-  }
-}
 
