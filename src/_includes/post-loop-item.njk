@@ -3,7 +3,7 @@
         {% if post.data.featured_image -%}
             <img src="{{ post.data.featured_image.url }}" alt="{{ post.data.featured_image.alt }}" />
         {% endif -%}
-        
+
         <h1 class="post-title">
             {% if post.data.link -%}
                 <a href="{{ post.data.link }}">{{ post.data.title }} <i class="fa-duotone fa-solid fa-square-arrow-up-right link-arrow"></i></a>
@@ -13,7 +13,7 @@
         </h1>
         <section class="post-meta">
             <time class="post-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-            <a href="{{ post.url }}" class="permalink"><i class="fa-solid fa-link-simple"></i></a>
+            <a href="{{ post.url }}" class="permalink"><i class="fa-regular fa-link-simple"></i></a>
         </section>
     </header>
     <section class="post-content">

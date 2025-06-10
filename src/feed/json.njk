@@ -24,7 +24,7 @@ permalink: /feed.json
 			"id": "{{ absolutePostUrl }}",
 			"url": "{{ absolutePostUrl }}",
 			{%- if post.data.link %}
-			"external_url": "{{ post.data.link }}",
+			"external_url": "{{ post.data.link | htmlBaseUrl(site.url) }}",
 			{%- endif %}
 			"title": "{{ post.data.title }}",
 			"content_html": {% if post.templateContent %}{{ post.templateContent | transformWithHtmlBase(absolutePostUrl, post.url) | dump | safe }}{% else %}""{% endif %},

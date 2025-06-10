@@ -17,7 +17,10 @@ permalink: /feed.xml
 	{% set absolutePostUrl %}{{ post.url | htmlBaseUrl(site.url) }}{% endset %}
 	<entry>
 		{% if post.data.title %}<title>{{ post.data.title }}</title>{% endif %}
-		<link href="{{ absolutePostUrl }}"/>
+		{%- if post.data.link %}
+		<link rel="alternate" href="{{ post.data.link | htmlBaseUrl(site.url) }}"/>
+		{%- endif %}
+		<link rel={% if post.data.link %}"related"{% else %}"alternate"{% endif %} href="{{ absolutePostUrl }}"/>
 		<updated>{{ (post.updated_date or post.date) | dateToRfc3339 }}</updated>
 		<id>{{ absolutePostUrl }}</id>
 		<content type="html">{{ post.templateContent | transformWithHtmlBase(absolutePostUrl, post.url) }}</content>
