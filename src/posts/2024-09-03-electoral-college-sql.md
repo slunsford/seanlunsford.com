@@ -9,9 +9,9 @@ tags:
 ---
 A couple weeks ago I read [two](https://leancrew.com/all-this/2024/08/pandas-and-the-electoral-college/?ref=seanlunsford.com) [posts](https://leancrew.com/all-this/2024/08/the-electoral-college-again-this-time-with-aggregation/?ref=seanlunsford.com) by Dr. Drang. He was documenting the creation of a table for a [previous blog post](https://leancrew.com/all-this/2024/08/what-i-didn-t-learn-about-the-electoral-college/?ref=seanlunsford.com) using [Pandas](https://pandas.pydata.org/), a data analysis package for [Python](https://en.wikipedia.org/wiki/Python_\(programming_language\)). Working with data is my day job now, so it was interesting to follow his process and the updates he made in the follow-up post. Of course I got [nerd-sniped](https://xkcd.com/356/), and just had to work out how I’d approach the problem with my own preferred tools.
 
-This will be the most technical piece I’ve written here, so if wrangling code and crunching numbers sounds like a good time, read on.\[^ns\]
+This will be the most technical piece I’ve written here, so if wrangling code and crunching numbers sounds like a good time, read on.[^ns]
 
-\[^ns\]: Joke’s on me: writing this post and updating my website to handle all these tables and code blocks nicely ended up being way more involved than solving the original problem.
+[^ns]: Joke’s on me: writing this post and updating my website to handle all these tables and code blocks nicely ended up being way more involved than solving the original problem.
 
 ## The Problem
 
@@ -84,9 +84,9 @@ Both Dr. Drang and I write our posts in [Markdown](https://en.wikipedia.org/wiki
 
 ## The Tools
 
-My go-to language for working with data is [SQL](https://en.wikipedia.org/wiki/SQL). I turn to Python\[^py\] for things that involve more scripting (like loops or complex functions). But for most data analysis needs, I find SQL better suited to the job.
+My go-to language for working with data is [SQL](https://en.wikipedia.org/wiki/SQL). I turn to Python[^py] for things that involve more scripting (like loops or complex functions). But for most data analysis needs, I find SQL better suited to the job.
 
-\[^py\]: Some Pandas, but mostly [Snowpark Python](https://docs.snowflake.com/en/developer-guide/snowpark/python/index), which is Pandas-inspired but native to [Snowflake](https://www.snowflake.com/en/), the data warehouse we use at work.
+[^py]: Some Pandas, but mostly [Snowpark Python](https://docs.snowflake.com/en/developer-guide/snowpark/python/index), which is Pandas-inspired but native to [Snowflake](https://www.snowflake.com/en/), the data warehouse we use at work.
 
 From personal projects to one-off data transformation/analysis tasks at work, I keep finding more and more uses for [DuckDB](https://duckdb.org/)—in its own words, “a fast in-process analytical database”. DuckDB can import (and export) a variety of file and database formats or even query them directly. It can also be used from within Python, which allows for workflows combining DuckDB and Pandas.
 
@@ -94,13 +94,13 @@ From personal projects to one-off data transformation/analysis tasks at work, I 
 
 I worked through this a couple different ways. The first time through was more piece-by-piece, and then I condensed that down to a one-shot query, which is what I used in a (very short) Python script to generate the final Markdown table.
 
-I started by importing the CSV to a new table in the database:\[^sql\]
+I started by importing the CSV to a new table in the database:[^sql]
 
 ```sql
 create table states as from "states.csv";
 ```
 
-\[^sql\]: To pick this apart a bit: I could read the contents of the file with `select * from "states.csv"`, which gives me every column (and row) of the data. DuckDB has a convenient syntax for those `select *` queries—namely, you can drop the `select *` and just type `from "states.csv"`. Here I’m taking it a step further and creating a table from the results of that query.
+[^sql]: To pick this apart a bit: I could read the contents of the file with `select * from "states.csv"`, which gives me every column (and row) of the data. DuckDB has a convenient syntax for those `select *` queries—namely, you can drop the `select *` and just type `from "states.csv"`. Here I’m taking it a step further and creating a table from the results of that query.
 
 I queried that table to get something like Dr. Drang’s initial summary table.
 
