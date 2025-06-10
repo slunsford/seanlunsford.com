@@ -26,7 +26,7 @@ This will be the most technical piece I’ve written here, so if wrangling code 
 | California | CA  | 38965193 | 54  |
 | Colorado | CO  | 5877610 | 10  |
 | Connecticut | CT  | 3617176 | 7   |
-| Delaware | DE  | 1031890 | 3   |
+| Delaware | DE  | [1031890](tel:1031890) | 3   |
 | District of Columbia | DC  | 678972 | 3   |
 | Florida | FL  | 22610726 | 30  |
 
@@ -86,7 +86,7 @@ Both Dr. Drang and I write our posts in [Markdown](https://en.wikipedia.org/wiki
 
 My go-to language for working with data is [SQL](https://en.wikipedia.org/wiki/SQL). I turn to Python\[^py\] for things that involve more scripting (like loops or complex functions). But for most data analysis needs, I find SQL better suited to the job.
 
-\[^py\]: Some Pandas, but mostly [Snowpark Python](https://docs.snowflake.com/en/developer-guide/snowpark/python/index), which is Pandas-inspired but native to [Snowflake](https://www.snowflake.com/en/), which we use at work.
+\[^py\]: Some Pandas, but mostly [Snowpark Python](https://docs.snowflake.com/en/developer-guide/snowpark/python/index), which is Pandas-inspired but native to [Snowflake](https://www.snowflake.com/en/), the data warehouse we use at work.
 
 From personal projects to one-off data transformation/analysis tasks at work, I keep finding more and more uses for [DuckDB](https://duckdb.org/)—in its own words, “a fast in-process analytical database”. DuckDB can import (and export) a variety of file and database formats or even query them directly. It can also be used from within Python, which allows for workflows combining DuckDB and Pandas.
 
