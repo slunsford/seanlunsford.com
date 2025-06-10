@@ -9,10 +9,12 @@ permalink: /feed.json
 	"home_page_url": "{{ site.url | addPathPrefixToFullUrl }}",
 	"feed_url": "{{ permalink | htmlBaseUrl(site.url) }}",
 	"description": "{{ site.description }}",
-	"author": {
+	"favicon": "{{ '/assets/icons/favicon-72.png' | htmlBaseUrl(site.url) }}",
+	"authors": [{
 		"name": "{{ site.author.name }}",
-		"url": "{{ site.author.url }}"
-	},
+		"url": "{{ site.author.url }}",
+		"avatar": "{{ site.author.avatar | htmlBaseUrl(site.url) }}"
+	}],
 	"items": [
     {%- set comma = joiner() %}
 		{%- for post in collections.posts | reverse %}
@@ -21,19 +23,26 @@ permalink: /feed.json
 		{
 			"id": "{{ absolutePostUrl }}",
 			"url": "{{ absolutePostUrl }}",
+			{%- if post.data.link %}
 			"external_url": "{{ post.data.link }}",
+			{%- endif %}
 			"title": "{{ post.data.title }}",
 			"content_html": {% if post.templateContent %}{{ post.templateContent | transformWithHtmlBase(absolutePostUrl, post.url) | dump | safe }}{% else %}""{% endif %},
-			"image": "{% if post.data.featured_image.url -%}
-        {{ post.data.featured_image.url | htmlBaseUrl(site.url) }}
-      {%- endif %}",
+			{%- if post.data.featured_image.url %}
+    	"banner_image": "{{ post.data.featured_image.url | htmlBaseUrl(site.url) }}",
+      {%- endif %}
 			"date_published": "{{ post.date | dateToRfc3339 }}",
 			"date_modified": "{{ (post.updated_date or post.date) | dateToRfc3339 }}",
+			"authors": [{
+				"name": "{{ site.author.name }}",
+				"url": "{{ site.author.url }}",
+				"avatar": "{{ site.author.avatar | htmlBaseUrl(site.url) }}"
+			}],
       {%- set comma = joiner() %}
       "tags": [ {%- for tag in post.data.tags | filterTagList -%}
         {{ comma() }} "{{ tag }}"
       {%- endfor %} ]
-		}
+	}
 		{%- endfor %}
 	]
 }

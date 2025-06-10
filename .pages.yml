@@ -136,6 +136,9 @@ content:
             label: URL
             type: string
             pattern: (^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$)?
+          - icon: avatar
+            label: Avatar
+            type: image
           - name: mastodon_url
             label: Mastodon URL
             type: string
