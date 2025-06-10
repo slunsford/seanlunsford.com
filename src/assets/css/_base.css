@@ -42,6 +42,10 @@ b, strong {
   font-weight: 600;
 }
 
+article {
+  font-family: var(--serif);
+}
+
 h1,
 h2,
 h3,
@@ -88,7 +92,6 @@ ol {
   hyphens: auto;
   text-wrap: pretty;
   hanging-punctuation: first;
-  font-family: var(--serif);
   font-weight: 400;
 }
 

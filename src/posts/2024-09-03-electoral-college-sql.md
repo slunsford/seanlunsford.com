@@ -1,7 +1,7 @@
 ---
 title: Bringing SQL to a Python Fight
 slug: sql-to-a-python-fight
-date: 2024-09-03
+date: 2024-09-03T16:13:19 +00:00
 draft: true
 tags:
   - Technology
@@ -219,24 +219,27 @@ To get it into a Markdown table, we can run this query from Python, convert it t
 import duckdb
 import pandas
 
-df = duckdb.sql("\
-        with totals as (\
-             select sum(population) as total_pop,\
-                    sum(electors) as total_electors\
-               from 'states.csv'\
-        )\
-           select electors as 'Electors',\
-                  string_agg(abbrev, ', ') as 'States',\
-                  sum(population/total_pop) as 'Pop Pct',\
-                  sum(electors/total_electors) as 'EC Pct'\
-             from 'states.csv',\
-                  totals\
-         group by electors\
-         order by electors;\
-     ").df()
+df = duckdb.sql("""
+    with totals as (
+         select sum(population) as total_pop,
+                sum(electors) as total_electors
+           from 'states.csv'
+    )
+       select electors as 'Electors',
+              string_agg(abbrev, ', ') as 'States',
+              sum(population/total_pop) as 'Pop Pct',
+              sum(electors/total_electors) as 'EC Pct'
+         from 'states.csv',
+              totals
+     group by electors
+     order by electors;
+""").df()
 
-print(df.to_markdown(index=False, floatfmt='.2%',\
-      colalign=['center', 'center', 'right', 'right'] ))
+print(df.to_markdown(
+    index=False,
+    floatfmt='.2%',
+    colalign=['center', 'center', 'right', 'right']
+))
 ```
 
 I’ve made two tweaks to the `to_markdown` call from Dr. Drang’s code. It was adding an index column by default, so I’ve disabled that. Second, since I’ve already renamed the columns in SQL, the `headers` parameter is no longer needed.
