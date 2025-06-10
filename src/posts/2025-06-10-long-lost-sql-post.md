@@ -3,6 +3,7 @@ title: Unearthing My One Post From 2024
 date: 2025-06-10T18:17:00 +00:00
 draft: false
 link: /2024/bringing-sql-to-a-python-fight/
+slug: long-lost-sql-post
 tags:
   - Blogging
 ---
