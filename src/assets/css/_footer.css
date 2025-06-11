@@ -12,10 +12,6 @@ footer.main {
   overflow: hidden;
   font-size: var(--font-size-minus-1);
   color: var(--secondary-text-color);
-
-  .powered-by {
-    margin-right: 0.5rem;
-  }
 }
 
 .nav-footer {
@@ -23,5 +19,5 @@ footer.main {
   list-style: none;
   margin: 0;
   padding: 0;
-  column-gap: 0.5rem;
+  gap: 0.5rem;
 }

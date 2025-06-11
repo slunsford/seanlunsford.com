@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 0.25rem;
   font-size: var(--font-size-minus-1);
   font-weight: 300;
   color: var(--secondary-text-color);
@@ -10,9 +11,9 @@
 
 .extra-pagination {
   display: none;
-}
 
-/* On page2+ show extra pagination controls at the top of post list */
-.paged .extra-pagination {
-  display: flex;
+  /* On page2+ show extra pagination controls at the top of post list */
+  .paged & {
+    display: flex;
+  }
 }
