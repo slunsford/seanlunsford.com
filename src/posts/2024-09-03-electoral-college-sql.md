@@ -1,6 +1,7 @@
 ---
 title: Bringing SQL to a Python Fight
 date: 2024-09-03T16:13:19 +00:00
+updated_date: 2025-06-10T23:10:00 +03:00
 link: https://leancrew.com/all-this/2024/08/the-electoral-college-again-this-time-with-aggregation/?ref=seanlunsford.com
 draft: false
 slug: bringing-sql-to-a-python-fight
