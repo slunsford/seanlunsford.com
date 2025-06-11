@@ -84,34 +84,14 @@
 
         <header class="main">
             <section class="site-title"><a href="/" class="home-link">{{ site.title }}</a></section>
-            {% include "navigation.njk" %}
+            {% include "nav-header.njk" %}
         </header>
         <main id="skip" class="content" role="main">
             {{ content | safe }}
         </main>
         <footer class="main">
             <section class="copyright">&copy; 2012–{% currentYear %} Sean Lunsford</section>
-            <ul class="footer-nav">
-                <li><a href="/feed.xml" title="RSS"><i class="fa-solid fa-rss"></i></a></li>
-
-                <li><a href="/feed.json" title="JSON Feed"><i class="fa-solid fa-brackets-curly"></i></a></li>
-
-                {%if site.github_url -%}
-                    <li><a rel="me" href="{{ site.github_url }}" title="GitHub"><i class="fa-brands fa-github"></i></a></li>
-                {% endif -%}
-
-                {%if site.author.mastodon_url -%}
-                    <li><a rel="me" href="{{ site.author.mastodon_url }}" title="Mastodon"><i class="fa-brands fa-mastodon"></i></a></li>
-                {% endif -%}
-
-                {%if site.author.blueksky_url -%}
-                    <li><a rel="me" href="{{ site.author.blueksky_url }}" title="Bluesky"><i class="fa-brands fa-bluesky"></i></a></li>
-                {% endif -%}
-
-                {%if site.author.threads_url -%}
-                    <li><a rel="me" href="{{ site.author.threads_url }}" title="Threads"><i class="fa-brands fa-threads"></i></a></li>
-                {% endif -%}
-            </ul>
+            {% include "nav-footer.njk" %}
         </footer>
 
         {# Tinylytics #}
