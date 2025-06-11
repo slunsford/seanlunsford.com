@@ -11,24 +11,11 @@ footer.main {
   text-align: center;
   overflow: hidden;
   font-size: var(--font-size-minus-1);
-}
-
-footer.main,
-footer.main a {
   color: var(--secondary-text-color);
-  text-decoration: none;
-}
 
-footer.main a:hover {
-  color: var(--accent-color);
-}
-
-footer.main a:active {
-  opacity: 75%;
-}
-
-footer .powered-by {
-  margin-right: 0.5rem;
+  .powered-by {
+    margin-right: 0.5rem;
+  }
 }
 
 .nav-footer {
