@@ -1,6 +1,6 @@
 <nav>
     <h2 class="visually-hidden">Top level navigation menu</h2>
-    <ul class="nav-header">
+    <ul class="nav-top">
     {%- for entry in nav %}
         {% set entryUrlWithSlash = entry.url + '/' %}
         <li class="nav-item{% if entry.url == page.url or entryUrlWithSlash == page.url %} nav-current{% endif %}"><a href="{{ entry.url }}">{{ entry.title }}</a></li>

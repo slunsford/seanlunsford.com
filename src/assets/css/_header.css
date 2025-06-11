@@ -22,7 +22,7 @@ header.main {
   color: var(--accent-color);
 }
 
-.nav-header {
+.nav-top {
   display: flex;
   flex-wrap: wrap;
   margin: 0;

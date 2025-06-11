@@ -84,14 +84,14 @@
 
         <header class="main">
             <section class="site-title"><a href="/" class="home-link">{{ site.title }}</a></section>
-            {% include "nav-header.njk" %}
+            {% include "nav-top.njk" %}
         </header>
         <main id="skip" class="content" role="main">
             {{ content | safe }}
         </main>
         <footer class="main">
             <section class="copyright">&copy; 2012–{% currentYear %} Sean Lunsford</section>
-            {% include "nav-footer.njk" %}
+            {% include "nav-bottom.njk" %}
         </footer>
 
         {# Tinylytics #}
