@@ -13,7 +13,7 @@ Popover footnotes are based on [bigfoot.js](https://github.com/lemonmade/bigfoot
 
 {% set currentMonth %}{% currentMonth %}{% endset -%}
 
-{% if currentMonth == 12 -%} The `<snow-fall>` web component is by Zach Leatherman. {%- endif %}
+{% if currentMonth == 12 -%} The `<snow-fall>` web component is by [Zach Leatherman](https://github.com/zachleat/snow-fall). {%- endif %}
 
 The post graph at the bottom of the [archive](/archive/) and [tag](/tag/technology/) pages is Robb Knight’s [Eleventy Post Graph](https://postgraph.rknight.me/) plugin.
 
