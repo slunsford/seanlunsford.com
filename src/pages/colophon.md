@@ -1,7 +1,7 @@
 ---
 title: Colophon
 ---
-This website is built with [Eleventy](https://www.11ty.dev/) and deployed on [Cloudflare Pages](https://pages.cloudflare.com/). The source code is on [GitHub](https://github.com/slunsford/seanlunsford.com).
+This website is built with [Eleventy](https://www.11ty.dev/) and deployed on [Vercel](https://vercel.com/). The source code is on [GitHub](https://github.com/slunsford/seanlunsford.com).
 
 [Email subscriptions](/subscribe/) are powered by [Buttondown](https://buttondown.email/refer/seanlunsford).
 
