@@ -4,6 +4,7 @@
  * Sarah Drasner's[@sdras] Night Owl
  * Ported by Sara vieria [@SaraVieira]
  * Added by Souvik Mandal [@SimpleIndian]
+ * Colors updated by Sean Lunsford
  */
 
 code[class*="language-"],
@@ -33,7 +34,7 @@ pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection,
 code[class*="language-"] ::-moz-selection {
   text-shadow: none;
-  background: rgba(29, 59, 83, 0.99);
+  background: rgba(34, 36, 47, 0.99);
 }
 
 pre[class*="language-"]::selection,
@@ -41,8 +42,9 @@ pre[class*="language-"] ::selection,
 code[class*="language-"]::selection,
 code[class*="language-"] ::selection {
   text-shadow: none;
-  background: rgba(29, 59, 83, 0.99);
+  background: rgba(34, 36, 47, 0.99);
 }
+
 
 @media print {
   code[class*="language-"],
@@ -60,7 +62,7 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  color: white;
+  color: #dfe1e2;
   /* background: #011627; */
 }
 
@@ -73,58 +75,58 @@ pre[class*="language-"] {
 .token.comment,
 .token.prolog,
 .token.cdata {
-  color: rgb(99, 119, 119);
+  color: #5c7a7a;
   font-style: italic;
 }
 
 .token.punctuation {
-  color: rgb(199, 146, 234);
+  color: #9582c4;
 }
 
 .namespace {
-  color: rgb(178, 204, 214);
+  color: #a8b8c2;
 }
 
 .token.deleted {
-  color: rgba(239, 83, 80, 0.56);
+  color: rgba(255, 69, 0, 0.56);
   font-style: italic;
 }
 
 .token.symbol,
 .token.property {
-  color: rgb(128, 203, 196);
+  color: #9cb5b0;
 }
 
 .token.tag,
 .token.operator,
 .token.keyword {
-  color: rgb(127, 219, 202);
+  color: #ff6b35;
 }
 
 .token.boolean {
-  color: rgb(255, 88, 116);
+  color: #ff5a74;
 }
 
 .token.number {
-  color: rgb(247, 140, 108);
+  color: #ff8c6c;
 }
 
 .token.constant,
 .token.function,
 .token.builtin,
 .token.char {
-  color: rgb(130, 170, 255);
+  color: #8bb4ff;
 }
 
 .token.selector,
 .token.doctype {
-  color: rgb(199, 146, 234);
+  color: #b8a9c9;
   font-style: italic;
 }
 
 .token.attr-name,
 .token.inserted {
-  color: rgb(173, 219, 103);
+  color: #a8c967;
   font-style: italic;
 }
 
@@ -133,19 +135,19 @@ pre[class*="language-"] {
 .token.entity,
 .language-css .token.string,
 .style .token.string {
-  color: rgb(173, 219, 103);
+  color: #a8c967;
 }
 
 .token.class-name,
 .token.atrule,
 .token.attr-value {
-  color: rgb(255, 203, 139);
+  color: #ffcb8b;
 }
 
 .token.regex,
 .token.important,
 .token.variable {
-  color: rgb(214, 222, 235);
+  color: #d6deeb;
 }
 
 .token.important,
