@@ -1,11 +1,11 @@
 title: seanlunsford.com
 url: https://seanlunsford.com
 github_url: https://github.com/slunsford/seanlunsford.com
-opengraph_image: /assets/img/opengraph.png
+opengraph_image: /images/opengraph.png
 author:
   name: Sean Lunsford
   email: sean@seanlunsford.com
-  avatar: /assets/img/sean.png
+  avatar: /images/sean.png
   url: https://seanlunsford.com
   mastodon_url: https://mastodon.seanlunsford.com/@sean
   mastodon_handle: "@sean@seanlunsford.com"
