@@ -91,7 +91,9 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addFilter("abbr", function(text) {
         if (!text) return text;
-        return text.replace(/\b([A-Z]{2,}s?)\b/g, '<abbr>$1</abbr>');
+        // First escape HTML entities to prevent conflicts with angle brackets
+        const escaped = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        return escaped.replace(/\b([A-Z]{2,}s?)\b/g, '<abbr>$1</abbr>');
     });
 
     eleventyConfig.addDataExtension("yml, yaml", (contents) => yaml.load(contents));
