@@ -66,9 +66,9 @@
   "media": {
     "advanced": false,
     "customFields": null,
-    "dir": "/assets/img",
+    "dir": "/assets/images",
     "maxSize": null,
-    "outputPath": "/assets/img",
+    "outputPath": "/images",
     "permissions": {
       "everybody": [
         "everything"

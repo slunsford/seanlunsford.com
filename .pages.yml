@@ -2,8 +2,8 @@ settings:
   content:
     merge: true
 media:
-  input: src/assets/img
-  output: /assets/img
+  input: src/assets/images
+  output: /images
 content:
   - name: posts
     label: Posts

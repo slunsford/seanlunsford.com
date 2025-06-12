@@ -10,11 +10,8 @@ const pluginBundle = require("@11ty/eleventy-plugin-bundle");
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 
 module.exports = function(eleventyConfig) {
-    // Copy `assets/` to `_site/assets/`
-    eleventyConfig.addPassthroughCopy("src/assets");
-
-    // Copy `public/` to `_site/`
-    eleventyConfig.addPassthroughCopy({ "src/public": "/" });
+    // Passthrough
+    eleventyConfig.addPassthroughCopy({ "src/assets": "/" });
 
     // Watch content images for the image pipeline.
     eleventyConfig.addWatchTarget("src/**/*.{svg,webp,png,jpeg}");
