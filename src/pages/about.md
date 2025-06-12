@@ -6,7 +6,7 @@ I’m a digital nomad currently based in Antalya, Türkiye, with my wife, daught
 
 ## Work
 
-I’m the [analytics engineer](https://www.getdbt.com/what-is-analytics-engineering#what-is-an-analytics-engineer) for a US homebuilder—a position I’ve been in for a couple years, working to modernize our data stack and replace myriad Excel reports with new dashboards. I’ve been at this company for over a decade now, but this role has brought me the most enthusiasm in my work yet.
+I’m the [analytics engineer](https://www.getdbt.com/what-is-analytics-engineering#what-is-an-analytics-engineer) for a US homebuilder—a position I’ve been in for a few years, working to modernize our data stack and replace myriad Excel reports with new dashboards. I’ve been at this company for over a decade now, but this role has brought me the most enthusiasm in my work yet.
 
 ## Interests
 
