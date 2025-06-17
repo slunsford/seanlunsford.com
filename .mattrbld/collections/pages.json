@@ -15,5 +15,5 @@
     ]
   },
   "type": "md",
-  "urlTemplate": "/:slug"
+  "urlTemplate": "/:slug/"
 }
