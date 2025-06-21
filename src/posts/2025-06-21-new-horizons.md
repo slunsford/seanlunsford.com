@@ -9,7 +9,7 @@ I definitely didn’t plan this, but as I’m finally catching a few minutes to 
 
 I say “we”, but the vast majority of the work going into this move is being pushed forward by my incredible wife, with me playing a supporting role at best—trying to juggle keeping on top of my job, taking kids so that Megan can get focused time to work on this move, and somewhere in there handle the pieces of the move that can only come down to me. We’re both so tired.
 
-But when I manage to get my head enough above water to see past all that—I am really excited for what’s next. For our next adventure. A fresh start. New horizons.
+But when I manage to get my head enough above water to see past all that, I am really excited for what’s next. For our next adventure. A fresh start. New horizons.
 
 “New Horizons” has been my [theme](/tag/yearly-themes/) for 2025. We started this year knowing it was time to move this summer, though we didn’t know where. The first four or five months of the year were figuring that part out. We considered—and ultimately ruled out—a return to the US for a few years. Instead, it became clear to us that the right next step for our family was to move somewhere where Megan could pick up her career in international education again, and where our 4-year-old could start preschool—ideally at the same school. So Megan spent months submitting applications, interviewing, looking at openings from the Philippines to Italy to Uganda before—at about the eleventh hour—connecting with an international school in India that felt like a really good fit for her, for our daughter, and for our family. So with not much more than a month before we’d have to fly, we decided we were moving to India.
 
