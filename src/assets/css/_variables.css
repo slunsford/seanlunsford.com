@@ -25,13 +25,13 @@
   --post-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
   --post-border-radius: 0.75rem;
 
-  --default-font-features: "onum";
+  --default-font-features: "calt", "onum", "ss12", "ss15";
   --small-caps: var(--default-font-features), "smcp";
   --all-small-caps: var(--default-font-features), "c2sc", "smcp";
   --mono-font-features: "ss02", "liga", "calt", "onum", "ss11", "ss13";
 
-  --sans: Concourse, sans-serif;
-  --serif: Valkyrie, serif;
+  --sans: Concourse, Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+  --serif: Valkyrie, 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
   --mono: ml, monospace;
 
   --font-size-minus-3: 0.702rem;
