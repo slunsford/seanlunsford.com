@@ -54,12 +54,9 @@ b, strong {
   font-weight: 600;
 }
 
-a {
+a, a:not([class]) {
+  color: var(--accent-color);
   text-decoration: none;
-
-  &:not([class]) {
-    color: var(--accent-color);
-  }
 }
 
 nav a {
