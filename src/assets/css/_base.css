@@ -64,9 +64,13 @@ a {
 
 nav a {
   color: var(--secondary-text-color);
+  transition-property: color;
+  transition-duration: 0.2s;
 
   &:hover {
     color: var(--accent-color);
+    transition-property: color;
+    transition-duration: 0.2s;
   }
 
   &:active {
