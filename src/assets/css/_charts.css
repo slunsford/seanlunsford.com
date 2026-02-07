@@ -1,0 +1,8 @@
+.chart {
+  margin: 0 0 1rem;
+  background-color: var(--background-color);
+  border: 1px solid var(--post-border-color);
+  border-radius: var(--post-border-radius);
+  padding: var(--post-padding);
+  font-family: var(--sans);
+}

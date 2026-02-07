@@ -9,7 +9,8 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginBundle = require("@11ty/eleventy-plugin-bundle");
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 
-module.exports = function(eleventyConfig) {
+module.exports = async function(eleventyConfig) {
+    const { default: uncharted } = await import("eleventy-plugin-uncharted");
     // Passthrough
     eleventyConfig.addPassthroughCopy({ "src/assets": "/" });
 
@@ -28,9 +29,17 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
     eleventyConfig.addPlugin(pluginBundle);
 
+    // Third-party plugins
     eleventyConfig.addPlugin(postGraph, {
         sort: 'desc',
-    })
+    });
+
+    eleventyConfig.addPlugin(uncharted, {
+        animate: true,
+        dataDir: 'src/_data',
+        dataPassthrough: true
+    });
+
 
     // Auto-populate updated_date for posts in production only
     eleventyConfig.addGlobalData("eleventyComputed", {
