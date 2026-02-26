@@ -44,4 +44,4 @@ You may have noticed it says “Global Variables” at the top of the page now. 
 
 [^h1b]: Like, say, an H-1B visa. Just to name a *totally* random example.
 
-[^uncharted]: I've since migrated to [a new site](https://tidytuesday.seanlunsford.com/2025/week-36/), which doesn't yet have interactive filtering. There I just posted a handful of countries to compare.
+[^uncharted]: I’ve since migrated to [a new site](https://tidytuesday.seanlunsford.com/2025/week-36/), which doesn't yet have interactive filtering. There I just posted a handful of countries to compare.
