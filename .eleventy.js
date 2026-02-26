@@ -36,8 +36,17 @@ module.exports = async function(eleventyConfig) {
 
     eleventyConfig.addPlugin(uncharted, {
         animate: true,
-        dataDir: 'src/_data',
-        dataPassthrough: true
+        dataDir: 'src/_data/charts',
+        dataPassthrough: true,
+        image: {
+            enabled: true,
+            outputDir: '/assets/images/charts/',
+            cacheDir: 'src/assets/images/charts/',
+            width: 800,
+            height: 500,
+            scale: 2,
+            background: '#f4f4f4'
+        }
     });
 
 

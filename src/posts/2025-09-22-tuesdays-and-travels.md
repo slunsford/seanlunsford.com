@@ -1,16 +1,22 @@
 ---
 title: Tuesdays and Travels
 date: 2025-09-25T11:08:00+00:00
+updated_date: 2026-02-27T01:35:19+05:30
 tags:
   - Data
   - Technology
   - Travel
 charts:
-  visa_requirements_united_states:
+  oyster-quotient:
     type: sankey
     title: Oyster Quotient
     subtitle: Visa requirements to and from the United States
-    file: charts/visa_requirements_united_states.csv
+    file: visa_requirements_united_states.csv
+    alt: "Sankey diagram showing visa requirements to and from the United States. On the left, incoming flows show 152 countries require visas for the US, 42 need electronic travel authorization (ESTA), and only 4 have visa-free access. On the right, US passport holders enjoy visa-free access to 136 countries, visa on arrival in 36, visas required in 24, online visas in 20, and electronic authorization in 10."
+    image:
+      width: 1000
+      height: 560
+
 ---
 I started this draft at 5:30 in the morning on Monday, waiting to board a flight in Delhi. I’m picking it back up to (hopefully) publish it as I wait for another flight at Heathrow, after three days at a [data conference](https://www.bigdataldn.com/) in London. This was my second time at this particular conference, and the fourth year running I’ve gone to a data conference in London in the fall.
 
@@ -20,7 +26,7 @@ Why am I writing about data and passports? Well, fittingly, I just did some recr
 
 I could have done a visualization tracking the change in rankings over time as addressed in that article, but as I explored this dataset, I became more intrigued in looking at the data as a two-way street—essentially, how does access to a country for other nationalities correspond to the access granted to its nationals abroad? It took a few attempts to figure out how best to represent that, but I landed on what’s called a Sankey chart—typically used to represent flow. I set it up to show the breakdown of visa requirement categories as designated in the data—for entering a given country on the left side, and for passport holders entering others on the right. [The page on my TidyTuesday site](https://tidytuesday2025.seanlunsford.com/2025-09-09/) has an interactive version with a dropdown menu to pick the country.[^uncharted] Here’s the US:
 
-{% chart 'visa_requirements_united_states' %}
+{% chart 'oyster-quotient' %}
 
 So I can see myself in that little slice of US passport holders applying for ETAs in one of 10 countries. But this also clearly shows what I was already pretty sure I knew: that while a majority of countries (at least for now) allow US citizens to visit with no visa at all—a privilege that I’ve taken advantage of plenty—an even larger majority of nationalities are required to apply for a visa to enter the United States. The number allowed to arrive visa-free? Four.
 
