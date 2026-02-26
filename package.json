@@ -30,9 +30,12 @@
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "@rknightuk/eleventy-plugin-post-graph": "^1.0.7",
-    "eleventy-plugin-uncharted": "^0.6.1",
+    "eleventy-plugin-uncharted": "^1.0.0-beta.5",
     "js-yaml": "^4.1.1",
     "luxon": "^3.4.4",
     "markdown-it-footnote": "^4.0.0"
+  },
+  "devDependencies": {
+    "puppeteer": "^24.37.5"
   }
 }
