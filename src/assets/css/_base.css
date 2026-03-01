@@ -194,10 +194,15 @@ cite {
 }
 
 hr {
-  display: block;
-  height: 1px;
   border: 0;
-  border-top: var(--secondary-text-color) 1px solid;
+  text-align: center;
+  margin: 1.5rem 0;
+
+  &::before {
+    content: "•  •  •";
+    color: var(--secondary-text-color);
+    letter-spacing: 0.25em;
+  }
 }
 
 kbd {
