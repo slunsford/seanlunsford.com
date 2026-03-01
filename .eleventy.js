@@ -120,6 +120,7 @@ module.exports = async function(eleventyConfig) {
 
     // Customize Markdown library settings:
     eleventyConfig.amendLibrary("md", mdLib => {
+        mdLib.set({ typographer: true });
         mdLib.enable("code");
         mdLib.use(markdownItFootnote);
         mdLib.use(markdownItAbbr);
