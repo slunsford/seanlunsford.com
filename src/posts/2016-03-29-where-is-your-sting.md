@@ -4,8 +4,9 @@ slug: where-is-your-sting
 date: 2016-03-28T22:56:12 +00:00
 updated_date: 2020-02-12T21:19:34 +00:00
 tags:
-  - "Christianity"
+  - Christianity
   - Highlights
+  - Current Events
 ---
 
 You may have heard of the explosion that rocked Lahore, Pakistan, yesterday. Having grown up in that part of the world, it hits pretty close to home for me.
