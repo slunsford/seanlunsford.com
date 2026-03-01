@@ -2,7 +2,7 @@
 title: About Me
 slug: about
 ---
-I’m a digital nomad currently based in Antalya, Türkiye, with my wife, daughter, and son. I’m an [ATCK](https://en.wikipedia.org/wiki/Third_culture_kid#:~:text=adult%20third%20culture%20kid%20%28ATCK%29) who spent eight years back in the United States (four in college; four after) before [returning to Asia](/2018/eleven-days/).
+I’m a digital nomad currently based in Dehradun, India, with my wife, daughter, and son. I’m an [ATCK](https://en.wikipedia.org/wiki/Third_culture_kid#:~:text=adult%20third%20culture%20kid%20%28ATCK%29) who spent eight years back in the United States (four in college; four after) before [returning to Asia](/2018/eleven-days/).
 
 ## Work
 
