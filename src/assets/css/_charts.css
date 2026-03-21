@@ -6,3 +6,8 @@
   padding: var(--post-padding);
   font-family: var(--sans);
 }
+
+.chart-claude-adoption {
+  .chart-series-pull-requests { --color: #858585; }
+  .chart-series-commits { --color: #d65300; }
+}

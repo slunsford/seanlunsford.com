@@ -40,7 +40,7 @@ You may have noticed it says “Global Variables” at the top of the page now. 
 
 ---
 
-**Update (Feb 2026):** Replaced the chart screenshot with a chart using my [Uncharted](https://github.com/slunsford/uncharted) plugin, which also powers my new [TidyTuesday](https://tidytuesday.seanlunsford.com/) site.
+**Update (Feb 2026):** Replaced the chart screenshot with a chart using my [Uncharted](https://uncharted.seanlunsford.com/) plugin, which also powers my new [TidyTuesday](https://tidytuesday.seanlunsford.com/) site.
 
 [^h1b]: Like, say, an H-1B visa. Just to name a *totally* random example.
 

@@ -9,6 +9,8 @@ Previous versions of this site have been on self-hosted [Ghost](https://ghost.or
 
 ## Dependencies
 
+Charts are made with [Uncharted](https://uncharted.seanlunsford.com/), a plugin [of my own](/2026/introducing-uncharted/).
+
 Popover footnotes are based on [bigfoot.js](https://github.com/lemonmade/bigfoot).
 
 {% set currentMonth %}{% currentMonth %}{% endset -%}
