@@ -27,7 +27,7 @@ permalink: /feed.json
 			"external_url": "{{ post.data.link | htmlBaseUrl(site.url) }}",
 			{%- endif %}
 			"title": "{{ post.data.title }}",
-			"content_html": {% if post.templateContent %}{{ post.templateContent | transformWithHtmlBase(absolutePostUrl, post.url) | dump | safe }}{% else %}""{% endif %},
+			"content_html": {% if post.templateContent %}{{ post.templateContent | transformWithHtmlBase(absolutePostUrl, post.url) | chartToImage(site.url) | dump | safe }}{% else %}""{% endif %},
 			{%- if post.data.featured_image.url %}
     	"banner_image": "{{ post.data.featured_image.url | htmlBaseUrl(site.url) }}",
       {%- endif %}

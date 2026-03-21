@@ -2,7 +2,7 @@
 title: Charting New Territory
 slug: introducing-uncharted
 link: https://uncharted.seanlunsford.com/
-date: 2026-03-21T17:02:48+00:00
+date: 2026-03-21T17:14:43+00:00
 tags:
   - Data
   - Technology
