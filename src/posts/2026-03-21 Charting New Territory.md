@@ -23,7 +23,7 @@ Today I'm publishing the 1.0 release of my first [Eleventy](https://www.11ty.dev
 
 {% chart 'claude-adoption' %}
 
-Because they're HTML + CSS instead of images, they can adapt and resize to fit the page and device they're on, be responsive to light/dark mode, and they can be styled to match the website—and without running client-side Javascript.
+Because they're HTML + CSS instead of images, they can adapt and resize to fit the page and device they're on, be responsive to light/dark mode, and be styled to match the website—and without running client-side Javascript.
 
 The chart above is relevant to Uncharted for multiple reasons. The genesis of the project was a two-page Wrapped-style website I put together for work to document what I did last year, based primarily on GitHub data. Since the C-Suite is very interested in any applications of AI within the company, I also added some numbers and the above chart to demonstrate my adoption of [Claude Code](https://claude.com/product/claude-code), which by the end of the year had become a key part of my development workflow.
 
@@ -33,7 +33,7 @@ Once I had a 0.1, my next use case (and the one I'd had in mind before the Wrapp
 
 Meanwhile, pretty much every new site I start now I do in Eleventy, and I really just wanted my Tidy Tuesday site to be on that same stack. So I worked with Claude Code to do [just that](https://tidytuesday.seanlunsford.com/). I started fresh with the first couple datasets in January, and have built out Uncharted as I've needed new chart types or other features for each week since.
 
-At whatever point I added a [Sankey diagram](https://en.wikipedia.org/wiki/Sankey_diagram) to the available chart types, I also went back and replaced the chart on [a recent(ish) post](https://seanlunsford.com/2025/tuesdays-and-travels/), which had just been a screenshot from my old Tidy Tuesday site before.
+At whatever point I added a [Sankey diagram](https://en.wikipedia.org/wiki/Sankey_diagram) to the available chart types, I also went back and replaced the chart on [a recent(ish) post](/2025/tuesdays-and-travels/) here, which had just been a screenshot from my old Tidy Tuesday site before.
 
 While working on this I've had the privilege of interacting with [Bob Monsour](https://indieweb.social/@bobmonsour) of [11tybundle](https://11tybundle.dev/) fame. He used a prerelease version to work on a new [Insights](https://11tybundle.dev/insights/) page, and while he was drafting that he opened a number of issues on the [GitHub repo](https://github.com/slunsford/uncharted) that we went back and forth on to debug. It was really helpful to get some external feedback during early development and very rewarding to see Uncharted in the wild so soon after I started the project.
 
