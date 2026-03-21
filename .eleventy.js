@@ -45,7 +45,10 @@ module.exports = async function(eleventyConfig) {
             width: 800,
             height: 500,
             scale: 2,
-            background: '#f4f4f4'
+            background: '#f4f4f4',
+            stylesheets: [
+                'src/assets/css/_charts.css'
+            ]
         }
     });
 
