@@ -4,9 +4,10 @@ slug: uncharted
 link: https://uncharted.seanlunsford.com/
 date: 2026-03-21T17:14:43+00:00
 tags:
+  - Uncharted
+  - Eleventy
   - Data
   - Technology
-  - Uncharted
 charts:
   claude-adoption:
     type: line
