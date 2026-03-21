@@ -255,6 +255,11 @@
       "source": "/categories/(.*)",
       "destination": "/tag/$1",
       "permanent": true
+    },
+    {
+      "source": "/2026/introducing-uncharted/",
+      "destination": "/2026/uncharted/",
+      "permanent": true
     }
   ]
 }
