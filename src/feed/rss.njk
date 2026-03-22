@@ -23,6 +23,8 @@ permalink: /feed.xml
 		<link rel={% if post.data.link %}"related"{% else %}"alternate"{% endif %} href="{{ absolutePostUrl }}"/>
 		<updated>{{ (post.updated_date or post.date) | dateToRfc3339 }}</updated>
 		<id>{{ absolutePostUrl }}</id>
+		{%- set postDescription = post.data.description or post.data.excerpt %}
+		{%- if postDescription %}<summary>{{ postDescription }}</summary>{% endif %}
 		<content type="html">{{ post.templateContent | transformWithHtmlBase(absolutePostUrl, post.url) | chartToImage(site.url) }}</content>
 	</entry>
 	{%- endfor %}
