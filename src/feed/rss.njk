@@ -1,13 +1,14 @@
 ---
 permalink: /feed.xml
 ---
+{%- set latestPost = collections.posts | reverse | first -%}
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ site.language }}">
 	<title>{{ site.title }}</title>
 	{% if site.description %}<subtitle>{{ site.description }}</subtitle>{% endif %}
 	<link href="{{ permalink | htmlBaseUrl(site.url) }}" rel="self"/>
 	<link href="{{ site.url | addPathPrefixToFullUrl }}"/>
-	<updated>{{ collections.posts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <updated>{% if latestPost.data.updated_date %}{{ latestPost.data.updated_date | dateToRfc3339 }}{% else %}{{ (latestPost.data.updated_date or latestPost.date) | dateToRfc3339 }}{% endif %}</updated>
 	<id>{{ site.url }}</id>
 	<author>
 		<name>{{ site.author.name }}</name>
@@ -21,7 +22,8 @@ permalink: /feed.xml
 		<link rel="alternate" href="{{ post.data.link | htmlBaseUrl(site.url) }}"/>
 		{%- endif %}
 		<link rel={% if post.data.link %}"related"{% else %}"alternate"{% endif %} href="{{ absolutePostUrl }}"/>
-		<updated>{{ (post.updated_date or post.date) | dateToRfc3339 }}</updated>
+    <published>{{ (post.data.published or post.date) | dateToRfc3339 }}</published>
+		<updated>{{ (post.data.updated_date or post.date) | dateToRfc3339 }}</updated>
 		<id>{{ absolutePostUrl }}</id>
 		{%- set postDescription = post.data.description or post.data.excerpt %}
 		{%- if postDescription %}<summary>{{ postDescription }}</summary>{% endif %}

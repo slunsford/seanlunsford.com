@@ -34,7 +34,7 @@ permalink: /feed.json
     	"banner_image": "{{ post.data.featured_image.url | htmlBaseUrl(site.url) }}",
       {%- endif %}
 			"date_published": "{{ post.date | dateToRfc3339 }}",
-			"date_modified": "{{ (post.updated_date or post.date) | dateToRfc3339 }}",
+			"date_modified": "{{ (post.data.updated_date or post.date) | dateToRfc3339 }}",
 			"authors": [{
 				"name": "{{ site.author.name }}",
 				"url": "{{ site.author.url }}",

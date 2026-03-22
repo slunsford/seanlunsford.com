@@ -4,6 +4,7 @@ description: Announcing Uncharted, an Eleventy plugin for generating charts from
 slug: uncharted
 link: https://uncharted.seanlunsford.com/
 date: 2026-03-21T17:49:56+00:00
+updated_date: 2026-03-22T11:11:53+00:00
 tags:
   - Uncharted
   - Eleventy
