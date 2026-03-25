@@ -35,6 +35,9 @@ content:
         label: External Link
         type: string
         pattern: ^((https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})?(\/[^\s]*\/?)?$
+      - name: description
+        label: Description
+        type: text
       - name: body
         label: Body
         type: rich-text
@@ -56,6 +59,8 @@ content:
             - Life
             - Technology
             - Data
+            - Eleventy
+            - Uncharted
             - Yearly Themes
       - name: featured_image
         label: Featured image
@@ -143,7 +148,7 @@ content:
             label: URL
             type: string
             pattern: (^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$)?
-          - icon: avatar
+          - name: avatar
             label: Avatar
             type: image
           - name: mastodon_url
