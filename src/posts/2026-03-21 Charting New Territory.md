@@ -1,26 +1,12 @@
 ---
 title: Charting New Territory
+date: 2026-03-Sa'T'17:24:00177409404000017740940400001774094040000
+draft: false
+link: https://uncharted.seanlunsford.com/
 description: Announcing Uncharted, an Eleventy plugin for generating charts from CSVs
 slug: uncharted
-link: https://uncharted.seanlunsford.com/
-date: 2026-03-21T17:49:56
-updated_date: 2026-03-22T11:11:53
-tags:
-  - Uncharted
-  - Eleventy
-  - Data
-  - Technology
-charts:
-  claude-adoption:
-    type: line
-    title: Claude Code Adoption
-    subtitle: AI-assisted development since May 2025
-    file: claude_adoption.csv
-    y:
-      max: 60
-    alt: "Line chart showing AI-assisted commits and pull requests from May to December 2025. Two lines track Pull Requests (gray) and Commits (orange). PRs start at 3 in May and grow steadily to 22 in December. Commits begin at 2 in May, remain low through September (2-8 range), then spike dramatically starting in October (24), climbing to 41 in November and 53 in December."
+tags: Uncharted
 ---
-
 Today I'm publishing the 1.0 release of my first [Eleventy](https://www.11ty.dev/) plugin, [Uncharted](https://uncharted.seanlunsford.com/). It's a plugin for creating charts on the [static site generator](https://en.wikipedia.org/wiki/Static_site_generator) I use for my blog and a number of other websites. It takes data from CSV files, [JSON in the data directory](https://www.11ty.dev/docs/data-global/), or the [YAML front matter](https://www.11ty.dev/docs/data-frontmatter/) for the post or page. It generates static HTML and CSS to render [a growing number of types of charts](https://uncharted.seanlunsford.com/chart-types/), with a limited amount of interactivity (i.e., hover effects and tooltips). Here's an example:
 
 {% chart 'claude-adoption' %}
